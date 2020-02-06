@@ -4,24 +4,20 @@ export const APP_CONSTANTS = {
 
   NAV_ITEMS: [
     {
-      link: "/knowledge",
-      name: "Keywords",
-      icon: 'assignment'
+      link: "/keywords",
+      name: "Keywords"
     },
     {
-      link: "/past",
-      name: "Portfolio",
-      icon: 'conveyor'
+      link: "/portfolio",
+      name: "Portfolio"
     },
     {
-      link: "/ppm",
-      name: "About me",
-      icon: 'chemistry'
+      link: "/about",
+      name: "About me"
     },
     {
-      link: "/web-links",
-      name: "Online Presence",
-      icon: 'shopping_cart'
+      link: "/profiles",
+      name: "Profiles"
     }
   ]
 };

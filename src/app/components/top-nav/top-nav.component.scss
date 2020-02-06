@@ -7,11 +7,7 @@
 
 .nav-item:not(.active) {
   & .icon {
-  filter: invert(0)
-    sepia(1)
-    hue-rotate(200deg)
-    saturate(4)
-    brightness(1);
+    filter: grayscale(100%)
   }
 }
 
