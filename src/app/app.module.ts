@@ -5,10 +5,15 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InlineSVGModule } from 'ng-inline-svg';
 
 import { SharedModule } from'./modules/shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
+import { AboutModule } from './modules/about/about.module';
+import { KeywordsModule } from './modules/keywords/keywords.module';
+import { PortfolioModule } from './modules/portfolio/portfolio.module';
+import { ProfilesModule } from './modules/profiles/profiles.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
-import { AppRoutingModule } from './app-routing.module';
+
 // import { SpinnerComponent } from './components/spinner/spinner.component';
 // import { SpinnerOverlayComponent } from './components/spinner-overlay/spinner-overlay.component';
 
@@ -18,6 +23,10 @@ import { AppRoutingModule } from './app-routing.module';
     HttpClientModule,
     SharedModule,
     AppRoutingModule,
+    PortfolioModule,
+    ProfilesModule,
+    AboutModule,
+    KeywordsModule,
     InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
