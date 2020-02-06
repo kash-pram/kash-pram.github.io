@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from'./modules/shared/shared.module';
 
 import { AppComponent } from './app.component';
+import { TopNavComponent } from './components/top-nav/top-nav.component';
 // import { SpinnerComponent } from './components/spinner/spinner.component';
 // import { SpinnerOverlayComponent } from './components/spinner-overlay/spinner-overlay.component';
 
@@ -21,7 +22,7 @@ import { AppComponent } from './app.component';
     ]
   )],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, TopNavComponent ],
   // entryComponents: [ SpinnerOverlayComponent ],
   // providers: [ Title, {
   //   provide: HTTP_INTERCEPTORS,

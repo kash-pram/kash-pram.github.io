@@ -28,7 +28,7 @@ declare let gtag:Function;
   styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent  {
-showSpinner = true;
+showSpinner = false;
 
 constructor ( 
   // public _gtagService: GtagService,
