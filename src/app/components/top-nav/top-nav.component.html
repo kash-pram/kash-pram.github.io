@@ -11,8 +11,8 @@
     </button>
     <div class="collapse navbar-collapse w-100" id="navbarCollapse">
       <div class="navbar-nav w-100 justify-content-center" >
-        <a class="nav-hover nav-item nav-link btn d-inline d-lg-inline-block nav-width no-border pt-3 cursor-pointer"
-          *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="selectNavItem(i)"
+        <a class="nav-hover nav-item nav-link btn d-inline d-lg-inline-block nav-width no-border mt-3 cursor-pointer"
+          *ngFor="let navItem of NAV_ITEMS; let i = index"
           [ngClass]="{'active': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
           <div class="no-border" routerLink="{{navItem.link}}">
             <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>

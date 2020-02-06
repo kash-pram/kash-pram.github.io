@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
 
 import { APP_CONSTANTS } from 'src/app/_constants/app-constants';
 
@@ -12,7 +12,13 @@ export class TopNavComponent {
   NAV_ITEMS = APP_CONSTANTS.NAV_ITEMS;
   selectedNavIndex: number = 0;
 
-  constructor ( public router: Router ) { }
+  constructor ( public router: Router ) {
+    router.events.subscribe(event => {
+      if(event instanceof NavigationEnd){
+        this.checkNavActive();
+      }
+    });
+  } // CONSTRUCTOR
 
   checkNavActive () {
     for ( let i = 0; i < this.NAV_ITEMS.length; i++ ) {
@@ -26,4 +32,5 @@ export class TopNavComponent {
   selectNavItem ( newIndex ) {
     this.selectedNavIndex = newIndex;
   } // FN
-}
+
+} // EXPORTS
