@@ -3,6 +3,8 @@ import { Component } from '@angular/core';
 // import {FormControl} from '@angular/forms';
 // import { Title } from '@angular/platform-browser';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { LoaderEmitterService } from './_services/loader-emitter.service';
+import { APP_CONSTANTS } from './_constants/app-constants';
 // import { filter, map } from 'rxjs/operators';
 
 // import moment from 'moment';
@@ -26,13 +28,23 @@ declare let gtag:Function;
   styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent  {
+showSpinner = true;
 
 constructor ( 
   // public _gtagService: GtagService,
+  public _loaderEmitter: LoaderEmitterService,
   public router: Router,
   // public activatedRoute: ActivatedRoute,
   // private titleService: Title
   ) {
+
+    this._loaderEmitter.changeEmitted$.subscribe(text => {
+      if ( text === APP_CONSTANTS.SHOW_LOADING ) {
+        this.showSpinner = true;
+      } else {
+        this.showSpinner = false;
+      }
+    })
     // const appTitle = this.titleService.getTitle();
 
     // this.router.events.pipe(

@@ -7,7 +7,8 @@ import { RouterModule } from '@angular/router';
 import { SharedModule } from'./modules/shared/shared.module';
 
 import { AppComponent } from './app.component';
-
+// import { SpinnerComponent } from './components/spinner/spinner.component';
+// import { SpinnerOverlayComponent } from './components/spinner-overlay/spinner-overlay.component';
 
 @NgModule({
   imports:      [ BrowserModule, 
@@ -19,7 +20,9 @@ import { AppComponent } from './app.component';
       { path: "", component: AppComponent}
     ]
   )],
+  // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
   declarations: [ AppComponent ],
+  // entryComponents: [ SpinnerOverlayComponent ],
   // providers: [ Title, {
   //   provide: HTTP_INTERCEPTORS,
   //   useClass: HTTPInterceptorService,
