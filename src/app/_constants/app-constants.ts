@@ -4,8 +4,8 @@ export const APP_CONSTANTS = {
 
   NAV_ITEMS: [
     {
-      link: "/keywords",
-      name: "Keywords"
+      link: "/skillset",
+      name: "Skillset"
     },
     {
       link: "/portfolio",

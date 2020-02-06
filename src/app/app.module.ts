@@ -7,7 +7,7 @@ import { InlineSVGModule } from 'ng-inline-svg';
 import { SharedModule } from'./modules/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AboutModule } from './modules/about/about.module';
-import { KeywordsModule } from './modules/keywords/keywords.module';
+import { SkillsetModule } from './modules/skillset/skillset.module';
 import { PortfolioModule } from './modules/portfolio/portfolio.module';
 import { ProfilesModule } from './modules/profiles/profiles.module';
 
@@ -26,7 +26,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
     PortfolioModule,
     ProfilesModule,
     AboutModule,
-    KeywordsModule,
+    SkillsetModule,
     InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],

@@ -1,12 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AppComponent } from './app.component';
-
 const routes: Routes = [
   // { path: "", component: AppComponent, pathMatch: 'full' },
-  { path: "keywords", 
-    loadChildren: () => import('./modules/keywords/keywords.module').then(m => m.KeywordsModule)
+  { path: "skillset", 
+    loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   },
   { path: "portfolio", 
     loadChildren: () => import('./modules/portfolio/portfolio.module').then(m => m.PortfolioModule)
@@ -19,11 +17,11 @@ const routes: Routes = [
   },
   // {
   //   path: '',
-  //   redirectTo: 'keywords',
+  //   redirectTo: 'skillset',
   //   pathMatch: 'full'
   // },
   // { path: "**", component: AppComponent }
-  //   loadChildren: () => import('./modules/keywords/keywords.module').then(m => m.KeywordsModule)
+  //   loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   // }
 ];
 
