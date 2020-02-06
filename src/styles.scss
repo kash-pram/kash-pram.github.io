@@ -28,3 +28,21 @@
  @media only screen and (min-width: 1200px) {
    
  }
+
+
+ .disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.no-border {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  background-color: #FFF;
+}
+.no-border:focus, .no-border:active, .no-border:hover {
+  outline: none;
+}
