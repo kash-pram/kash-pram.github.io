@@ -5,6 +5,18 @@
   background-color: #FFF;
 }
 
-.nav-hover:hover {
-  background-color: #FF0;
+.nav-item:not(.active) {
+  & .icon {
+  filter: invert(0)
+    sepia(1)
+    hue-rotate(200deg)
+    saturate(4)
+    brightness(1);
+  }
+}
+
+.nav-item:hover {
+  & .icon {
+    filter: none;
+  }
 }

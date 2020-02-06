@@ -1,22 +1,22 @@
 export const APP_CONSTANTS = {
   SHOW_LOADING: 'SHOW_LOADING',
   HIDE_LOADING: 'HIDE_LOADING',
-  
+
   NAV_ITEMS: [
     {
       link: "/knowledge",
-      name: "I Understand",
+      name: "Keywords",
       icon: 'assignment'
     },
     {
       link: "/past",
-      name: "PPM's Work",
-      icon: 'folder_open'
+      name: "Portfolio",
+      icon: 'conveyor'
     },
     {
       link: "/ppm",
-      name: "About PPM",
-      icon: 'edit'
+      name: "About me",
+      icon: 'chemistry'
     },
     {
       link: "/web-links",

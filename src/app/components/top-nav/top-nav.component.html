@@ -13,17 +13,10 @@
             <a class="nav-hover nav-item nav-link d-inline d-lg-inline-block nav-width no-border" 
             [ngClass]="{'active': i === selectedNavIndex }" [routerLink]="navItem.link" (click)="selectNavItem(i)"
             *ngFor="let navItem of NAV_ITEMS; let i = index">
-              <span >
-                <!-- <mat-icon class="mx-3 font-size20">{{navItem.icon}}</mat-icon> -->
-              </span>{{navItem.name}}
+            <span class="icon d-inline-block mr-4" [inlineSVG]="'/assets/css/' + navItem.icon + '.svg'"></span>
+            <span class="d-inline-block ml-4">{{navItem.name}}</span>
             </a>
-            <!-- <a href="#" class="nav-hover nav-item nav-link d-inline d-lg-inline-block nav-width">Profile</a>
-            <a href="#" class="nav-hover nav-item nav-link d-inline d-lg-inline-block nav-width">Messages</a>
-            <a href="#" class="nav-hover nav-item nav-link d-inline d-lg-inline-block nav-width disabled" tabindex="-1">Reports</a> -->
           </div>
-          <!-- <div class="navbar-nav ml-auto">
-            <a href="#" class="nav-item nav-link">Login</a>
-          </div> -->
       </div>
   </nav>
 </div>

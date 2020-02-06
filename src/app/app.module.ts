@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { InlineSVGModule } from 'ng-inline-svg';
 
 import { SharedModule } from'./modules/shared/shared.module';
 
@@ -16,7 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
     FormsModule, ReactiveFormsModule,
     HttpClientModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
   declarations: [ AppComponent, TopNavComponent ],
