@@ -4,18 +4,28 @@
 
  /* Extra small devices (phones, 600px and down) */
  @media only screen and (max-width: 600px) {
-
+  .icon > svg {
+    height: 50px;
+    width: 50px;
+  }
  }
 
  /* Small devices (portrait tablets and large phones, 600px and up) */
  @media only screen and (min-width: 600px) {
-
+  .icon > svg {
+    height: 60px;
+    width: 60px;
+  }
  }
  
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (min-width: 768px) {
   .nav-width {
     width: 25%;
+  }
+  .icon > svg {
+    height: 70px;
+    width: 70px;
   }
  }
  

@@ -17,12 +17,11 @@ const routes: Routes = [
   { path: "profiles",
     loadChildren: () => import('./modules/profiles/profiles.module').then(m => m.ProfilesModule)
   },
-  // {
-  //   path: '',
-  //   redirectTo: '',
-  //   pathMatch: 'full'
-  // },
-  
+  {
+    path: '',
+    redirectTo: 'keywords',
+    pathMatch: 'full'
+  },
   // { path: "**", component: AppComponent }
   //   loadChildren: () => import('./modules/keywords/keywords.module').then(m => m.KeywordsModule)
   // }

@@ -1,22 +1,31 @@
-<div id="div-top-nav">
+<div id="div-top-nav" class="border-all">
   <a href="#" class="navbar-brand w-100">
     <!-- <img src="/examples/images/logo.svg" height="28" alt="CoolBrand"> -->
   PPM1988
   </a>
 
   <nav class="navbar navbar-expand-md navbar-light font-size24">
-      <button type="button" class="navbar-toggler no-border" data-toggle="collapse" data-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse w-100" id="navbarCollapse">
-          <div class="navbar-nav w-100 justify-content-center" >
-            <a class="nav-hover nav-item nav-link d-inline d-lg-inline-block nav-width no-border py-3" 
-            [ngClass]="{'active': i === selectedNavIndex }" routerLink="{{navItem.link}}" (click)="selectNavItem(i)"
-            *ngFor="let navItem of NAV_ITEMS; let i = index">
-              <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
-              <span class="d-inline-block ml-3">{{navItem.name}}</span>
-            </a>
+    <button type="button" class="navbar-toggler no-border" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-expanded="false">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse w-100" id="navbarCollapse">
+      <div class="navbar-nav w-100 justify-content-center" >
+        <a class="nav-hover nav-item nav-link btn d-inline d-lg-inline-block nav-width no-border pt-3 cursor-pointer"
+          *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="selectNavItem(i)"
+          [ngClass]="{'active': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <div class="no-border" routerLink="{{navItem.link}}">
+            <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
+            <span class="d-inline-block ml-3">{{navItem.name}}</span>
           </div>
+        </a>
+        <!-- <a class="nav-hover nav-item nav-link d-inline d-lg-inline-block nav-width no-border pt-3" 
+        [ngClass]="{'active': i === selectedNavIndex }" routerLink="{{navItem.link}}" (click)="selectNavItem(i)"
+        *ngFor="let navItem of NAV_ITEMS; let i = index" data-toggle="collapse" data-target=".navbar-toggler">
+          <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
+          <span class="d-inline-block ml-3">{{navItem.name}}</span>
+        </a> -->
       </div>
+    </div>
   </nav>
 </div>
