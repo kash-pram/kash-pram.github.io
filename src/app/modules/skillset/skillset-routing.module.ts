@@ -3,7 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { SkillsetComponent } from './skillset.component';
 
-const routes: Routes = [{ path: '', component: SkillsetComponent }];
+const routes: Routes = [
+  { path: '', component: SkillsetComponent },
+  { path: '**', pathMatch: 'full', redirectTo: '' }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

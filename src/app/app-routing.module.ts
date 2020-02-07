@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   // { path: "", component: AppComponent, pathMatch: 'full' },
-  { path: "skillset", 
+  { path: "skillset",
     loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   },
   { path: "portfolio", 
@@ -20,7 +20,7 @@ const routes: Routes = [
   //   redirectTo: 'skillset',
   //   pathMatch: 'full'
   // },
-  // { path: "**", component: AppComponent }
+  { path: "**", pathMatch: 'prefix', redirectTo: 'skillset' }
   //   loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   // }
 ];
