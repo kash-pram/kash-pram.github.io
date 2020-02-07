@@ -13,6 +13,7 @@ import { ProfilesModule } from './modules/profiles/profiles.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { AlertComponent } from './components/alert/alert.component';
 
 // import { SpinnerComponent } from './components/spinner/spinner.component';
 // import { SpinnerOverlayComponent } from './components/spinner-overlay/spinner-overlay.component';
@@ -30,7 +31,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
     InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
-  declarations: [ AppComponent, TopNavComponent ],
+  declarations: [ AppComponent, TopNavComponent, AlertComponent ],
   // entryComponents: [ SpinnerOverlayComponent ],
   // providers: [ Title, {
   //   provide: HTTP_INTERCEPTORS,

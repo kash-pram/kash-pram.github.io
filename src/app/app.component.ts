@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { LoaderEmitterService } from './_services/loader-emitter.service';
 import { APP_CONSTANTS } from './_constants/app-constants';
+import { AlertService } from './_services/alert.service';
+import { timeout } from 'rxjs/operators';
+
 // import { filter, map } from 'rxjs/operators';
 
 // import moment from 'moment';
@@ -32,11 +35,22 @@ showSpinner = false;
 
 constructor ( 
   // public _gtagService: GtagService,
+  public _alertService: AlertService,
   public _loaderEmitter: LoaderEmitterService,
   public router: Router,
   // public activatedRoute: ActivatedRoute,
   // private titleService: Title
   ) {
+// Create an Observable that will publish a value on an interval
+// const secondsCounter = interval(1000);
+// // Subscribe to begin publishing values
+// secondsCounter.subscribe(n =>
+//   this._alertService.info('Click here to view / download Resume')
+  
+//   );
+setTimeout(function() {
+  this._alertService.info('Click here to view / download Resume')
+}.bind(this), 2000);
 
     this._loaderEmitter.changeEmitted$.subscribe(text => {
       if ( text === APP_CONSTANTS.SHOW_LOADING ) {
