@@ -39,27 +39,23 @@
    
  }
 
- .nav-width {
-  border: 1px double black;
-  border-radius: 10px;
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
+ .color-yellow{
+   color: #FF0;
+ }
+ .nav-border {
+  border: 1px dashed #ECE;
+  border-radius: 100px;
+  // border-top-style: hidden;
+  // border-right-style: hidden;
+  // border-left-style: hidden;
   // border-bottom-style: hidden;
-  background-color: #FFF;
+  // background-color: #FFF;
 }
 .disable-select {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-}
-.no-border {
-  // border-top-style: hidden;
-  // border-right-style: hidden;
-  // border-left-style: hidden;
-  // border-bottom-style: hidden;
-  // background-color: #FFF;
 }
 .no-outline:focus, .no-outline:active, .no-outline:hover {
   outline: none;

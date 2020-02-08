@@ -53,12 +53,12 @@ constructor (
   
 //   );
 
-    setTimeout(function() {
+    // setTimeout(function() {
       // this._alertService.info('Click here to view / download Resume')
       this._snackBar.openFromComponent(ResumeSnackbarComponent, {
         duration: 6000
       });
-    }.bind(this), 2000);
+    // }.bind(this), 5000);
 
     this._loaderEmitter.changeEmitted$.subscribe(text => {
       if ( text === APP_CONSTANTS.SHOW_LOADING ) {
