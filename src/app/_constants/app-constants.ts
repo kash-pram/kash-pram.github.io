@@ -8,16 +8,16 @@ export const APP_CONSTANTS = {
       name: "Skillset"
     },
     {
-      link: "/portfolio",
-      name: "Portfolio"
+      link: "/projects",
+      name: "Projects"
     },
     // {
     //   link: "/about",
     //   name: "About me"
     // },
     {
-      link: "/profiles",
-      name: "Profiles"
+      link: "/contact",
+      name: "Contact"
     }
   ]
 };

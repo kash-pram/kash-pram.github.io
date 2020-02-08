@@ -1,5 +1,5 @@
 export const CARDS_CONSTANTS = {
-  '/profiles': [
+  '/contact': [
     {
       title: 'StackOverflow',
       link: 'https://stackoverflow.com/users/2959821/ppm1988',
@@ -31,6 +31,6 @@ export const CARDS_CONSTANTS = {
       innerHTML: '<img src="assets/logos/Twitter_Social_Icon_Circle_Color.svg" height="58" alt="" title="">'
     }
   ],
-  '/portfolio': [],
+  '/projects': [],
   '/skillset': []
 };

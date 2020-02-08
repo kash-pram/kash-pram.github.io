@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 // import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
 
 @Component({
-  selector: 'app-portfolio',
-  templateUrl: './portfolio.component.html',
-  // styleUrls: ['./portfolio.component.scss']
+  selector: 'app-projects',
+  templateUrl: './projects.component.html',
+  // styleUrls: ['./projects.component.scss']
 })
-export class PortfolioComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
   // scriptHTML;
 
   constructor () {

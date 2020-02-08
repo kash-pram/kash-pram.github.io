@@ -41,9 +41,14 @@
 
 #divPageFooter{
   height: 150px;
-  background-color: #F8F8F8;
+  background-color: #222;
 }
-
+.color-white{
+  color: #FFF;
+}
+.color-black{
+  color: #000;
+}
 .color-yellow{
   color: #FF0;
 }
@@ -56,9 +61,27 @@
   -ms-user-select: none;
   user-select: none;
 }
+.no-link{
+  color: #000;
+
+  &:hover{
+    color: #000;
+    text-decoration: none;
+  }
+}
 .no-outline:focus, .no-outline:active, .no-outline:hover {
   outline: none;
 }
 .cursor-pointer {
   cursor: pointer;
+}
+
+
+// UTILITY
+.css-grow {
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }

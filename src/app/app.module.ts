@@ -9,8 +9,8 @@ import { SharedModule } from'./modules/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 // import { AboutModule } from './modules/about/about.module';
 import { SkillsetModule } from './modules/skillset/skillset.module';
-import { PortfolioModule } from './modules/portfolio/portfolio.module';
-import { ProfilesModule } from './modules/profiles/profiles.module';
+import { ProjectsModule } from './modules/projects/projects.module';
+import { ContactModule } from './modules/contact/contact.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
@@ -27,8 +27,8 @@ import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-sna
     BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
-    PortfolioModule,
-    ProfilesModule,
+    ProjectsModule,
+    ContactModule,
     // AboutModule,
     SkillsetModule,
     InlineSVGModule.forRoot()
