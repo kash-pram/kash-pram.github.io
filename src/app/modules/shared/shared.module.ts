@@ -34,6 +34,7 @@ import {
 } from '@angular/material';
 
 import { CdkTableModule } from '@angular/cdk/table';
+import { CardsListComponent } from './cards-list/cards-list.component';
 
 @NgModule({
   // declarations: [ ],
@@ -63,6 +64,7 @@ import { CdkTableModule } from '@angular/cdk/table';
     // MatStepperModule,
     CdkTableModule,
     MatSnackBarModule,
+    CardsListComponent,
     // MatDividerModule,
     // MatListModule,
     // MatToolbarModule,
@@ -72,6 +74,7 @@ import { CdkTableModule } from '@angular/cdk/table';
     // MatBadgeModule,
     // MatProgressSpinnerModule,
     // MatTooltipModule
-  ]
+  ],
+  declarations: [ CardsListComponent ]
 })
 export class SharedModule { }
