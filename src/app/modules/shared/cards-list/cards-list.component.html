@@ -5,13 +5,13 @@
         <div class="card-header">
           {{eachCard.title}}
         </div>
-        <div class="card-body card-size">
+        <a class="card-body card-size no-outline" [href]="eachCard.link" target="_blank">
           <!-- <h5 class="card-title"></h5> -->
           <!-- <h6 class="card-subtitle mb-2 text-muted">{{eachCard.subTitle}}</h6> -->
           <p class="card-text" [innerHTML]="eachCard.innerHTML"></p>
             <!-- <a href="#" class="card-link">Card link</a>
             <a href="#" class="card-link">Another link</a> -->
-        </div>
+        </a>
       </div>
     </div>
   </div>
