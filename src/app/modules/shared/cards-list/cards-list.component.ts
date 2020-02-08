@@ -1,25 +1,18 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { CARDS_CONSTANTS } from 'src/app/_constants/cards-constants';
 
 @Component({
   selector: 'app-cards-list',
   templateUrl: './cards-list.component.html',
   styleUrls: ['./cards-list.component.scss']
 })
-export class CardsListComponent implements OnInit {
-  @Input()
-  cardTitle: string;
-  
-  @Input()
-  cardSubTitle: string;
+export class CardsListComponent {
+  cardsData = [];
 
-  @Input()
-  cardMessage;
+  constructor ( public router: Router ) {
+    this.cardsData = CARDS_CONSTANTS[this.router.url];
+  } // CONSTR
 
-  constructor() { }
-
-  ngOnInit() {
-    console.log('card ', this.cardTitle, this.cardMessage, this.cardSubTitle);
-    
-  }
-
-}
+} // EXPORT
