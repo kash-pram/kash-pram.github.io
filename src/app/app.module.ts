@@ -3,6 +3,7 @@ import { BrowserModule, Title } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { InlineSVGModule } from 'ng-inline-svg';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from'./modules/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { ProfilesModule } from './modules/profiles/profiles.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
 // import { AlertComponent } from './components/alert/alert.component';
 
 // import { SpinnerComponent } from './components/spinner/spinner.component';
@@ -22,6 +24,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
   imports: [ BrowserModule, 
     FormsModule, ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
     PortfolioModule,
@@ -31,10 +34,13 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
     InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
-  declarations: [ AppComponent, TopNavComponent, 
+  declarations: [ AppComponent, TopNavComponent, ResumeSnackbarComponent, 
     // AlertComponent
    ],
-  // entryComponents: [ SpinnerOverlayComponent ],
+  entryComponents: [ 
+    // SpinnerOverlayComponent,
+    ResumeSnackbarComponent
+  ],
   // providers: [ Title, {
   //   provide: HTTP_INTERCEPTORS,
   //   useClass: HTTPInterceptorService,

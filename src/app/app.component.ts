@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {MatSnackBar} from '@angular/material/snack-bar';
+
 // import { Component, Input, HostBinding } from '@angular/core';
 // import {FormControl} from '@angular/forms';
 // import { Title } from '@angular/platform-browser';
@@ -8,6 +10,7 @@ import { APP_CONSTANTS } from './_constants/app-constants';
 // import { AlertService } from './_services/alert.service';
 import { timeout } from 'rxjs/operators';
 
+import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
 // import { filter, map } from 'rxjs/operators';
 
 // import moment from 'moment';
@@ -36,6 +39,7 @@ showSpinner = false;
 constructor ( 
   // public _gtagService: GtagService,
   // public _alertService: AlertService,
+  private _snackBar: MatSnackBar,
   public _loaderEmitter: LoaderEmitterService,
   public router: Router,
   // public activatedRoute: ActivatedRoute,
@@ -48,9 +52,13 @@ constructor (
 //   this._alertService.info('Click here to view / download Resume')
   
 //   );
-// setTimeout(function() {
-//   this._alertService.info('Click here to view / download Resume')
-// }.bind(this), 2000);
+
+    setTimeout(function() {
+      // this._alertService.info('Click here to view / download Resume')
+      this._snackBar.openFromComponent(ResumeSnackbarComponent, {
+        duration: 6000
+      });
+    }.bind(this), 2000);
 
     this._loaderEmitter.changeEmitted$.subscribe(text => {
       if ( text === APP_CONSTANTS.SHOW_LOADING ) {
