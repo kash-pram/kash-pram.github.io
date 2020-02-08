@@ -39,20 +39,31 @@
    
  }
 
-
- .disable-select {
+ .nav-width {
+  border: 1px double black;
+  border-radius: 10px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  // border-bottom-style: hidden;
+  background-color: #FFF;
+}
+.disable-select {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 .no-border {
-  border-top-style: hidden;
-  border-right-style: hidden;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
-  background-color: #FFF;
+  // border-top-style: hidden;
+  // border-right-style: hidden;
+  // border-left-style: hidden;
+  // border-bottom-style: hidden;
+  // background-color: #FFF;
 }
 .no-border:focus, .no-border:active, .no-border:hover {
   outline: none;
+}
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -11,10 +11,10 @@ export const APP_CONSTANTS = {
       link: "/portfolio",
       name: "Portfolio"
     },
-    {
-      link: "/about",
-      name: "About me"
-    },
+    // {
+    //   link: "/about",
+    //   name: "About me"
+    // },
     {
       link: "/profiles",
       name: "Profiles"

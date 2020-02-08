@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { LoaderEmitterService } from './_services/loader-emitter.service';
 import { APP_CONSTANTS } from './_constants/app-constants';
-import { AlertService } from './_services/alert.service';
+// import { AlertService } from './_services/alert.service';
 import { timeout } from 'rxjs/operators';
 
 // import { filter, map } from 'rxjs/operators';
@@ -35,7 +35,7 @@ showSpinner = false;
 
 constructor ( 
   // public _gtagService: GtagService,
-  public _alertService: AlertService,
+  // public _alertService: AlertService,
   public _loaderEmitter: LoaderEmitterService,
   public router: Router,
   // public activatedRoute: ActivatedRoute,
@@ -48,9 +48,9 @@ constructor (
 //   this._alertService.info('Click here to view / download Resume')
   
 //   );
-setTimeout(function() {
-  this._alertService.info('Click here to view / download Resume')
-}.bind(this), 2000);
+// setTimeout(function() {
+//   this._alertService.info('Click here to view / download Resume')
+// }.bind(this), 2000);
 
     this._loaderEmitter.changeEmitted$.subscribe(text => {
       if ( text === APP_CONSTANTS.SHOW_LOADING ) {
