@@ -1,19 +1,19 @@
 <div id="div-top-nav" class="">
   <!-- <img src="/examples/images/logo.svg" height="28" alt="CoolBrand"> -->
-  <a href="#" class="navbar-brand w-100">PPM1988</a>
+  <!-- <a href="#" class="navbar-brand w-100">PPM1988</a> -->
 
   <!-- <nav class="navbar navbar-expand-md navbar-light"> -->
-  <nav class="nav nav-tabs navbar navbar-expand-md navbar-light no-border-bottom">
+  <nav class="nav navbar navbar-expand-md navbar-light no-border-bottom no-padding-bottom" [ngClass]="{'nav-tabs': !isMobile}">
     <button type="button" class="navbar-toggler no-outline" data-toggle="collapse" data-target="#navbarCollapse"
       aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse w-100" id="navbarCollapse">
       <div class="navbar-nav w-100 justify-content-center" >
-        <a class="nav-hover nav-item nav-link nav-width nav-border cursor-pointer font-size18 d-inline d-lg-inline-block no-outline mt-3 ml-1"
-          *ngFor="let navItem of NAV_ITEMS; let i = index"
+        <a class="nav-hover nav-item nav-link nav-width cursor-pointer font-size18 d-inline d-lg-inline-block no-outline py-4"
+          *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="navigateByUrl(navItem.link)"
           [ngClass]="{'active': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
-          <div class="no-outline" routerLink="{{navItem.link}}">
+          <div class="no-outline">
             <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
             <span class="d-inline-block ml-3">{{navItem.name}}</span>
           </div>

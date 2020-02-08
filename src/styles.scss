@@ -2,54 +2,53 @@
 @import '@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 
- /* Extra small devices (phones, 600px and down) */
- @media only screen and (max-width: 600px) {
-  .icon > svg {
-    height: 50px;
-    width: 50px;
-  }
- }
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+.icon > svg {
+  height: 50px;
+  width: 50px;
+}
+}
 
- /* Small devices (portrait tablets and large phones, 600px and up) */
- @media only screen and (min-width: 600px) {
-  .icon > svg {
-    height: 60px;
-    width: 60px;
-  }
- }
- 
- /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (min-width: 768px) {
-  .nav-width {
-    width: 25%;
-  }
-  .icon > svg {
-    height: 70px;
-    width: 70px;
-  }
- }
- 
- /* Large devices (laptops/desktops, 992px and up) */
- @media only screen and (min-width: 992px) {
-   
- }
- 
- /* Extra large devices (large laptops and desktops, 1200px and up) */
- @media only screen and (min-width: 1200px) {
-   
- }
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+.icon > svg {
+  height: 60px;
+  width: 60px;
+}
+}
 
- .color-yellow{
-   color: #FF0;
- }
- .nav-border {
-  // border: 1px dashed #ECE;
-  // border-radius: 100px;
-  // border-top-style: hidden;
-  // border-right-style: hidden;
-  // border-left-style: hidden;
-  // border-bottom-style: hidden;
-  // background-color: #FFF;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+.nav-width {
+  width: 25%;
+}
+.icon > svg {
+  height: 70px;
+  width: 70px;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  
+}
+
+#divPageFooter{
+  height: 300px;
+  background-color: #F8F8F8;
+}
+
+.color-yellow{
+  color: #FF0;
+}
+.bg-gray{
+  background-color: #F8F8F8;
 }
 .disable-select {
   -webkit-user-select: none;

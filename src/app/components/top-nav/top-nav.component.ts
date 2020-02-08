@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { APP_CONSTANTS } from 'src/app/_constants/app-constants';
@@ -11,6 +11,12 @@ import { APP_CONSTANTS } from 'src/app/_constants/app-constants';
 export class TopNavComponent {
   NAV_ITEMS = APP_CONSTANTS.NAV_ITEMS;
   selectedNavIndex: number = 0;
+
+  isMobile = ( window.innerWidth >= 768 ) ? false : true;
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.isMobile = ( window.innerWidth >= 768 ) ? false : true;
+  }
 
   constructor ( public router: Router ) {
     router.events.subscribe(event => {
@@ -31,6 +37,10 @@ export class TopNavComponent {
 
   selectNavItem ( newIndex ) {
     this.selectedNavIndex = newIndex;
+  } // FN
+
+  navigateByUrl ( navLink ) {
+    this.router.navigateByUrl(navLink);
   } // FN
 
 } // EXPORTS

@@ -2,7 +2,8 @@
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #FFF;
+  background-color: #F8F8F8;
+  z-index: 1000;
 }
 
 .nav-item:not(.active) {
