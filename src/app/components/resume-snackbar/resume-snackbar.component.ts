@@ -9,7 +9,7 @@ import { timer } from 'rxjs';
 })
 export class ResumeSnackbarComponent {
   subActiveTimer;
-  timerCount = 11;
+  timerCount = 10;
 
   constructor ( public snackBar: MatSnackBar ) {
     const source = timer(0, 1000);

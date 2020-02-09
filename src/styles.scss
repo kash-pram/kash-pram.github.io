@@ -45,9 +45,6 @@
   // background-color: #222;
   background-color: #F8F8F8;
 }
-.min-width-400px{
-  // min-width: 500px !important;
-}
 .color-white{
   color: #FFF;
 }
@@ -56,6 +53,9 @@
 }
 .color-yellow{
   color: #FF0;
+}
+.bg-dark-gray{
+  background-color: #e9ecee;
 }
 .bg-gray{
   background-color: #F8F8F8;
@@ -73,6 +73,11 @@
     color: #000;
     text-decoration: none;
   }
+}
+.bottom-shadow{
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  -moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
 }
 .no-outline:focus, .no-outline:active, .no-outline:hover {
   outline: none;

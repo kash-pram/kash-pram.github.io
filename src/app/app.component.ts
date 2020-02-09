@@ -61,7 +61,7 @@ constructor (
     setTimeout(function() {
       // this._alertService.info('Click here to view / download Resume')
       this._snackBar.openFromComponent(ResumeSnackbarComponent, {
-        duration: 10000,
+        duration: 9000,
         // panelClass: 'min-width-400px'
         // verticalPosition: 'top',
         // horizontalPosition: 'right'
