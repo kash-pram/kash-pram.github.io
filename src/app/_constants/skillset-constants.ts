@@ -1,9 +1,46 @@
 export const SKILLSET_CARDS = [
   {
     title: 'JavaScript',
-    // link: 'https://stackoverflow.com/users/2959821/ppm1988',
-    innerHTML: '<div class="progress">\
-    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>\
-  </div>'
+    proficiency: '70'
+  },
+  {
+    title: 'HTML 5',
+    proficiency: '50'
+  },
+  {
+    title: 'CSS 3',
+    proficiency: '70'
+  },
+  {
+    title: 'Angular',
+    proficiency: '10'
+  },
+  {
+    title: 'Node JS',
+    proficiency: '5'
+  },
+  {
+    title: 'Vue JS',
+    proficiency: '5'
+  },
+  {
+    title: 'React JS',
+    proficiency: '5'
+  },
+  {
+    title: 'Angular JS',
+    proficiency: '30'
+  },
+  {
+    title: 'TDD',
+    proficiency: '5'
+  },
+  {
+    title: 'Mongo DB',
+    proficiency: '15'
+  },
+  {
+    title: 'SCSS',
+    proficiency: '20'
   },
 ]

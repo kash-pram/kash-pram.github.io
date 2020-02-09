@@ -19,34 +19,16 @@ Search input box
 <div class="container" *ngIf="cardsData.length > 0">
   <div class="row justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
-      <div class="card mt-5 no-outline no-link">
-      <!-- <a class="card css-grow mt-5 no-outline no-link" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}"> -->
-        <div class="card-header">
+      <div class="card mt-5 no-outline no-border-all">
+        <div class="card-header bg-transparent">
           {{eachCard.title}}
-          <!-- <img class="float-right ml-3 external-link-icon" src="assets/icons/external-link.svg" height="15px" title="Open link in new tab"> -->
         </div>
         <div class="card-body card-size">
-          <!-- <h5 class="card-title"></h5> -->
-          <!-- <h6 class="card-subtitle mb-2 text-muted">{{eachCard.subTitle}}</h6> -->
-          <!-- <div class="card-text" [innerHTML]="eachCard.innerHTML"></div> -->
-
           <div class="progress mt-3">
-            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <!-- [style.background-color]="getRandomColor()"  -->
+            <div class="progress-bar opacity6" role="progressbar"
+            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
-          <div class="progress  mt-3">
-            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <div class="progress mt-3">
-            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <div class="progress mt-3">
-            <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-          <div class="progress mt-3">
-            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-          </div>
-            <!-- <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a> -->
         </div>
       </div>
     </div>
