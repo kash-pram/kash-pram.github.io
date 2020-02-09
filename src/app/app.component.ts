@@ -35,13 +35,11 @@ declare let gtag:Function;
 export class AppComponent  {
 showSpinner = false;
 
-minHeight = window.innerHeight - 250;
-@HostListener('window:resize', ['$event'])
-onResize(event) {
-  this.minHeight = window.innerHeight - 250;
-  console.log('seting height to be', this.minHeight);
-  
-}
+minHeight = window.innerHeight;
+// @HostListener('window:resize', ['$event'])
+// onResize(event) {
+//   this.minHeight = window.innerHeight - 250;
+// }
 
 constructor ( 
   // public _gtagService: GtagService,
