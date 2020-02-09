@@ -10,7 +10,7 @@ export const CARDS_CONSTANTS = {
       title: 'Github',
       // subTitle: 'assets/icons/external-link.svg',
       link: 'https://github.com/ppm1988/',
-      innerHTML: '<img src="/assets/logos/GitHub-Mark-64px.png" height="58" alt="Github" title="">'
+      innerHTML: '<img src="assets/logos/GitHub-Mark-120px-plus.png" height="58" alt="Github" title="">'
     },
     {
       title: 'LinkedIn',

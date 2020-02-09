@@ -9,13 +9,13 @@ import { timer } from 'rxjs';
 })
 export class ResumeSnackbarComponent {
   subActiveTimer;
-  timerCount = 6;
+  timerCount = 11;
 
   constructor ( public snackBar: MatSnackBar ) {
     const source = timer(0, 1000);
     this.subActiveTimer = source.subscribe(() => {
       this.timerCount--;
-      if (this.timerCount === 0) {
+      if (this.timerCount === 1) {
         this.subActiveTimer.unsubscribe();
       } // IF
     });

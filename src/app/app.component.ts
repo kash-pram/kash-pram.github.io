@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 
 // import { Component, Input, HostBinding } from '@angular/core';
@@ -35,6 +35,14 @@ declare let gtag:Function;
 export class AppComponent  {
 showSpinner = false;
 
+minHeight = window.innerHeight - 250;
+@HostListener('window:resize', ['$event'])
+onResize(event) {
+  this.minHeight = window.innerHeight - 250;
+  console.log('seting height to be', this.minHeight);
+  
+}
+
 constructor ( 
   // public _gtagService: GtagService,
   // public _alertService: AlertService,
@@ -55,7 +63,7 @@ constructor (
     setTimeout(function() {
       // this._alertService.info('Click here to view / download Resume')
       this._snackBar.openFromComponent(ResumeSnackbarComponent, {
-        duration: 5000,
+        duration: 10000,
         // panelClass: 'min-width-400px'
         // verticalPosition: 'top',
         // horizontalPosition: 'right'
@@ -93,6 +101,8 @@ constructor (
         gtag('config', 'UA-156515857-5', {'page_path': event.url});
       }
     });
+
   } // CONSTRUCTOR
+  
 
 } // EXPORTS
