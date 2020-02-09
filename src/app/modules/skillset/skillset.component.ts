@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
+import { SKILLSET_CARDS } from 'src/app/_constants/skillset-constants';
 
 @Component({
   selector: 'app-skillset',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
   // styleUrls: ['./skillset.component.scss']
 })
 export class SkillsetComponent implements OnInit {
+  cardsData = SKILLSET_CARDS;
   // options: CloudOptions = {
   //   // if width is between 0 and 1 it will be set to the size of the upper element multiplied by the value 
   //   width: 1000,

@@ -6,7 +6,7 @@ import { CARDS_CONSTANTS } from 'src/app/_constants/cards-constants';
 @Component({
   selector: 'app-cards-list',
   templateUrl: './cards-list.component.html',
-  styleUrls: ['./cards-list.component.scss']
+  // styleUrls: ['./cards-list.component.scss']
 })
 export class CardsListComponent {
   cardsData = [];
