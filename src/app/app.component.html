@@ -8,7 +8,7 @@
 
   <div class="sm-margin-twenty-five-top xs-margin-twenty-five-top md-margin-sixteen-top margin-thirteen-top"
   [style.min-height.px]="minHeight">
-    <router-outlet></router-outlet>
+    <router-outlet (activate)="onActivate($event)"></router-outlet>
 
     <!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" target="_blank" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a> -->
   </div>
