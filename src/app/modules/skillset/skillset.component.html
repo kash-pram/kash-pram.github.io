@@ -19,15 +19,17 @@ Search input box
 <div class="container" *ngIf="cardsData.length > 0">
   <div class="row justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
-      <div class="card mt-5 no-outline no-border-all">
+      <div class="card mt-5 no-outline no-border-all" title="Proficiency {{eachCard.proficiency}}%">
         <div class="card-header bg-transparent">
           {{eachCard.title}}
         </div>
         <div class="card-body card-size">
           <div class="progress mt-3">
             <!-- [style.background-color]="getRandomColor()"  -->
-            <div class="progress-bar opacity6" role="progressbar"
-            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar"
+            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
+            {{eachCard.proficiency}}
+            </div>
           </div>
         </div>
       </div>
