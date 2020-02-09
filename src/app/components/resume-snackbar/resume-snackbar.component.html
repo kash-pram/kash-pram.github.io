@@ -1,5 +1,4 @@
-<div class="text-center">
-  Click <a class="no-outline d-inline-block" (click)="closeMessage()" routerLink='/projects'>Projects</a> to download the resume
-
-  <span class='ml-3 d-inline-block cursor-pointer color-yellow' (click)="closeMessage()" title="Close">{{this.timerCount}}</span>
+<div class="color-white cursor-pointer" title="Click to Dismiss" (click)="closeMessage()">
+  Click <a class="no-outline" routerLink='/projects'>Projects</a> to download resume
+  <span class='float-right mr-2 mt-1 text-muted'>{{this.timerCount}}</span>
 </div>
