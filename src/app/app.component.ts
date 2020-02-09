@@ -8,7 +8,6 @@ import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
 import { LoaderEmitterService } from './_services/loader-emitter.service';
 import { APP_CONSTANTS } from './_constants/app-constants';
 // import { AlertService } from './_services/alert.service';
-import { timeout } from 'rxjs/operators';
 
 import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
 // import { filter, map } from 'rxjs/operators';
@@ -56,7 +55,10 @@ constructor (
     setTimeout(function() {
       // this._alertService.info('Click here to view / download Resume')
       this._snackBar.openFromComponent(ResumeSnackbarComponent, {
-        duration: 6000
+        duration: 5000,
+        // panelClass: 'min-width-400px'
+        // verticalPosition: 'top',
+        // horizontalPosition: 'right'
       });
     }.bind(this), 5000);
 
@@ -87,8 +89,8 @@ constructor (
 
     this.router.events.subscribe(event => {
       if(event instanceof NavigationEnd){
-        // gtag('config', 'UA-156515857-3', {'page_path': event.urlAfterRedirects});
-        gtag('config', 'UA-156515857-3', {'page_path': event.url});
+        // gtag('config', 'UA-156515857-5', {'page_path': event.urlAfterRedirects});
+        gtag('config', 'UA-156515857-5', {'page_path': event.url});
       }
     });
   } // CONSTRUCTOR
