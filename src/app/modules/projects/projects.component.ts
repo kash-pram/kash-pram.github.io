@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
+import { PROJECTS_CARDS } from 'src/app/_constants/projects-constants';
 
 @Component({
   selector: 'app-projects',
@@ -8,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
   // scriptHTML;
-
+  cardsData = PROJECTS_CARDS;
+  
   constructor () {
   // constructor ( private sanitizer: DomSanitizer) {
     // this.scriptHTML = sanitizer.bypassSecurityTrustHtml('<div id="medium-widget"></div><script src="https://medium-widget.pixelpoint.io/widget.js"></script>\

@@ -3,8 +3,8 @@
 <div class="container" *ngIf="cardsData.length > 0">
   <div class="row justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
-      <div class="card mt-5 no-outline" title="Proficiency {{eachCard.proficiency}}%">
-        <div class="card-header bg-transparent font-weight-bold">
+      <div class="card mt-5 no-outline border-dashed" title="Proficiency {{eachCard.proficiency}}%">
+        <div class="card-header bg-transparent border-transperent font-weight-bold">
           {{eachCard.title}}
         </div>
         <div class="card-body card-size">

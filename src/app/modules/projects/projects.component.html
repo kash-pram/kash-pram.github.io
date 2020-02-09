@@ -1,10 +1,29 @@
 
-List of projects
+<h3 class="text-muted">#Projects</h3>
+
+<div class="container" *ngIf="cardsData.length > 0">
+  <div class="row justify-content-center">
+    <div class="col-auto" *ngFor="let eachCard of cardsData">
+      <div class="card mt-5 no-outline border-dashed" title="Proficiency {{eachCard.proficiency}}%">
+        <div class="card-header bg-transparent border-transperent font-weight-bold">
+          {{eachCard.title}}
+        </div>
+        <div class="card-body card-size">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <br>
 
 Blog widgets
-<app-cards-list></app-cards-list>
+<!-- <app-cards-list></app-cards-list> -->
+
+
+
+
 <!-- <div [innerHTML]="scriptHTML"></div> -->
 <!-- 
 <ngx-medium-widget resource="https://medium.com/@ppm1988"

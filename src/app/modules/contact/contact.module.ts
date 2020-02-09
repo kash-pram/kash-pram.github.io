@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedModule } from '../shared/shared.module';
+// import { SharedModule } from '../shared/shared.module';
 import { ContactRoutingModule } from './contact-routing.module';
 
 import { ContactComponent } from './contact.component';
@@ -10,7 +10,7 @@ import { ContactComponent } from './contact.component';
   declarations: [ContactComponent],
   imports: [
     CommonModule,
-    SharedModule,
+    // SharedModule,
     ContactRoutingModule
   ]
 })
