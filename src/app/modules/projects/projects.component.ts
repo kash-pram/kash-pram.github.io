@@ -5,7 +5,7 @@ import { PROJECTS_CARDS } from 'src/app/_constants/projects-constants';
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  // styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
   // scriptHTML;
