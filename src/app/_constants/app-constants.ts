@@ -11,7 +11,7 @@ export const APP_CONSTANTS = {
     },
     {
       link: "/skill-set",
-      name: "# skill set",
+      name: "# skills",
       icon: 'skillset'
     },
     // {

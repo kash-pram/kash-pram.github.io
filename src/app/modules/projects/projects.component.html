@@ -1,18 +1,24 @@
 <div class="container" *ngIf="cardsData.length > 0">
-  <h1 class="pt-5 pb-1 padding-ten-left text-left color-secondary font-weight-bold"># projects</h1>
-  <!-- <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
+  <h1 class="pt-5 pb-1 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># projects</h1>
+  <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
     
-  </div> -->
-
+  </div>
   <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
-      <div class="card no-outline border-dashed" title="Proficiency {{eachCard.proficiency}}%">
+      <div class="card no-outline no-border-all" title="Proficiency {{eachCard.proficiency}}%">
         <div class="card-header bg-transparent border-transperent font-weight-bold">
           {{eachCard.title}}
         </div>
-        <div class="card-body card-size">
-          
-        </div>
+        <!-- <div class="card-body card-size">
+          <div class="text-right font-weight-bold font-size18">{{eachCard.title}}</div>
+          <div class="progress mt-1">
+            <div class="progress-bar bg-green" role="progressbar" [ngStyle]="{'filter': 'hue-rotate(' + eachCard.proficiency + 'deg)'}" 
+            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
+            
+            </div>
+            <span class="d-inline-block ml-2">{{eachCard.proficiency}}%</span>
+          </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -20,27 +26,20 @@
   <div class="py-5 justify-content-center">
     <hr class=" width-10 hr-break">
   </div>
-
-  <h1 class="pb-1 pt-2 padding-ten-left text-left color-secondary font-weight-bold"># timeline</h1>
-  <!-- <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
-    experience apart from self
-  </div> -->
   
-  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
-    timeline
+  <!-- <h3 class=" color-secondary"># cloud</h3> -->
+  <h1 class="pb-1 pt-2 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># timeline</h1>
+  <!-- <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">list of words that I can probably understand</div> -->
+  
+  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">Timeline
+  <!-- <angular-tag-cloud
+    [data]="data"
+    [width]="options.width"
+    [height]="options.height"
+    [overflow]="options.overflow">
+  </angular-tag-cloud> -->
+  
+  Search input box
   </div>
-  <!-- <app-cards-list></app-cards-list> -->
-  
-  <!-- <div [innerHTML]="scriptHTML"></div> -->
-  <!-- 
-  <ngx-medium-widget resource="https://medium.com/@ppm1988"
-    postsLimit="10"
-    postsPerLine="3"
-    pictureSize="small"
-    [postfields]="[]"
-    postRatio="square">
-  </ngx-medium-widget> -->
 </div>
-
-
 
