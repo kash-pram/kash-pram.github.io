@@ -16,8 +16,8 @@ export const APP_CONSTANTS = {
     //   name: "About me"
     // },
     {
-      link: "/contact",
-      name: "Contact"
+      link: "/profiles",
+      name: "Profiles"
     }
   ]
 };

@@ -4,13 +4,14 @@ import { Component } from '@angular/core';
 // import { Component, Input, HostBinding } from '@angular/core';
 // import {FormControl} from '@angular/forms';
 // import { Title } from '@angular/platform-browser';
-import { Router, NavigationEnd } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 // import { LoaderEmitterService } from './_services/loader-emitter.service';
 // import { APP_CONSTANTS } from './_constants/app-constants';
 // import { AlertService } from './_services/alert.service';
 
 // import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
-// import { filter, map } from 'rxjs/operators';
+import { filter, map } from 'rxjs/operators';
 
 // import moment from 'moment';
 // import {
@@ -33,7 +34,7 @@ declare let gtag:Function;
   // styleUrls: [ './app.component.scss' ]
 })
 export class AppComponent  {
-// showSpinner = false;
+showSpinner = false;
 
 minHeight = window.innerHeight;
 // @HostListener('window:resize', ['$event'])
@@ -47,8 +48,8 @@ constructor (
   // private _snackBar: MatSnackBar,
   // public _loaderEmitter: LoaderEmitterService,
   public router: Router,
-  // public activatedRoute: ActivatedRoute,
-  // private titleService: Title
+  public activatedRoute: ActivatedRoute,
+  private titleService: Title
   ) {
 // Create an Observable that will publish a value on an interval
 // const secondsCounter = interval(1000);
@@ -80,26 +81,28 @@ constructor (
     // });
     // DO NOT DELETE
 
-    // const appTitle = this.titleService.getTitle();
+    const appTitle = this.titleService.getTitle();
 
-    // this.router.events.pipe(
-    //   filter(event => event instanceof NavigationEnd),
-    //   map(() => {
-    //     let child = this.activatedRoute.firstChild;
-    //     while (child.firstChild) {
-    //       child = child.firstChild;
-    //     }
-    //     if (child.snapshot.data['title']) {
-    //       return child.snapshot.data['title'];
-    //     }
-    //     return appTitle;
-    //   })
-    // ).subscribe((ttl: string) => {
-    //   this.titleService.setTitle('My Title - ' + ttl);
-    // });
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd),
+      map(() => {
+        let child = this.activatedRoute.firstChild;
+        console.log(child);
+        
+        while (child.firstChild) {
+          child = child.firstChild;
+        }
+        if (child.snapshot.data['title']) {
+          return child.snapshot.data['title'];
+        }
+        return appTitle;
+      })
+    ).subscribe((ttl: string) => {
+      this.titleService.setTitle(ttl + ' | PPM - Frontend Developer');
+    });
 
     this.router.events.subscribe(event => {
-      if(event instanceof NavigationEnd){
+      if ( event instanceof NavigationEnd ) {
         // gtag('config', 'UA-156515857-5', {'page_path': event.urlAfterRedirects});
         gtag('config', 'UA-156515857-5', {'page_path': event.url});
       }
