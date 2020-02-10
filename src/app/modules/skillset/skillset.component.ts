@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 // import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 import { SKILLSET_CARDS } from 'src/app/_constants/skillset-constants';
 
@@ -7,7 +7,7 @@ import { SKILLSET_CARDS } from 'src/app/_constants/skillset-constants';
   templateUrl: './skillset.component.html',
   styleUrls: ['./skillset.component.scss']
 })
-export class SkillsetComponent implements OnInit {
+export class SkillsetComponent {
   cardsData = SKILLSET_CARDS;
   // options: CloudOptions = {
   //   // if width is between 0 and 1 it will be set to the size of the upper element multiplied by the value 
@@ -27,17 +27,17 @@ export class SkillsetComponent implements OnInit {
     // this.assignColor();
   }
 
-  assignColor () {
-    this.cardsData.forEach(elem => {
-      elem['bgcolor'] = this.getRandomColor();
-    });
-  } // FN
+  // assignColor () {
+  //   this.cardsData.forEach(elem => {
+  //     elem['bgcolor'] = this.getRandomColor();
+  //   });
+  // } // FN
 
-  ngOnInit() {
-  }
+  // ngOnInit() {
+  // }
 
-  getRandomColor() {
-    return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-  }
+  // getRandomColor() {
+  //   return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+  // }
 
 }

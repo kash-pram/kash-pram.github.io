@@ -6,11 +6,13 @@ export const APP_CONSTANTS = {
     
     {
       link: "/projects",
-      name: "Projects"
+      name: "# projects",
+      // icon: 'projects'
     },
     {
       link: "/skillset",
-      name: "Skillset"
+      name: "# skillset",
+      // icon: 'skillset'
     },
     // {
     //   link: "/about",
@@ -18,7 +20,8 @@ export const APP_CONSTANTS = {
     // },
     {
       link: "/profiles",
-      name: "Profiles"
+      name: "# profiles",
+      // icon: 'profiles'
     }
   ]
 };

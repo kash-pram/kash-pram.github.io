@@ -17,7 +17,8 @@
   & .icon {
     filter: none;
   }
-  & div span {
-    color: #0099CC;
+  &:not(.active) div span {
+    // color: #E18942;
+    color: #000;
   }
 }

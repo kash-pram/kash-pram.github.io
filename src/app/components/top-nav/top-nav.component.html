@@ -14,7 +14,7 @@
           [ngClass]="{'active font-weight-bold': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
           <div class="no-outline">
             <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
-            <span class="d-inline-block ml-3" [ngClass]="{'color-blue': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</span>
+            <span class="d-inline-block ml-3" [ngClass]="{'color-secondary': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</span>
           </div>
         </a>
       </div>
