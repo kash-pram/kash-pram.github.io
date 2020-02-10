@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
 // import { Component, Input, HostBinding } from '@angular/core';
 // import {FormControl} from '@angular/forms';
 // import { Title } from '@angular/platform-browser';
-import { Router, NavigationEnd, ActivatedRoute } from '@angular/router';
+import { Router, NavigationEnd, ActivatedRoute, NavigationStart } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 // import { LoaderEmitterService } from './_services/loader-emitter.service';
 // import { APP_CONSTANTS } from './_constants/app-constants';
@@ -12,6 +12,7 @@ import { Title } from '@angular/platform-browser';
 
 // import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
 import { filter, map } from 'rxjs/operators';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 // import moment from 'moment';
 // import {
@@ -31,7 +32,25 @@ declare let gtag:Function;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  // styleUrls: [ './app.component.scss' ]
+  styleUrls: [ './app.component.scss' ],
+  animations: [
+    // the fade-in/fade-out animation.
+    trigger('simpleFadeAnimation', [
+
+      // the "in" style determines the "resting" state of the element when it is visible.
+      state('in', style({opacity: 1})),
+
+      // fade in when created. this could also be written as transition('void => *')
+      transition(':enter', [
+        style({opacity: 0}),
+        animate(600 )
+      ]),
+
+      // fade out when destroyed. this could also be written as transition('void => *')
+      transition(':leave',
+        animate(600, style({opacity: 0})))
+    ])
+  ]
 })
 export class AppComponent  {
 showSpinner = false;
@@ -87,8 +106,7 @@ constructor (
       filter(event => event instanceof NavigationEnd),
       map(() => {
         let child = this.activatedRoute.firstChild;
-        console.log(child);
-        
+
         while (child.firstChild) {
           child = child.firstChild;
         }
@@ -98,14 +116,20 @@ constructor (
         return appTitle;
       })
     ).subscribe((ttl: string) => {
-      this.titleService.setTitle(ttl + ' | PPM - Frontend Developer');
+      this.titleService.setTitle('PPM - ' + ttl + ' | Frontend Developer');
     });
 
     this.router.events.subscribe(event => {
-      if ( event instanceof NavigationEnd ) {
+
+      if ( event instanceof NavigationStart ) {
+        this.showSpinner = true;
+      } else if ( event instanceof NavigationEnd ) {
         // gtag('config', 'UA-156515857-5', {'page_path': event.urlAfterRedirects});
         gtag('config', 'UA-156515857-5', {'page_path': event.url});
-      }
+        setTimeout(() => {
+          this.showSpinner = false;
+        }, 500);
+      } // IF-ELSE
     });
 
   } // CONSTRUCTOR

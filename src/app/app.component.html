@@ -2,15 +2,15 @@
 
   <app-top-nav></app-top-nav>
 
-  <div class="loader-overlay" *ngIf="showSpinner">
-    <div class="lds-dual-ring"></div>
-  </div>
-
   <div class="sm-margin-twenty-five-top xs-margin-twenty-five-top md-margin-sixteen-top margin-thirteen-top"
   [style.min-height.px]="minHeight">
     <router-outlet (activate)="onActivate($event)"></router-outlet>
 
     <!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" target="_blank" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a> -->
+  </div>
+  
+  <div class="loader-overlay" *ngIf="showSpinner" [@simpleFadeAnimation]="'leave'">
+    <div class="lds-dual-ring"></div>
   </div>
 
   <footer id="divPageFooter" class="mt-5 p-3 bg-gray color-black">
@@ -23,6 +23,8 @@
 
      Contact links
      <br>
+     <!-- <img src="/examples/images/logo.svg" height="28" alt="CoolBrand"> -->
+    <a href="#" class="float-left w-100">PPM1988</a>
     &copy; ppm1988
   </footer>
 
