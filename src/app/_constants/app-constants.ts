@@ -7,12 +7,12 @@ export const APP_CONSTANTS = {
     {
       link: "/projects",
       name: "# projects",
-      // icon: 'projects'
+      icon: 'projects'
     },
     {
-      link: "/skillset",
-      name: "# skillset",
-      // icon: 'skillset'
+      link: "/skill-set",
+      name: "# skill set",
+      icon: 'skillset'
     },
     // {
     //   link: "/about",
@@ -21,7 +21,7 @@ export const APP_CONSTANTS = {
     {
       link: "/about",
       name: "# about",
-      // icon: 'about'
+      icon: 'about'
     }
   ]
 };

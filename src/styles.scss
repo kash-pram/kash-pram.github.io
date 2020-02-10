@@ -25,13 +25,16 @@ $color-primary-dark: #3D3242;
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-.nav-width {
-  width: 25%;
-}
-.icon > svg {
-  height: 70px;
-  width: 70px;
-}
+  .nav-width {
+    width: 25%;
+  }
+  .icon > svg {
+    height: 70px;
+    width: 70px;
+  }
+  .font-size70{
+    font-size: 70px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -58,6 +61,15 @@ $color-primary-dark: #3D3242;
 }
 .color-yellow{
   color: #FF0;
+}
+.color-gray{
+  color: #EEE;
+}
+.color-light-gray{
+  color: #DCDFE2;
+}
+.color-lighter-gray{
+  color: #E9ECEF;
 }
 .color-dark-gray{
   color: #737373;
@@ -110,7 +122,7 @@ $color-primary-dark: #3D3242;
 
 .hr-break{
   // #C0392B
-  border: 2px solid #CCC;
+  border: 2px solid #B95835;
   border-radius: 5px;
 }
 .height-3px{

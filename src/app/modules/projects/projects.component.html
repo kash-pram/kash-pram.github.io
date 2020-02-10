@@ -1,10 +1,12 @@
-<!-- <h3 class="py-5 color-secondary"># projects</h3> -->
-<h1 class="py-5 padding-ten-left text-muted text-left"># projects</h1>
-
 <div class="container" *ngIf="cardsData.length > 0">
-  <div class="row justify-content-center">
+  <h1 class="pt-5 pb-1 padding-ten-left text-left color-secondary font-weight-bold"># projects</h1>
+  <!-- <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
+    
+  </div> -->
+
+  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
-      <div class="card mt-5 no-outline border-dashed" title="Proficiency {{eachCard.proficiency}}%">
+      <div class="card no-outline border-dashed" title="Proficiency {{eachCard.proficiency}}%">
         <div class="card-header bg-transparent border-transperent font-weight-bold">
           {{eachCard.title}}
         </div>
@@ -14,25 +16,31 @@
       </div>
     </div>
   </div>
+
+  <div class="py-5 justify-content-center">
+    <hr class=" width-10 hr-break">
+  </div>
+
+  <h1 class="pb-1 pt-2 padding-ten-left text-left color-secondary font-weight-bold"># timeline</h1>
+  <!-- <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
+    experience apart from self
+  </div> -->
+  
+  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
+    timeline
+  </div>
+  <!-- <app-cards-list></app-cards-list> -->
+  
+  <!-- <div [innerHTML]="scriptHTML"></div> -->
+  <!-- 
+  <ngx-medium-widget resource="https://medium.com/@ppm1988"
+    postsLimit="10"
+    postsPerLine="3"
+    pictureSize="small"
+    [postfields]="[]"
+    postRatio="square">
+  </ngx-medium-widget> -->
 </div>
 
-<div class="py-5 justify-content-center">
-  <hr class=" width-10 hr-break">
-</div>
 
-
-<h1 class="pb-5 pt-2 padding-ten-left text-muted text-left"># timeline</h1>
-
-Timeline
-<!-- <app-cards-list></app-cards-list> -->
-
-<!-- <div [innerHTML]="scriptHTML"></div> -->
-<!-- 
-<ngx-medium-widget resource="https://medium.com/@ppm1988"
-  postsLimit="10"
-  postsPerLine="3"
-  pictureSize="small"
-  [postfields]="[]"
-  postRatio="square">
-</ngx-medium-widget> -->
 

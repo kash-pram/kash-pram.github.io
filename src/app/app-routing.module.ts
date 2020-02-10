@@ -6,7 +6,7 @@ const routes: Routes = [
   { path: "projects", 
     loadChildren: () => import('./modules/projects/projects.module').then(m => m.ProjectsModule)
   },
-  { path: "skillset",
+  { path: "skill-set",
     loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   },
   // { path: "about",
