@@ -43,12 +43,12 @@ declare let gtag:Function;
       // fade in when created. this could also be written as transition('void => *')
       transition(':enter', [
         style({opacity: 0}),
-        animate(600 )
+        animate(200 )
       ]),
 
       // fade out when destroyed. this could also be written as transition('void => *')
       transition(':leave',
-        animate(600, style({opacity: 0})))
+        animate(300, style({opacity: 0})))
     ])
   ]
 })

@@ -23,7 +23,15 @@ export class SkillsetComponent implements OnInit {
   //   // ...
   // ];
   
-  constructor() { }
+  constructor () {
+    this.assignColor();
+  }
+
+  assignColor () {
+    this.cardsData.forEach(elem => {
+      elem['bgcolor'] = this.getRandomColor();
+    });
+  } // FN
 
   ngOnInit() {
   }

@@ -182,104 +182,107 @@ $color-primary-dark: #3D3242;
 
 
 
-.hover-effect:hover {
-  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
-}
+// .hover-effect:hover {
+//   box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+// }
 
-.hover-effect:hover:before, .hover-effect:hover:after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 250px;
-  height: 250px;
-  background: #FDA8CF;
-  border-radius: 75px;
-  z-index: -1;
-  animation: 1s clockwise infinite;
-}
+// .hover-effect:hover:before, .hover-effect:hover:after {
+//   display: block;
+//   content: '';
+//   position: absolute;
+//   width: 250px;
+//   height: 250px;
+//   background: #FDA8CF;
+//   border-radius: 75px;
+//   z-index: -1;
+//   animation: 1s clockwise infinite;
+// }
 
-.hover-effect:hover:after {
-  background: #F3CE5E;
-  animation: 2s counterclockwise infinite;
-}
+// .hover-effect:hover:after {
+//   background: #F3CE5E;
+//   animation: 2s counterclockwise infinite;
+// }
 
-@keyframes clockwise {
-  0% {
-    top: -5px;
-    left: 0;
-  }
-  12% {
-    top: -2px;
-    left: 2px;
-  }
-  25% {
-    top: 0;
-    left: 5px;    
-  }
-  37% {
-    top: 2px;
-    left: 2px;
-  }
-  50% {
-    top: 5px;
-    left: 0;    
-  }
-  62% {
-    top: 2px;
-    left: -2px;
-  }
-  75% {
-    top: 0;
-    left: -5px;
-  }
-  87% {
-    top: -2px;
-    left: -2px;
-  }
-  100% {
-    top: -5px;
-    left: 0;    
-  }
-}
+// @keyframes clockwise {
+//   0% {
+//     top: -5px;
+//     left: 0;
+//   }
+//   12% {
+//     top: -2px;
+//     left: 2px;
+//   }
+//   25% {
+//     top: 0;
+//     left: 5px;    
+//   }
+//   37% {
+//     top: 2px;
+//     left: 2px;
+//   }
+//   50% {
+//     top: 5px;
+//     left: 0;    
+//   }
+//   62% {
+//     top: 2px;
+//     left: -2px;
+//   }
+//   75% {
+//     top: 0;
+//     left: -5px;
+//   }
+//   87% {
+//     top: -2px;
+//     left: -2px;
+//   }
+//   100% {
+//     top: -5px;
+//     left: 0;    
+//   }
+// }
 
-@keyframes counterclockwise {
-  0% {
-    top: -5px;
-    right: 0;
-  }
-  12% {
-    top: -2px;
-    right: 2px;
-  }
-  25% {
-    top: 0;
-    right: 5px;    
-  }
-  37% {
-    top: 2px;
-    right: 2px;
-  }
-  50% {
-    top: 5px;
-    right: 0;    
-  }
-  62% {
-    top: 2px;
-    right: -2px;
-  }
-  75% {
-    top: 0;
-    right: -5px;
-  }
-  87% {
-    top: -2px;
-    right: -2px;
-  }
-  100% {
-    top: -5px;
-    right: 0;    
-  }
-}
+// @keyframes counterclockwise {
+//   0% {
+//     top: -5px;
+//     right: 0;
+//   }
+//   12% {
+//     top: -2px;
+//     right: 2px;
+//   }
+//   25% {
+//     top: 0;
+//     right: 5px;    
+//   }
+//   37% {
+//     top: 2px;
+//     right: 2px;
+//   }
+//   50% {
+//     top: 5px;
+//     right: 0;    
+//   }
+//   62% {
+//     top: 2px;
+//     right: -2px;
+//   }
+//   75% {
+//     top: 0;
+//     right: -5px;
+//   }
+//   87% {
+//     top: -2px;
+//     right: -2px;
+//   }
+//   100% {
+//     top: -5px;
+//     right: 0;    
+//   }
+// }
+
+
+
 // .hover-effect:hover{
   // position:relative;
   // -webkit-box-shadow:0 1px 4px #e9ecee, 0 0 40px #e9ecee;
