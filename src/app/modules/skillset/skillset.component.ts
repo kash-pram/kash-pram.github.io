@@ -5,7 +5,7 @@ import { SKILLSET_CARDS } from 'src/app/_constants/skillset-constants';
 @Component({
   selector: 'app-skillset',
   templateUrl: './skillset.component.html',
-  // styleUrls: ['./skillset.component.scss']
+  styleUrls: ['./skillset.component.scss']
 })
 export class SkillsetComponent implements OnInit {
   cardsData = SKILLSET_CARDS;

@@ -3,13 +3,14 @@ export const APP_CONSTANTS = {
   HIDE_LOADING: 'HIDE_LOADING',
 
   NAV_ITEMS: [
-    {
-      link: "/skillset",
-      name: "Skillset"
-    },
+    
     {
       link: "/projects",
       name: "Projects"
+    },
+    {
+      link: "/skillset",
+      name: "Skillset"
     },
     // {
     //   link: "/about",

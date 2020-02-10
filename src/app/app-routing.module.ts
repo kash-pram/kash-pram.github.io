@@ -3,11 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   // { path: "", component: AppComponent, pathMatch: 'full' },
-  { path: "skillset",
-    loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
-  },
   { path: "projects", 
     loadChildren: () => import('./modules/projects/projects.module').then(m => m.ProjectsModule)
+  },
+  { path: "skillset",
+    loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   },
   // { path: "about",
   //   loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)

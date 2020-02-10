@@ -11,10 +11,10 @@
       <div class="navbar-nav w-100 justify-content-center" >
         <a class="nav-hover nav-item nav-link nav-width cursor-pointer font-size18 d-inline d-lg-inline-block no-outline py-4"
           *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="navigateByUrl(navItem.link)"
-          [ngClass]="{'active': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
+          [ngClass]="{'active font-weight-bold': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
           <div class="no-outline">
             <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
-            <span class="d-inline-block ml-3">{{navItem.name}}</span>
+            <span class="d-inline-block ml-3" [ngClass]="{'color-blue': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</span>
           </div>
         </a>
       </div>

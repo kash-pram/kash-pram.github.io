@@ -1,4 +1,4 @@
-<h3 class="py-5 color-secondary">#skillset</h3>
+<h1 class="py-5 padding-ten-left text-muted text-left"># skillset</h1>
 
 <div class="container" *ngIf="cardsData.length > 0">
   <div class="row justify-content-center">
@@ -8,10 +8,10 @@
           {{eachCard.title}}
         </div> -->
         <div class="card-body card-size">
-          <div class="text-left">{{eachCard.title}}</div>
+          <div class="skills-header text-right">{{eachCard.title}}</div>
           <div class="progress mt-1">
             <!-- [style.background-color]="getRandomColor()"  -->
-            <div class="progress-bar" role="progressbar" [style.opacity]="eachCard.proficiency/10"
+            <div class="progress-bar bg-green" role="progressbar" [style.opacity.%]="eachCard.proficiency"
             [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
             {{eachCard.proficiency}}
             </div>
@@ -27,8 +27,8 @@
 </div>
 
 
-<h3 class="py-5 color-secondary">#iUnderstand</h3>
-
+<!-- <h3 class=" color-secondary"># cloud</h3> -->
+<h1 class="pb-5 pt-2 padding-ten-left text-muted text-left"># cloud</h1>
 <br>
 Cloud
 <!-- <angular-tag-cloud

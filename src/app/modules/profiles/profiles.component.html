@@ -1,16 +1,18 @@
 <!-- <div class="mt-5"> -->
-  <h3 class="py-5 color-secondary">#profiles</h3>
+  <h1 class="py-5 padding-ten-left text-muted text-left"># profiles</h1>
   
   <div class="container" *ngIf="cardsData.length > 0">
     <div class="row justify-content-center">
       <div class="col-auto" *ngFor="let eachCard of cardsData">
-        <a class="card mt-5 no-outline no-link border-dashed" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}">
+        <a class="card mt-5 py-3 no-outline no-link hover-effect border-dotted" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}">
         <!-- <a class="card css-grow mt-5 no-outline no-link" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}"> -->
-          <div class="card-header bg-transparent border-transperent font-weight-bold">
+          <!-- <div class="card-header bg-transparent border-transperent font-weight-bold">
             {{eachCard.title}}
             <img class="float-right ml-3 external-link-icon" src="assets/icons/external-link.svg" height="15px" title="Opens link in new tab">
-          </div>
+          </div> -->
           <div class="card-body card-size">
+            <!-- {{eachCard.title}} -->
+            <img class="float-right ml-3 external-link-icon" src="assets/icons/external-link.svg" height="15px" title="Opens link in new tab">
             <!-- <h5 class="card-title"></h5> -->
             <!-- <h6 class="card-subtitle mb-2 text-muted">{{eachCard.subTitle}}</h6> -->
             <div class="card-text" [innerHTML]="eachCard.innerHTML"></div>

@@ -1,6 +1,6 @@
 export const SKILLSET_CARDS = [
   {
-    title: 'JavaScript',
+    title: 'JS',
     proficiency: '70'
   },
   {
