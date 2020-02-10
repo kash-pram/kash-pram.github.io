@@ -89,7 +89,7 @@ $color-primary-dark: #3D3242;
 
 .hr-break{
   // #C0392B
-  border: 2px solid #E18942;
+  border: 2px solid #CCC;
   border-radius: 5px;
 }
 .height-3px{
@@ -121,6 +121,9 @@ $color-primary-dark: #3D3242;
   cursor: pointer;
 }
 
+.margin-150px-top{
+  margin-top: 150px;
+}
 
 .card-size{
   height: 100px;
