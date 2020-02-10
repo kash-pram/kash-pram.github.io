@@ -4,6 +4,10 @@ export const SKILLSET_CARDS = [
     proficiency: '70'
   },
   {
+    title: 'Angular',
+    proficiency: '25'
+  },
+  {
     title: 'HTML 5',
     proficiency: '50'
   },
@@ -11,25 +15,26 @@ export const SKILLSET_CARDS = [
     title: 'CSS 3',
     proficiency: '70'
   },
+  
   {
-    title: 'Angular',
+    title: 'Node JS',
     proficiency: '10'
   },
   {
-    title: 'Node JS',
-    proficiency: '5'
+    title: 'Vue JS',
+    proficiency: '10'
   },
   {
-    title: 'Vue JS',
-    proficiency: '5'
+    title: 'Angular JS',
+    proficiency: '40'
   },
   {
     title: 'React JS',
     proficiency: '5'
   },
   {
-    title: 'Angular JS',
-    proficiency: '30'
+    title: 'TypeScript',
+    proficiency: '20'
   },
   {
     title: 'TDD',
