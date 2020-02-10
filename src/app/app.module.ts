@@ -10,11 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 // import { AboutModule } from './modules/about/about.module';
 import { SkillsetModule } from './modules/skillset/skillset.module';
 import { ProjectsModule } from './modules/projects/projects.module';
-import { ProfilesModule } from './modules/profiles/profiles.module';
+import { AboutModule } from './modules/about/about.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
-import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
+// import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
 // import { AlertComponent } from './components/alert/alert.component';
 
 // import { SpinnerComponent } from './components/spinner/spinner.component';
@@ -28,18 +28,18 @@ import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-sna
     SharedModule,
     AppRoutingModule,
     ProjectsModule,
-    ProfilesModule,
+    AboutModule,
     // AboutModule,
     SkillsetModule,
     InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
-  declarations: [ AppComponent, TopNavComponent, ResumeSnackbarComponent, 
-    // AlertComponent
+  declarations: [ AppComponent, TopNavComponent,
+    // AlertComponent, ResumeSnackbarComponent
    ],
   entryComponents: [ 
     // SpinnerOverlayComponent,
-    ResumeSnackbarComponent
+    // ResumeSnackbarComponent
   ],
   // providers: [ Title, {
   //   provide: HTTP_INTERCEPTORS,

@@ -6,7 +6,13 @@
   // background-color: #2098D1;
   z-index: 1000;
 }
-
+.nav-bottom-shadow.active {
+  // &.active {
+  -webkit-box-shadow: 0 6px 2px -1px #e9ecee, 0 -6px 2px -1px #e9ecee;
+  -moz-box-shadow: 0 6px 2px -1px #e9ecee, 0 -6px 2px -1px #e9ecee;
+  box-shadow: 0 6px 2px -1px #e9ecee, 0 -6px 2px -1px #e9ecee;
+  // }
+}
 .nav-item:not(.active) {
   & .icon {
     filter: grayscale(100%);

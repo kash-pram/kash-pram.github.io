@@ -19,9 +19,9 @@ export const APP_CONSTANTS = {
     //   name: "About me"
     // },
     {
-      link: "/profiles",
-      name: "# profiles",
-      // icon: 'profiles'
+      link: "/about",
+      name: "# about",
+      // icon: 'about'
     }
   ]
 };

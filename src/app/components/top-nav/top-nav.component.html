@@ -1,8 +1,8 @@
-<div id="div-top-nav" class="bottom-shadow">
+<div id="div-top-nav">
 
   <!-- <nav class="navbar navbar-expand-md navbar-light"> -->
-  <!-- <nav class="nav navbar navbar-expand-md navbar-light no-border-bottom no-padding-bottom" [ngClass]="{'nav-tabs': !isMobile}"> -->
-  <nav class="navbar navbar-expand-md navbar-light no-border-bottom no-padding-bottom">
+  <nav class="nav navbar navbar-expand-md navbar-light no-border-bottom no-padding-bottom" [ngClass]="{'nav-tabs': !isMobile}">
+  <!-- <nav class="navbar navbar-expand-md navbar-light no-border-bottom no-padding-bottom"> -->
     <button type="button" class="navbar-toggler no-outline mb-2" data-toggle="collapse" data-target="#navbarCollapse"
       aria-expanded="false">
       <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
       <div class="navbar-nav w-100 justify-content-center" >
         <a class="nav-hover nav-item nav-link nav-width cursor-pointer font-size18 d-inline d-lg-inline-block no-outline py-4"
           *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="navigateByUrl(navItem.link)"
-          [ngClass]="{'active font-weight-bold': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
+          [ngClass]="{'active font-weight-bold': i === selectedNavIndex, 'nav-bottom-shadow': !isMobile }" data-toggle="collapse" data-target=".navbar-collapse.show">
           <div class="no-outline">
             <span class="icon" [inlineSVG]="'/assets/icons' + navItem.link + '.svg'"></span>
             <span class="d-inline-block ml-3" [ngClass]="{'color-secondary': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</span>

@@ -1,4 +1,4 @@
-export const PROFILES_CARDS = [
+export const ABOUT_CARDS = [
   {
     title: 'StackOverflow',
     // subTitle: 'assets/icons/external-link.svg',
