@@ -24,7 +24,7 @@ export class SkillsetComponent implements OnInit {
   // ];
   
   constructor () {
-    this.assignColor();
+    // this.assignColor();
   }
 
   assignColor () {
