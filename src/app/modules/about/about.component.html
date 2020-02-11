@@ -1,10 +1,17 @@
-
 <div class="container" *ngIf="cardsData.length > 0">
-  <h1 class="pt-5 pb-1 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># profiles</h1>
-  <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
-    
+  <div class="row">
+    <h1 class="col-12 pt-5 pb-1 text-left color-secondary font-weight-bold font-size70 sm-font-size50">
+    # profiles
+    </h1>
   </div>
-  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
+
+  <div class="row">
+    <div class="col-12 pb-4 font-size46 md-font-size36 sm-font-size36 color-light-gray">
+      from my online presence
+    </div>
+  </div>
+
+  <div class="row margin-70px-top sm-margin-20px-top justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
       <a class="card mt-5 py-3 no-outline no-link hover-effect border-dotted" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}">
       <!-- <a class="card css-grow mt-5 no-outline no-link" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}"> -->
@@ -32,24 +39,25 @@
     </div> -->
   </div>
 
-  <div class="py-5 justify-content-center">
-    <hr class=" width-10 hr-break">
+  <div class="row padding-100px-tb">
+    <hr class="col-auto hr-break">
   </div>
   
-  <!-- <h3 class=" color-secondary"># cloud</h3> -->
-  <h1 class="pb-1 pt-2 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># about me</h1>
-  <!-- <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">list of words that I can probably understand</div> -->
-  
-  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
-  <!-- <angular-tag-cloud
-    [data]="data"
-    [width]="options.width"
-    [height]="options.height"
-    [overflow]="options.overflow">
-  </angular-tag-cloud> -->
-  
-  swimming,
-  playing cards
+  <div class="row">
+    <h1 class="col-12 pb-1 pt-2 text-left color-secondary font-weight-bold font-size70 sm-font-size50">
+    # timeline
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-12 pb-4 font-size46 md-font-size36 sm-font-size36 color-light-gray">
+      of my professional work experience
+    </div>
+  </div>
+
+  <div class="row margin-70px-top sm-margin-20px-top justify-content-center">
+    swimming,
+    playing cards
   </div>
 </div>
 

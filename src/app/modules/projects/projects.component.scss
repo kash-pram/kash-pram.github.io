@@ -72,19 +72,19 @@
 
 @media screen and (max-width: 768px) {
   .timeline-container:before {
-     left: 8px;
-     width: 2px;
+    left: 23px;
+    width: 2px;
   }
   .timeline-block {
-     width: 100%;
-     margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 30px;
   }
   .timeline-block-right {
-     float: none;
+    float: none;
   }
 
   .timeline-block-left {
-     float: none;
-     direction: ltr;
+    float: none;
+    direction: ltr;
   }
 }
