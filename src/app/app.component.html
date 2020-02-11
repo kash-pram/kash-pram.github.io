@@ -2,17 +2,18 @@
 
   <app-top-nav></app-top-nav>
 
-  <!-- <div class="sm-margin-twenty-five-top xs-margin-twenty-five-top md-margin-sixteen-top margin-twelve-top" -->
   <div class="xs-margin-50px-top sm-margin-sixteen-top margin-150px-top"
   [style.min-height.px]="minHeight">
     <router-outlet (activate)="onActivate($event)"></router-outlet>
 
-    <!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" target="_blank" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a> -->
+    <div class="position-relative">
+      <div class="loader-overlay" *ngIf="showSpinner" [@simpleFadeAnimation]="'in'">
+        <div class="lds-dual-ring"></div>
+      </div>
+    </div>
   </div>
   
-  <div class="loader-overlay" *ngIf="showSpinner" [@simpleFadeAnimation]="'in'">
-    <div class="lds-dual-ring"></div>
-  </div>
+  
 
   <footer id="divPageFooter" class="mt-5 p-3 bg-gray color-black top-shadow">
     <!-- <div class="row tex-center justify-content-center">
@@ -21,8 +22,8 @@
       </div>
     </div>
      -->
+<!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" target="_blank" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a> -->
 
-     Contact links
      <br>
      <!-- <img src="/examples/images/logo.svg" height="28" alt="CoolBrand"> -->
     <a href="#" class="float-left w-100">PPM1988</a>

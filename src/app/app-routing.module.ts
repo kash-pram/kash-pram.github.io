@@ -20,7 +20,7 @@ const routes: Routes = [
   //   redirectTo: 'skillset',
   //   pathMatch: 'full'
   // },
-  { path: "**", pathMatch: 'prefix', redirectTo: 'skillset' }
+  { path: "**", pathMatch: 'prefix', redirectTo: 'skill-set' }
   //   loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)
   // }
 ];

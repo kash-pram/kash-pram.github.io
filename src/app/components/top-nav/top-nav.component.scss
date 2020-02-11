@@ -14,13 +14,13 @@
   // }
 }
 .nav-item:not(.active) {
-  & .icon {
+  & .nav-icon {
     filter: grayscale(100%);
   }
 }
 
 .nav-item:hover {
-  & .icon {
+  & .nav-icon {
     filter: none;
   }
   &:not(.active) div span {

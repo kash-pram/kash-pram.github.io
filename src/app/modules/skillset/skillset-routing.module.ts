@@ -5,7 +5,7 @@ import { SkillsetComponent } from './skillset.component';
 import { APP_CONSTANTS } from 'src/app/_constants/app-constants';
 
 const routes: Routes = [
-  { path: '', component: SkillsetComponent, data: { title: 'Skillset' } },
+  { path: '', component: SkillsetComponent, data: { title: 'skills' } },
   { path: '**', pathMatch: 'full', redirectTo: '' }
 ];
 

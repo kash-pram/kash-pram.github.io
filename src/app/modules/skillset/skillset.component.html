@@ -1,9 +1,21 @@
 <div class="container" *ngIf="cardsData.length > 0">
-  <h1 class="pt-5 pb-1 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># skill set</h1>
-  <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
+  <!-- <h1 class="row pt-5 pb-1 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># skill set</h1>
+  <div class="row pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
     list of competencies that I like to project
+  </div> -->
+  <div class="row">
+    <h1 class="col-12 pt-5 pb-1 text-left color-secondary font-weight-bold font-size70 sm-font-size50">
+    # skill set
+    </h1>
   </div>
-  <div class="margin-70px-top sm-margin-20px-top row justify-content-center">
+
+  <div class="row">
+    <div class="col-12 pb-4 text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
+      list of competencies that I like to project
+    </div>
+  </div>
+
+  <div class="row margin-70px-top sm-margin-20px-top justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of cardsData">
       <div class="card no-outline no-border-all" title="Proficiency {{eachCard.proficiency}}%">
         <!-- <div class="card-header bg-transparent border-transperent font-weight-bold">
@@ -22,13 +34,15 @@
     </div>
   </div>
 
-  <div class="py-5 justify-content-center">
-    <hr class=" width-10 hr-break">
+  <div class="py-5">
+    <hr class="width-10 hr-break">
   </div>
   
   <!-- <h3 class=" color-secondary"># cloud</h3> -->
-  <h1 class="pb-1 pt-2 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># cloud</h1>
-  <div class="pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">list of words that I can probably understand</div>
+  <h1 class="row pb-1 pt-2 padding-ten-left text-left color-secondary font-weight-bold font-size70 sm-font-size50"># cloud</h1>
+  <div class="row pb-4 padding-ten-left padding-ten-right text-right font-size46 md-font-size36 sm-font-size36 color-light-gray">
+    list of words that I can probably understand
+  </div>
   
   <div class="margin-70px-top sm-margin-20px-top row justify-content-center">Cloud
   <!-- <angular-tag-cloud
