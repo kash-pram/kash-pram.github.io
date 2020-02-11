@@ -14,15 +14,15 @@
   <div class="row margin-70px-top sm-margin-20px-top justify-content-center">
     <div class="col-12 position-relative">
       <div class="timeline-container">
-        <div class="timeline-block timeline-block-right">
+        <div class="timeline-block" [ngClass]="{'timeline-block-right': even, 'timeline-block-left': odd }" *ngFor="let eachTimeline of timelineData; let odd = odd; let even = even">
             <div class="marker"></div>
             <div class="timeline-content">
-              <h3>First Year</h3>
-              <span>Some work experience</span>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
+              <h3>{{eachTimeline.title}}</h3>
+              <span>{{eachTimeline.duration}}</span>
+              <p [innerHTML]="eachTimeline.innerHTML"></p>
             </div>
         </div>
-      
+<!--       
         <div class="timeline-block timeline-block-left">
             <div class="marker"></div>
             <div class="timeline-content">
@@ -57,11 +57,10 @@
               <span>Some work experience</span>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
             </div>
-        </div>
+        </div> -->
       </div>
     </div>
-    
-  </div>
+  </div><!-- ROW -->
 
   <div class="row padding-100px-tb">
     <hr class="col-auto hr-break">

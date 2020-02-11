@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 // import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
-import { PROJECTS_CARDS } from 'src/app/_constants/projects-constants';
+import { PROJECTS_CARDS, TIMELINE_CARDS } from 'src/app/_constants/projects-constants';
 
 @Component({
   selector: 'app-projects',
@@ -10,6 +10,7 @@ import { PROJECTS_CARDS } from 'src/app/_constants/projects-constants';
 export class ProjectsComponent implements OnInit {
   // scriptHTML;
   cardsData = PROJECTS_CARDS;
+  timelineData = TIMELINE_CARDS;
   
   constructor () {
   // constructor ( private sanitizer: DomSanitizer) {
