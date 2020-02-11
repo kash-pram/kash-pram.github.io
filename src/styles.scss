@@ -9,18 +9,25 @@ $color-primary-dark: #3D3242;
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-.nav-icon > svg {
-  height: 50px;
-  width: 50px;
-}
+  .nav-icon > svg {
+    height: 50px;
+    width: 50px;
+  }
+
+  // .overflow-y{
+  //   overflow-y: auto;
+  // }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-.nav-icon > svg {
-  height: 60px;
-  width: 60px;
-}
+  .nav-icon > svg {
+    height: 60px;
+    width: 60px;
+  }
+  // .overflow-y{
+  //   overflow-y: auto;
+  // }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

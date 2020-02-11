@@ -48,7 +48,7 @@ declare let gtag:Function;
 
       // fade out when destroyed. this could also be written as transition('void => *')
       transition(':leave',
-        animate(300, style({opacity: 0})))
+        animate(500, style({opacity: 0})))
     ])
   ]
 })
@@ -126,9 +126,9 @@ constructor (
       } else if ( event instanceof NavigationEnd ) {
         // gtag('config', 'UA-156515857-5', {'page_path': event.urlAfterRedirects});
         gtag('config', 'UA-156515857-5', {'page_path': event.url});
-        setTimeout(() => {
-          this.showSpinner = false;
-        }, 500);
+        // setTimeout(() => {
+        //   this.showSpinner = false;
+        // }, 1000);
       } // IF-ELSE
     });
 
@@ -138,9 +138,12 @@ constructor (
     let scrollToTop = window.setInterval(() => {
       let pos = window.pageYOffset;
       if (pos > 0) {
-          window.scrollTo(0, pos - 20); // how far to scroll on each step
+        window.scrollTo(0, pos - 20); // how far to scroll on each step
       } else {
-          window.clearInterval(scrollToTop);
+        window.clearInterval(scrollToTop);
+        setTimeout(() => {
+          this.showSpinner = false;
+        }, 300);
       }
     }, 16);
   } // FN
