@@ -1,49 +1,13 @@
 <div class="container" *ngIf="cardsData.length > 0">
   <div class="row">
     <h1 class="col-12 pt-5 pb-1 text-left color-secondary font-weight-bold font-size70 sm-font-size50">
-    # projects
+      # timeline
     </h1>
   </div>
 
   <div class="row">
     <div class="col-12 pb-4 font-size46 md-font-size36 sm-font-size36 color-light-gray">
-      from my professional experience (6.5 years)
-    </div>
-  </div>
-
-  <div class="row margin-70px-top sm-margin-20px-top justify-content-center">
-    <div class="col-auto" *ngFor="let eachCard of cardsData">
-      <div class="card no-outline no-border-all" title="Proficiency {{eachCard.proficiency}}%">
-        <div class="card-header bg-transparent border-transperent font-weight-bold">
-          {{eachCard.title}}
-        </div>
-        <!-- <div class="card-body card-size">
-          <div class="text-right font-weight-bold font-size18">{{eachCard.title}}</div>
-          <div class="progress mt-1">
-            <div class="progress-bar bg-green" role="progressbar" [ngStyle]="{'filter': 'hue-rotate(' + eachCard.proficiency + 'deg)'}" 
-            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
-            
-            </div>
-            <span class="d-inline-block ml-2">{{eachCard.proficiency}}%</span>
-          </div>
-        </div> -->
-      </div>
-    </div>
-  </div>
-
-  <div class="row padding-100px-tb">
-    <hr class="col-auto hr-break">
-  </div>
-  
-  <div class="row">
-    <h1 class="col-12 pb-1 pt-2 text-left color-secondary font-weight-bold font-size70 sm-font-size50">
-    # timeline
-    </h1>
-  </div>
-
-  <div class="row">
-    <div class="col-12 pb-4 font-size46 md-font-size36 sm-font-size36 color-light-gray">
-      of my professional work experience
+      of my work experience
     </div>
   </div>
 
@@ -96,7 +60,43 @@
         </div>
       </div>
     </div>
+    
+  </div>
 
+  <div class="row padding-100px-tb">
+    <hr class="col-auto hr-break">
+  </div>
+  
+  <div class="row">
+    <h1 class="col-12 pb-1 pt-2 text-left color-secondary font-weight-bold font-size70 sm-font-size50">
+      # projects
+    </h1>
+  </div>
+
+  <div class="row">
+    <div class="col-12 pb-4 font-size46 md-font-size36 sm-font-size36 color-light-gray">
+      from the past
+    </div>
+  </div>
+
+  <div class="row margin-70px-top sm-margin-20px-top justify-content-center">
+    <div class="col-auto" *ngFor="let eachCard of cardsData">
+      <div class="card no-outline no-border-all" title="Proficiency {{eachCard.proficiency}}%">
+        <div class="card-header bg-transparent border-transperent font-weight-bold">
+          {{eachCard.title}}
+        </div>
+        <!-- <div class="card-body card-size">
+          <div class="text-right font-weight-bold font-size18">{{eachCard.title}}</div>
+          <div class="progress mt-1">
+            <div class="progress-bar bg-green" role="progressbar" [ngStyle]="{'filter': 'hue-rotate(' + eachCard.proficiency + 'deg)'}" 
+            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
+            
+            </div>
+            <span class="d-inline-block ml-2">{{eachCard.proficiency}}%</span>
+          </div>
+        </div> -->
+      </div>
+    </div>
   </div>
 </div>
 

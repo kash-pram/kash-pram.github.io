@@ -5,8 +5,8 @@ export const APP_CONSTANTS = {
   NAV_ITEMS: [
     
     {
-      link: "/projects",
-      name: "# projects",
+      link: "/past",
+      name: "# past",
       icon: 'projects'
     },
     {
