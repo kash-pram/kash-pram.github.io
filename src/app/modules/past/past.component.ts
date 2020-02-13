@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 // import {BrowserModule, DomSanitizer} from '@angular/platform-browser'
-import { PROJECTS_CARDS, TIMELINE_CARDS } from 'src/app/_constants/projects-constants';
+import { PROJECT_CARDS, TIMELINE_CARDS } from 'src/app/_constants/past-constants';
 
 @Component({
-  selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  selector: 'app-past',
+  templateUrl: './past.component.html',
+  styleUrls: ['./past.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class PastComponent implements OnInit {
   // scriptHTML;
-  cardsData = PROJECTS_CARDS;
+  cardsData = PROJECT_CARDS;
   timelineData = TIMELINE_CARDS;
   
   constructor () {

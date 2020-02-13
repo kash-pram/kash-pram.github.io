@@ -9,7 +9,7 @@ import { SharedModule } from'./modules/shared/shared.module';
 import { AppRoutingModule } from './app-routing.module';
 // import { AboutModule } from './modules/about/about.module';
 import { SkillsetModule } from './modules/skillset/skillset.module';
-import { ProjectsModule } from './modules/projects/projects.module';
+import { PastModule } from './modules/past/past.module';
 import { AboutModule } from './modules/about/about.module';
 
 import { AppComponent } from './app.component';
@@ -27,7 +27,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
     BrowserAnimationsModule,
     SharedModule,
     AppRoutingModule,
-    ProjectsModule,
+    PastModule,
     AboutModule,
     // AboutModule,
     SkillsetModule,

@@ -138,12 +138,12 @@ constructor (
     let scrollToTop = window.setInterval(() => {
       let pos = window.pageYOffset;
       if (pos > 0) {
-        window.scrollTo(0, pos - 20); // how far to scroll on each step
+        window.scrollTo(0, pos - 100); // how far to scroll on each step
       } else {
         window.clearInterval(scrollToTop);
-        setTimeout(() => {
+        // setTimeout(() => {
           this.showSpinner = false;
-        }, 300);
+        // }, 300);
       }
     }, 16);
   } // FN

@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 // import { SharedModule } from '../shared/shared.module';
-import { ProjectsRoutingModule } from './projects-routing.module';
+import { PastRoutingModule } from './past-routing.module';
 // import { MediumWidgetModule } from 'ngx-medium-widget';
 
-import { ProjectsComponent } from './projects.component';
+import { PastComponent } from './past.component';
 
 
 @NgModule({
-  declarations: [ProjectsComponent],
+  declarations: [ PastComponent ],
   imports: [
     CommonModule,
     // SharedModule,
     // MediumWidgetModule,
-    ProjectsRoutingModule
+    PastRoutingModule
   ]
 })
-export class ProjectsModule { }
+export class PastModule { }

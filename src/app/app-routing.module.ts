@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   // { path: "", component: AppComponent, pathMatch: 'full' },
   { path: "past", 
-    loadChildren: () => import('./modules/projects/projects.module').then(m => m.ProjectsModule)
+    loadChildren: () => import('./modules/past/past.module').then(m => m.PastModule)
   },
   { path: "skill-set",
     loadChildren: () => import('./modules/skillset/skillset.module').then(m => m.SkillsetModule)

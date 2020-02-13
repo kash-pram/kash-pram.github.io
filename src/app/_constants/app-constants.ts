@@ -7,7 +7,7 @@ export const APP_CONSTANTS = {
     {
       link: "/past",
       name: "# past",
-      icon: 'projects'
+      icon: 'past'
     },
     {
       link: "/skill-set",

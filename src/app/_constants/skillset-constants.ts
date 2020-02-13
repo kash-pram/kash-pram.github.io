@@ -37,8 +37,12 @@ export const SKILLSET_CARDS = [
     proficiency: '20'
   },
   {
-    title: 'TDD',
+    title: 'TDD - Jasmine',
     proficiency: '5'
+  },
+  {
+    title: 'SQL',
+    proficiency: '30'
   },
   {
     title: 'Mongo DB',
@@ -47,5 +51,61 @@ export const SKILLSET_CARDS = [
   {
     title: 'SCSS',
     proficiency: '20'
+  },
+  {
+    title: 'UX',
+    proficiency: '5'
+  },
+  {
+    title: 'EJS',
+    proficiency: '5'
+  },
+  {
+    title: 'Scala',
+    proficiency: '5'
+  },
+  {
+    title: 'Dev Ops',
+    proficiency: '5'
+  },
+  {
+    title: 'Project Management',
+    proficiency: '10'
+  },
+  {
+    title: 'Postgres',
+    proficiency: '5'
+  },
+  {
+    title: 'Shell',
+    proficiency: '5'
+  },
+  {
+    title: 'Regex',
+    proficiency: '25'
+  },
+  {
+    title: 'GraphQL',
+    proficiency: '5'
+  },
+  {
+    title: 'ASP.NET',
+    proficiency: '20'
+  },
+  {
+    title: 'C#',
+    proficiency: '20'
+  },
+  {
+    title: 'Python',
+    proficiency: '5'
+  },
+  {
+    title: 'Java',
+    proficiency: '5'
+  },
+  {
+    title: 'PHP',
+    proficiency: '5'
   },
 ]
