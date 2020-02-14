@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Tag } from 'cloudee';
+
 // import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 import { SKILLSET_CARDS } from 'src/app/_constants/skillset-constants';
 
@@ -9,6 +11,27 @@ import { SKILLSET_CARDS } from 'src/app/_constants/skillset-constants';
 })
 export class SkillsetComponent {
   cardsData = SKILLSET_CARDS;
+
+  myTags: Tag[] = [
+		{ weight: 16, text: 'insurance',image: '../favicon.ico'  },
+    { weight: 24, text: 'lay' ,image: '../favicon.ico' },
+    { weight: 18, text: 'tense'  },
+    { weight: 16, text: 'cabin' ,image: '../favicon.ico' },
+    { weight: 32, text: 'bomb' ,image: '../favicon.ico' },
+    { weight: 30, text: 'broadcast' ,image: '../favicon.ico' },
+    { weight: 18, text: 'portion' ,image: '../favicon.ico' },
+	];
+	options: TagCanvasOptions = {
+    dragControl: true,
+    imageMode:'text',
+    clickToFront: 500,
+    initial: [ .1, 0 ],
+    weight: true
+  };
+      
+  showTagDetails (tag) {
+    console.log(tag);
+  }
   // options: CloudOptions = {
   //   // if width is between 0 and 1 it will be set to the size of the upper element multiplied by the value 
   //   width: 1000,
