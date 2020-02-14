@@ -126,4 +126,14 @@ export const SKILLSET_CARDS = [
   //   title: 'PHP',
   //   proficiency: '5'
   // },
-]
+];
+
+export const CLOUD_CARDS = [
+  { weight: 16, text: 'insurance',image: '../favicon.ico'  },
+  { weight: 24, text: 'lay' ,image: '../favicon.ico' },
+  { weight: 18, text: 'tense'  },
+  { weight: 16, text: 'cabin' ,image: '../favicon.ico' },
+  { weight: 32, text: 'bomb' ,image: '../favicon.ico' },
+  { weight: 30, text: 'broadcast' ,image: '../favicon.ico' },
+  { weight: 18, text: 'portion' ,image: '../favicon.ico' },
+];
