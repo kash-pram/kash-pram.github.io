@@ -15,8 +15,8 @@ export const SKILLSET_CARDS = [
     exp: 'more than 5 projects'
   },
   {
-    title: 'CSS 3',
-    proficiency: '75',
+    title: 'CSS 3, SCSS',
+    proficiency: '70',
     exp: 'more than 5 projects'
   },
   {
@@ -32,7 +32,7 @@ export const SKILLSET_CARDS = [
   {
     title: 'Vue JS',
     proficiency: '15',
-    exp: 'N/A'
+    exp: ''
   },
   {
     title: 'Angular JS',
@@ -42,7 +42,7 @@ export const SKILLSET_CARDS = [
   {
     title: 'React JS - JSX',
     proficiency: '5',
-    exp: 'N/A'
+    exp: ''
   },
   {
     title: 'TypeScript',
@@ -52,7 +52,7 @@ export const SKILLSET_CARDS = [
   {
     title: 'TDD - Jasmine',
     proficiency: '5',
-    exp: 'N/A'
+    exp: ''
   },
   {
     title: 'SQL',
@@ -65,75 +65,73 @@ export const SKILLSET_CARDS = [
     exp: '1 project'
   },
   {
-    title: 'SCSS',
-    proficiency: '50',
-    exp: '2 projects'
+    title: 'QA, BA',
+    proficiency: '10',
+    exp: '3 projects'
   },
-  // {
-  //   title: 'UX',
-  //   proficiency: '5'
-  // },
   {
     title: 'Express, EJS',
     proficiency: '15',
     exp: '1 project'
-  },
-  // {
-  //   title: 'Scala',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'Dev Ops',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'Project Management',
-  //   proficiency: '10'
-  // },
-  // {
-  //   title: 'Postgres',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'Shell',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'Regex',
-  //   proficiency: '25'
-  // },
-  // {
-  //   title: 'GraphQL',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'ASP.NET',
-  //   proficiency: '20'
-  // },
-  // {
-  //   title: 'C#',
-  //   proficiency: '20'
-  // },
-  // {
-  //   title: 'Python',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'Java',
-  //   proficiency: '5'
-  // },
-  // {
-  //   title: 'PHP',
-  //   proficiency: '5'
-  // },
+  }
 ];
 
 export const CLOUD_CARDS = [
-  { weight: 16, text: 'insurance',image: '../favicon.ico'  },
-  { weight: 24, text: 'lay' ,image: '../favicon.ico' },
-  { weight: 18, text: 'tense'  },
-  { weight: 16, text: 'cabin' ,image: '../favicon.ico' },
-  { weight: 32, text: 'bomb' ,image: '../favicon.ico' },
-  { weight: 30, text: 'broadcast' ,image: '../favicon.ico' },
-  { weight: 18, text: 'portion' ,image: '../favicon.ico' },
+  { weight: '10', text: 'gulp' },
+  { weight: '10', text: 'grunt' },
+  { weight: '10', text: '3-Tier' },
+  { weight: '10', text: 'bower' },
+  { weight: '10', text: 'Webpack' },
+  { weight: '10', text: 'OSI' },
+  { weight: '10', text: 'JWT' },
+  { weight: '10', text: 'callback' },
+  { weight: '10', text: 'Lodash' },
+  { weight: '10', text: 'CORS' },
+  { weight: '10', text: 'SocketIO' },
+  { weight: '10', text: 'SPA' },
+  { weight: '10', text: 'fallback' },
+  { weight: '10', text: 'SEO' },
+  { weight: '10', text: 'Emmet' },
+  { weight: '10', text: 'Google Analytics' },
+  { weight: '10', text: '' },
+  { weight: '10', text: 'Developer Tools' },
+  { weight: '10', text: 'Palette' },
+  { weight: '10', text: 'Pair Programming' },
+  { weight: '10', text: 'Screenshare' },
+  { weight: '10', text: 'Lucidchart' },
+  { weight: '10', text: 'Kanban' },
+  { weight: '10', text: 'Scrum' },
+  { weight: '10', text: 'UML diagrams' },
+  { weight: '10', text: 'Mindmapping' },
+  { weight: '10', text: 'XMind' },
+  { weight: '10', text: 'Coggle' },
+  { weight: '10', text: 'PR' },
+  { weight: '10', text: 'Case study' },
+  { weight: '10', text: 'Docker' },
+  { weight: '10', text: 'Elastic Beanstalk' },
+  { weight: '10', text: 'Load Balancer' },
+  { weight: '10', text: 'Normalization' },
+  { weight: '10', text: 'IIS' },
+  { weight: '10', text: 'Cron' },
+  { weight: '10', text: 'Babel' },
+  { weight: '10', text: 'Yeoman' },
+  { weight: '10', text: 'EC2' },
+  { weight: '10', text: 'SaaS' },
+  { weight: '10', text: 'PaaS' },
+  { weight: '10', text: 'Private key' },
+  { weight: '10', text: 'Public key' },
+  { weight: '10', text: 'sessionStorage' },
+  { weight: '10', text: 'localStorage' },
+  { weight: '10', text: 'indexedDB' },
+  { weight: '10', text: 'CDN' },
+  { weight: '10', text: 'Swagger' },
+  { weight: '10', text: 'Electron' },
+  { weight: '10', text: 'canIUse' },
+  { weight: '10', text: 'DNS' },
+  { weight: '10', text: 'XHR' },
+  { weight: '10', text: 'XSS' },
+  { weight: '10', text: 'PWA' },
+  { weight: '10', text: 'GraphQL' },
+  { weight: '10', text: 'Hasura' },
+  
 ];

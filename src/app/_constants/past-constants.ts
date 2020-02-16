@@ -10,16 +10,16 @@ export const PROJECT_CARDS = [
   {
     title: 'ETF Trading',
     innerHTML: '',
-    type: 'Front-end web applications',
-    status: 'N/A',
+    type: 'Front-end web application',
+    status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
     for: 'BNY Mellon [Banking and Financial Services] - CTS'
   },
   {
     title: 'Sixth Day Allowance',
     innerHTML: '',
-    type: 'Front-end web applications',
-    status: 'N/A',
+    type: 'Front-end web application',
+    status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
     for: 'BNY Mellon [Banking and Financial Services] - CTS'
   },
@@ -35,7 +35,7 @@ export const PROJECT_CARDS = [
     title: 'Record And Play',
     innerHTML: '',
     type: 'Scripting',
-    status: 'N/A',
+    status: '',
     skills: ['Python', 'Git', 'Jenkins'], 
     for: 'Amazon Internal'
   },
@@ -43,15 +43,15 @@ export const PROJECT_CARDS = [
     title: '300 DPI Approach',
     innerHTML: '',
     type: 'Scripting',
-    status: 'N/A',
+    status: '',
     skills: ['Shell scripting'],
-    for: 'Amazon Internal'
+    for: 'Amazon'
   },
   {
     title: 'FireOS My-Accounts',
     innerHTML: '',
     type: 'Testing',
-    status: 'N/A',
+    status: '',
     skills: ['Unit Testing', 'Android', 'JIRA', 'Git'], 
     for: 'Quality Assurance - Amazon'
   },
@@ -60,77 +60,85 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Delivered',
-    skills: ['Angular JS 1.4', 'Google Maps', 'MySQL', 'Node JS', 'Scala', 'JIRA', 'Git'], 
+    skills: ['Angular JS 1.4', 'Bootstrap 3', 'Google Maps', 'MySQL', 'Node JS', 'Scala', 'JIRA', 'Git'], 
     for: 'RidePal [Corporate commute services] - CES IT'
   },
   {
     title: 'RidePal Official Website',
-    innerHTML: '',
-    type: 'Front-end web applications',
+    innerHTML: '<a href="www.ridepal.com" target="_blank">ridepal.com</a>',
+    type: 'Front-end web application',
     status: 'Delivered',
-    skills: ['Angular 8', 'Confluence', 'JIRA', 'Git'], 
+    skills: ['Angular 8', 'Bootstrap 4', 'RxJS', 'Confluence', 'JIRA', 'Git'], 
     for: 'RidePal [Corporate commute services] - CES IT'
   },
   {
     title: 'Vantage Dashboard Intellimetric',
     innerHTML: '',
-    type: 'Front-end web applications',
-    status: 'N/A',
-    skills: ['Angular 8', 'Angular Material', 'Stripes', 'AWS Cognito', 'Amplify', 'Zeplin', 'BitBucket', 'Git'], 
+    type: 'Front-end web application',
+    status: '',
+    skills: ['Angular 8', 'Angular Material', 'Bootstrap 4', 'RxJS', 'Stripes', 'AWS Cognito', 'Amplify', 'Zeplin', 'BitBucket', 'Git'], 
     for: 'Vantage [Learning services] - CES IT'
   },
   {
-    title: 'Timer',
-    innerHTML: '',
-    type: '',
+    title: 'timer',
+    innerHTML: '<a href="http://ppm1988.github.io/timer" target="_blank">timer</a>',
+    type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [''], 
+    skills: ['Angular 8', 'Bootstrap 4', 'Angular Material', 'AWS Cognito', 'Git'], 
     for: ''
   },
   {
     title: 'beppo',
-    innerHTML: '',
-    type: '',
-    status: 'N/A',
+    innerHTML: '<a href="http://ppm1988.github.io/beppo" target="_blank">beppo</a>',
+    type: 'Static website',
+    status: '',
     skills: [''], 
     for: ''
   },
   {
-    title: 'tevoted',
-    innerHTML: '',
-    type: '',
+    title: 'time-keeper',
+    innerHTML: '<a href="http://ppm1988.github.io/tevoted" target="_blank">tevoted</a>',
+    type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [''], 
     for: ''
   },
   {
-    title: 'ces-corner',
-    innerHTML: '',
-    type: '',
+    title: 'corner-board',
+    innerHTML: '<a href="http://ppm1988.github.io/ces-corner" target="_blank">ces-corner</a>',
+    type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [''], 
     for: ''
   },
   {
     title: 'portfolio',
-    innerHTML: '',
-    type: '',
-    status: 'N/A',
+    innerHTML: '<a href="http://ppm1988.github.io/portfolio" target="_blank">portfolio</a>',
+    type: 'Static website',
+    status: '',
     skills: [''], 
     for: ''
   },
   {
     title: 'magic-box',
-    innerHTML: '',
-    type: '',
+    innerHTML: '<a href="http://ppm1988.github.io/magic-box" target="_blank">magic-box</a>',
+    type: 'Full-stack web application',
     status: 'Work-in-progress',
+    skills: [''], 
+    for: ''
+  },
+  {
+    title: 'remind-me',
+    innerHTML: '',
+    type: 'Full-stack web application',
+    status: 'Pending',
     skills: [''], 
     for: ''
   },
   {
     title: 'tototo',
     innerHTML: '',
-    type: '',
+    type: 'Full-stack web application',
     status: 'Pending',
     skills: [''], 
     for: ''
@@ -138,7 +146,31 @@ export const PROJECT_CARDS = [
   {
     title: 'need-basis / group notify',
     innerHTML: '',
-    type: '',
+    type: 'Full-stack web application',
+    status: 'Pending',
+    skills: [''], 
+    for: ''
+  },
+  {
+    title: 'post-it',
+    innerHTML: '',
+    type: 'Full-stack web application',
+    status: 'Pending',
+    skills: [''], 
+    for: ''
+  },
+  {
+    title: 'one-place',
+    innerHTML: '',
+    type: 'Full-stack web application',
+    status: 'Pending',
+    skills: [''], 
+    for: ''
+  },
+  {
+    title: 'transupport',
+    innerHTML: '',
+    type: 'Full-stack web application',
     status: 'Pending',
     skills: [''], 
     for: ''
@@ -146,7 +178,7 @@ export const PROJECT_CARDS = [
   {
     title: 'work-log',
     innerHTML: '',
-    type: '',
+    type: 'Full-stack web application',
     status: 'Pending',
     skills: [''], 
     for: ''
@@ -158,7 +190,6 @@ export const TIMELINE_CARDS = [
     title: 'Cognizant Technology Solutions India Pvt. Ltd.',
     duration: 'Feb 2011 - June 2013 [2 years 4 months]',
     logo: '',
-    link: '',
     projects: ['Pulse Sales Tool', 'ETF Trading', 'Sixth Day Allowance' ],
     positions: ['Programmer Analyst Trainee', 'Programmer Analyst']
   },
@@ -166,7 +197,6 @@ export const TIMELINE_CARDS = [
     title: 'Rush46',
     duration: 'June 2013 - Aug 2013 [3 months]',
     logo: '',
-    link: '',
     projects: [],
     positions: ['Co-Owner']
   },
@@ -174,7 +204,6 @@ export const TIMELINE_CARDS = [
     title: 'Amazon Development Center India Pvt. Ltd.',
     duration: 'Sep 2013 - Feb 2015 [1 year 5 months]',
     logo: '',
-    link: '',
     projects: ['Kindle Device Metrics', 'Record and Play', '300 DPI', 'FireOS My-Accounts'],
     positions: ['Software Development Consultant', 'Quality Assurance Engineer']
   },
@@ -182,7 +211,6 @@ export const TIMELINE_CARDS = [
     title: 'BEPPO INDIA',
     duration: 'Apr 2015 - Dec 2016 [1 year 8 months]',
     logo: '',
-    link: '',
     projects: [],
     positions: ['Owner']
   },
@@ -190,7 +218,6 @@ export const TIMELINE_CARDS = [
     title: 'CES Information Technologies Pvt. Ltd.',
     duration: 'March 2017 - Nov 2019 [2 years 8 months]',
     logo: '',
-    link: '',
     projects: ['RidePal Admin Dashboard', 'RidePal Official Website', 'Vantage Admin Dashboard'],
     positions: ['Software Engineer', 'Senior Software Technologist']
   }
