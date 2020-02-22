@@ -188,35 +188,35 @@ export const PROJECT_CARDS = [
 export const TIMELINE_CARDS = [
   {
     title: 'Cognizant Technology Solutions India Pvt. Ltd.',
-    duration: 'Feb 2011 - June 2013 [2 years 4 months]',
+    duration: 'Feb 2011 - June 2013 (2 years 4 months)',
     logo: '',
     projects: ['Pulse Sales Tool', 'ETF Trading', 'Sixth Day Allowance' ],
     positions: ['Programmer Analyst Trainee', 'Programmer Analyst']
   },
   {
     title: 'Rush46',
-    duration: 'June 2013 - Aug 2013 [3 months]',
+    duration: 'June 2013 - Aug 2013 (3 months)',
     logo: '',
     projects: [],
     positions: ['Co-Owner']
   },
   {
     title: 'Amazon Development Center India Pvt. Ltd.',
-    duration: 'Sep 2013 - Feb 2015 [1 year 5 months]',
+    duration: 'Sep 2013 - Feb 2015 (1 year 5 months)',
     logo: '',
     projects: ['Kindle Device Metrics', 'Record and Play', '300 DPI', 'FireOS My-Accounts'],
     positions: ['Software Development Consultant', 'Quality Assurance Engineer']
   },
   {
     title: 'BEPPO INDIA',
-    duration: 'Apr 2015 - Dec 2016 [1 year 8 months]',
+    duration: 'Apr 2015 - Dec 2016 (1 year 8 months)',
     logo: '',
     projects: [],
     positions: ['Owner']
   },
   {
     title: 'CES Information Technologies Pvt. Ltd.',
-    duration: 'March 2017 - Nov 2019 [2 years 8 months]',
+    duration: 'March 2017 - Nov 2019 (2 years 8 months)',
     logo: '',
     projects: ['RidePal Admin Dashboard', 'RidePal Official Website', 'Vantage Admin Dashboard'],
     positions: ['Software Engineer', 'Senior Software Technologist']
