@@ -9,12 +9,12 @@
     </button>
     <div class="collapse navbar-collapse w-100" id="navbarCollapse">
       <div class="navbar-nav w-100 justify-content-center" >
-        <a class="nav-hover nav-item nav-link nav-width cursor-pointer font-size18 d-inline d-lg-inline-block no-outline py-4"
+        <a class="nav-hover nav-item nav-link nav-width cursor-pointer d-inline d-lg-inline-block no-outline py-4"
           *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="navigateByUrl(navItem.link)"
           [ngClass]="{'active font-weight-bold': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
           <div class="no-outline row">
             <div class="col-7 nav-icon text-right" [inlineSVG]="'/assets/icons/' + navItem.icon + '.svg'"></div>
-            <div class="col-5 pl-3 text-center" [ngClass]="{'color-secondary': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</div>
+            <div class="col-5 pl-3 text-center font-size13" [ngClass]="{'color-secondary': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</div>
           </div>
         </a>
       </div>
