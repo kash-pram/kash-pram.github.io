@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Tag } from 'cloudee';
+// import { Tag } from 'cloudee';
 
 // import { CloudData, CloudOptions } from 'angular-tag-cloud-module';
 import { SKILLSET_CARDS, CLOUD_CARDS } from 'src/app/_constants/skillset-constants';
@@ -12,22 +12,22 @@ import { SKILLSET_CARDS, CLOUD_CARDS } from 'src/app/_constants/skillset-constan
 export class SkillsetComponent {
   cardsData = SKILLSET_CARDS;
 
-  myTags: Tag[] = CLOUD_CARDS;
+  // myTags: Tag[] = CLOUD_CARDS;
 
-	options: TagCanvasOptions = {
-    dragControl: true,
-    // offsetX: 1,
-    // offsetY: 10,
-    // padding: 100,
-    // radiusX: 100,
-    // radiusY: 1000,
-    // stretchX: 10,
-    // stretchY: 100,
-    imageMode: 'text',
-    clickToFront: 500,
-    initial: [ .1, 0 ],
-    weight: true
-  };
+	// options: TagCanvasOptions = {
+  //   dragControl: true,
+  //   // offsetX: 1,
+  //   // offsetY: 10,
+  //   // padding: 100,
+  //   // radiusX: 100,
+  //   // radiusY: 1000,
+  //   // stretchX: 10,
+  //   // stretchY: 100,
+  //   imageMode: 'text',
+  //   clickToFront: 500,
+  //   initial: [ .1, 0 ],
+  //   weight: true
+  // };
       
   showTagDetails (tag) {
     console.log(tag);
