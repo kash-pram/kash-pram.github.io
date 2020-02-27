@@ -133,5 +133,9 @@ export const CLOUD_CARDS = [
   { weight: 10, text: 'PWA' },
   { weight: 10, text: 'GraphQL' },
   { weight: 10, text: 'Hasura' },
+  { weight: 10, text: 'MVP' },
+  { weight: 10, text: 'MVVM' },
+  { weight: 10, text: 'MVx' },
+  { weight: 10, text: 'Schema' },
   
 ];
