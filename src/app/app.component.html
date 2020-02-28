@@ -2,7 +2,7 @@
 
   <app-top-nav></app-top-nav>
 
-  <div class="xs-margin-50px-top sm-margin-sixteen-top margin-150px-top"
+  <div class="xs-margin-50px-top sm-margin-sixteen-top margin-150px-top xs-margin-50px-bottom sm-margin-sixteen-bottom margin-150px-bottom"
   [style.min-height.px]="minHeight">
     <router-outlet (activate)="onActivate($event)"></router-outlet>
 
@@ -13,23 +13,6 @@
     </div>
   </div>
   
-  
-
-  <footer id="divPageFooter" class="mt-5 bg-gray color-black top-shadow">
-    <!-- <div class="row tex-center justify-content-center">
-      <div class="col-auto col-lg-4">
-        <alert></alert>
-      </div>
-    </div>
-     -->
-<!-- Icons made by <a href="https://www.flaticon.com/authors/eucalyp" target="_blank" title="Eucalyp">Eucalyp</a> from <a href="https://www.flaticon.com/" target="_blank" title="Flaticon"> www.flaticon.com</a> -->
-     Thirukural or quotes
-     <br>
-     <!-- <img src="/examples/images/logo.svg" height="28" alt="CoolBrand"> -->
-     <h1>PPM1988</h1>
-    Made with sense
-    <a href="#" class="d-block">PPM1988</a>
-    <div>&copy; ppm1988</div>
-  </footer>
+  <app-footer></app-footer>
 
 </div>

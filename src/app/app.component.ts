@@ -116,7 +116,7 @@ constructor (
         return appTitle;
       })
     ).subscribe((ttl: string) => {
-      this.titleService.setTitle('PPM # ' + ttl + ' | Frontend Developer');
+      this.titleService.setTitle('PPM # ' + ttl + ' | Web Application Developer');
     });
 
     this.router.events.subscribe(event => {

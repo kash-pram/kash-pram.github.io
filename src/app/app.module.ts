@@ -14,6 +14,7 @@ import { AboutModule } from './modules/about/about.module';
 
 import { AppComponent } from './app.component';
 import { TopNavComponent } from './components/top-nav/top-nav.component';
+import { FooterComponent } from './components/footer/footer.component';
 // import { ResumeSnackbarComponent } from './components/resume-snackbar/resume-snackbar.component';
 // import { AlertComponent } from './components/alert/alert.component';
 
@@ -34,7 +35,7 @@ import { TopNavComponent } from './components/top-nav/top-nav.component';
     InlineSVGModule.forRoot()
   ],
   // declarations: [ AppComponent, SpinnerComponent, SpinnerOverlayComponent ],
-  declarations: [ AppComponent, TopNavComponent,
+  declarations: [ AppComponent, TopNavComponent, FooterComponent,
     // AlertComponent, ResumeSnackbarComponent
    ],
   entryComponents: [ 

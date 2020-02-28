@@ -54,11 +54,8 @@ $color-primary-dark: #3D3242;
   
 }
 
-#divPageFooter{
-  height: 150px;
-  // border-top: 2px double #000;
-  // background-color: #222;
-  background-color: #F8F8F8;
+.h-200px{
+  height: 200px;
 }
 .color-white{
   color: #FFF;
@@ -174,6 +171,9 @@ $color-primary-dark: #3D3242;
 
 .margin-150px-top{
   margin-top: 150px;
+}
+.margin-150px-bottom{
+  margin-bottom: 150px;
 }
 
 .card-size{
