@@ -36,16 +36,17 @@
 
     <div class="col-12 position-relative">
       <div class="timeline-container">
-        <div class="timeline-block" [ngClass]="{'timeline-block-right': even, 'timeline-block-left': odd }" *ngFor="let eachTimeline of timelineData; let odd = odd; let even = even">
+        <div class="timeline-block" [ngClass]="{'timeline-block-right': even, 'timeline-block-left': odd }"
+          *ngFor="let eachTimeline of timelineData; let odd = odd; let even = even">
             <div class="marker"></div>
             <div class="timeline-content">
               <h3>{{eachTimeline.title}}</h3>
               <span>{{eachTimeline.duration}}</span>
-              <p>
-                <!-- <div [innerHTML]="eachTimeline.link">
-                  
-                </div> -->
-              </p>
+              <div>
+                <div class="positions d-inline-block" *ngFor="let eachPosition of eachTimeline.positions">
+                  {{eachPosition}}
+                </div>
+              </div>
             </div>
         </div>
       </div>

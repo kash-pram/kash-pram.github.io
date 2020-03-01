@@ -62,11 +62,15 @@
   color: #a4a4a4;
 }
 
-.timeline-content p {
+.timeline-content .positions {
   font-size: 14px;
   line-height: 1.5em;
   word-spacing: 1px;
-  color: #888;
+  padding: 4px 8px;
+  margin: 5px;
+  color: #FFF;
+  background-color: #888;
+  border-radius: 5px;
 }
 
 
