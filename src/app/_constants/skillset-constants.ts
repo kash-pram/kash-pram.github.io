@@ -137,5 +137,5 @@ export const CLOUD_CARDS = [
   { weight: 10, text: 'MVVM' },
   { weight: 10, text: 'MVx' },
   { weight: 10, text: 'Schema' },
-  
+  { weight: 10, text: '' },
 ];

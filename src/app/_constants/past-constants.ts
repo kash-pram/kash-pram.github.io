@@ -183,6 +183,30 @@ export const PROJECT_CARDS = [
     skills: [''], 
     for: ''
   },
+  {
+    title: 'up-to-date',
+    innerHTML: '',
+    type: 'Web Plugin / Library',
+    status: 'Pending',
+    skills: [''], 
+    for: ''
+  },
+  {
+    title: 'phone-to-desktop',
+    innerHTML: '',
+    type: 'Web Plugin / Library',
+    status: 'Pending',
+    skills: [''], 
+    for: ''
+  },
+  {
+    title: 'sense [on-demand]',
+    innerHTML: '',
+    type: 'Full-stack web application',
+    status: 'Pending',
+    skills: [''], 
+    for: ''
+  },
 ];
 
 export const TIMELINE_CARDS = [
