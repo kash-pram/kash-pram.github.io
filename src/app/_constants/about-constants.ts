@@ -1,4 +1,4 @@
-export const ABOUT_CARDS = [
+export const PROFILES_CARDS = [
   {
     title: 'StackOverflow',
     // subTitle: 'assets/icons/external-link.svg',
@@ -34,4 +34,72 @@ export const ABOUT_CARDS = [
     link: 'https://twitter.com/social_ppm',
     innerHTML: '<img src="assets/logos/Twitter_Social_Icon_Circle_Color.svg" height="58" alt="Twitter" title="">'
   }
-]
+];
+
+
+export const INTERESTS_CARDS = [
+  {
+    title: 'Puzzles',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },  
+  {
+    title: 'Magnets',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },
+  {
+    title: 'Rubiks',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },
+  {
+    title: 'Snooker',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },
+  {
+    title: 'Swimming',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },
+  {
+    title: 'Driving',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },
+  {
+    title: 'Card Games',
+    innerHTML: '',
+    type: 'MVC web application',
+    status: 'Delivered',
+    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
+    for: 'Oshkosh [Logistics] - CTS'
+  },
+  {
+    title: 'Sudoku',
+    innerHTML: '',
+    type: 'Front-end web application',
+    status: '',
+    skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
+    for: 'BNY Mellon [Banking and Financial Services] - CTS'
+  }
+];

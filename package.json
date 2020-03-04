@@ -24,6 +24,7 @@
     "bootstrap": "^4.4.1",
     "jquery": "^3.4.1",
     "ng-inline-svg": "^9.2.2",
+    "ngx-owl-carousel-o": "^2.0.3",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

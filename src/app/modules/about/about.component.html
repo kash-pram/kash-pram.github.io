@@ -1,4 +1,4 @@
-<div class="container" *ngIf="cardsData.length > 0">
+<div class="container">
   <div class="row">
     <div class="col-12 pt-5 text-center">
       <h1 class="no-margin-bottom color-light-gray font-weight-bold font-size70 sm-font-size50">
@@ -14,17 +14,24 @@
       </div>
     </div>
   </div>
-
+<div class="row">
+  <div class="col-12">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide>Slide 1</ng-template>  
+      <ng-template carouselSlide>Slide 2</ng-template>  
+      <ng-template carouselSlide>Slide 3</ng-template>  
+    </owl-carousel-o>
+  </div>
+</div>
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
-    <div class="col-auto">
-      Swimming,
-      Playing cards,
-      Driving,
-      Magnets,
-      Rubiks,
-      Puzzles,
-      Sudoku,
-      Snooker
+    
+
+    <div class="col" *ngFor="let eachCard of interestsData">
+      <div class="card card-size d-inline-flex no-outline no-border-all">
+        <div class="card-header bg-transparent border-transperent font-weight-bold">
+            <span class="custom-tags">{{eachCard.title}}</span>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -55,7 +62,7 @@
   </div> -->
 
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
-    <div class="col-auto" *ngFor="let eachCard of cardsData">
+    <div class="col-auto" *ngFor="let eachCard of profilesData">
       <a class="card mt-5 py-3 no-outline no-link hover-effect border-dotted" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}">
       <!-- <a class="card css-grow mt-5 no-outline no-link" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}"> -->
         <!-- <div class="card-header bg-transparent border-transperent font-weight-bold">
