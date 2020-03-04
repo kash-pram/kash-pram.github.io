@@ -70,8 +70,8 @@ $color-primary-dark: #3D3242;
   color: #EEE;
 }
 .color-light-gray{
-  // #DCDFE2
-  color: #F2F4F6;
+  color: #DCDFE2;
+  // color: #F2F4F6;
 }
 .color-lighter-gray{
   color: #E9ECEF;
@@ -192,6 +192,19 @@ $color-primary-dark: #3D3242;
   &:hover {
     transform: scale(1.1);
   }
+}
+
+
+
+.custom-tags {
+  font-size: 14px;
+  line-height: 1.5em;
+  word-spacing: 1px;
+  padding: 4px 8px;
+  margin: 5px;
+  color: #FFF;
+  background-color: #888;
+  border-radius: 5px;
 }
 
 
