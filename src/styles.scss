@@ -200,11 +200,27 @@ $color-primary-dark: #3D3242;
 }
 
 
+
+/* OWL CAROUSEL OVER-RIDE */
 .owl-nav {
   position: absolute;
-  top: -40px;
-  left: calc(50% - 30px);
+  top: -60px;
+  left: calc(50% - 90px);
+
+  & div {
+    // color: #000 !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin: 0 20px !important;
+    padding: 5px 20px !important;
+  }
 }
+.owl-dots {
+  position: relative;
+  top: -45px;
+  // left: calc(50% - 60px);
+}
+
 
 .custom-tags {
   font-size: 14px;
@@ -219,17 +235,17 @@ $color-primary-dark: #3D3242;
 
 
 
-.bg-amzn {
-  width: 100px; height: 30px;
-  background: url('assets/icons/logo_sprites.png') -8px -8px;
+.bg-ces {
+  width: 42px; height: 31px;
+  background: url('assets/icons/logo_sprites.png') -8px -45px;
 }
 .bg-cts {
-  width: 100px; height: 21px;
-  background: url('assets/icons/logo_sprites.png') -124px -8px;
+  width: 80px; height: 17px;
+  background: url('assets/icons/logo_sprites.png') -94px -8px;
 }
-.bg-ces {
-  width: 62px; height: 45px;
-  background: url('assets/icons/logo_sprites.png') -8px -54px;
+.bg-amzn {
+  width: 70px; height: 21px;
+  background: url('assets/icons/logo_sprites.png') -8px -8px;
 }
 
 // .hover-effect:hover {
