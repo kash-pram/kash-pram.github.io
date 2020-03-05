@@ -14,23 +14,25 @@
       </div>
     </div>
   </div>
-<div class="row">
-  <div class="col-12">
-    <owl-carousel-o [options]="customOptions">
-      <ng-template carouselSlide>Slide 1</ng-template>  
-      <ng-template carouselSlide>Slide 2</ng-template>  
-      <ng-template carouselSlide>Slide 3</ng-template>  
-    </owl-carousel-o>
-  </div>
-</div>
+  <!-- <div class="row">
+    <div class="col-12">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>Slide 1</ng-template>  
+        <ng-template carouselSlide>Slide 2</ng-template>  
+        <ng-template carouselSlide>Slide 3</ng-template>  
+      </owl-carousel-o>
+    </div>
+  </div> -->
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
-    
-
-    <div class="col" *ngFor="let eachCard of interestsData">
-      <div class="card card-size d-inline-flex no-outline no-border-all">
-        <div class="card-header bg-transparent border-transperent font-weight-bold">
-            <span class="custom-tags">{{eachCard.title}}</span>
-        </div>
+    <div class="col-auto" *ngFor="let eachCard of interestsData">
+      <div class="border-all no-border-left border-dashed border-color-extra-medium-gray border-radius-7 align-items-center m-3 width-150px text-left">
+        <div class="d-inline-block vertical-align-middle width-7px height-80px" [style.background-color]="eachCard.bgcolor"></div>
+        <span class="vertical-align-middle pl-2 font-weight-bold font-size15">
+          {{eachCard.title}}
+        </span>
+        <span class="text-muted float-right m-2 font-size13">
+          {{eachCard.proficiency}}
+        </span>
       </div>
     </div>
   </div>

@@ -9,8 +9,8 @@ import { PROFILES_CARDS, INTERESTS_CARDS } from 'src/app/_constants/about-consta
   // styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
-  profilesData = PROFILES_CARDS;
   interestsData = INTERESTS_CARDS;
+  profilesData = PROFILES_CARDS;
 
   customOptions: OwlOptions = {
     loop: true,
@@ -42,6 +42,18 @@ export class AboutComponent {
     nav: true
   };
 
-  constructor () {  }
+  constructor () {
+    this.assignColor();
+  }
+
+  assignColor () {
+    this.interestsData.forEach(elem => {
+      elem['bgcolor'] = this.getRandomColor();
+    });
+  } // FN
+
+  getRandomColor() {
+    return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+  }
 
 }

@@ -40,66 +40,42 @@ export const PROFILES_CARDS = [
 export const INTERESTS_CARDS = [
   {
     title: 'Puzzles',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'fair'
   },  
   {
     title: 'Magnets',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'amateur'
   },
   {
     title: 'Rubiks',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'novice'
   },
   {
     title: 'Snooker',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'amateur'
   },
   {
     title: 'Swimming',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'fair'
   },
   {
     title: 'Driving',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'pro'
   },
   {
     title: 'Card Games',
-    innerHTML: '',
-    type: 'MVC web application',
-    status: 'Delivered',
-    skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    proficiency: 'pro'
   },
   {
     title: 'Sudoku',
-    innerHTML: '',
-    type: 'Front-end web application',
-    status: '',
-    skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
-    for: 'BNY Mellon [Banking and Financial Services] - CTS'
-  }
+    proficiency: 'fair'
+  },
+  {
+    title: 'Plants',
+    proficiency: 'amateur'
+  },
+  {
+    title: 'Yoga',
+    proficiency: 'amateur'
+  },
 ];
