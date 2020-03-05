@@ -24,27 +24,10 @@ export class PastComponent implements OnInit {
     pullDrag: true,
     dots: true,
     autoplay: true,
-    // dotsEach: true,
-    autoplaySpeed: 500,
+    autoplayHoverPause: true,
+    autoplaySpeed: 1500,
     navSpeed: 700,
-    // navText: [],
     navText: ['<', '>'],
-    // responsive: {
-    //   0: {
-    //     items: 1
-    //   },
-    //   400: {
-    //     items: 2
-    //   }
-    //   // ,
-    //   // 740: {
-    //   //   items: 3
-    //   // }
-    //   // ,
-    //   // 940: {
-    //   //   items: 4
-    //   // }
-    // },
     nav: true
   };
 

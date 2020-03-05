@@ -200,6 +200,11 @@ $color-primary-dark: #3D3242;
 }
 
 
+.owl-nav {
+  position: absolute;
+  top: -40px;
+  left: calc(50% - 30px);
+}
 
 .custom-tags {
   font-size: 14px;
@@ -213,6 +218,19 @@ $color-primary-dark: #3D3242;
 }
 
 
+
+.bg-amzn {
+  width: 100px; height: 30px;
+  background: url('assets/icons/logo_sprites.png') -8px -8px;
+}
+.bg-cts {
+  width: 100px; height: 21px;
+  background: url('assets/icons/logo_sprites.png') -124px -8px;
+}
+.bg-ces {
+  width: 62px; height: 45px;
+  background: url('assets/icons/logo_sprites.png') -8px -54px;
+}
 
 // .hover-effect:hover {
 //   box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);

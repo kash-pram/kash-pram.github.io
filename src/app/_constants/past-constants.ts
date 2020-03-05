@@ -5,7 +5,7 @@ export const PROJECT_CARDS = [
     type: 'MVC web application',
     status: 'delivered',
     skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh (Logistics) - CTS'
+    for: 'cts'
   },
   {
     title: 'ETF Trading',
@@ -13,7 +13,7 @@ export const PROJECT_CARDS = [
     type: 'Front-end web application',
     status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
-    for: 'BNY Mellon (Banking and Financial Services) - CTS'
+    for: 'cts'
   },
   {
     title: 'Sixth Day Allowance',
@@ -21,7 +21,7 @@ export const PROJECT_CARDS = [
     type: 'Front-end web application',
     status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
-    for: 'BNY Mellon (Banking and Financial Services) - CTS'
+    for: 'cts'
   },
   {
     title: 'Kindle Device Metrics',
@@ -29,7 +29,7 @@ export const PROJECT_CARDS = [
     type: 'Full-stack web application',
     status: 'delivered',
     skills: ['HTML', 'JS', 'CSS', 'PHP', 'MySQL','jQuery - AJAX', 'Chart JS', 'JIRA', 'Perforce'], 
-    for: 'Amazon Internal'
+    for: 'amzn'
   },
   // {
   //   title: 'Record And Play',
@@ -53,7 +53,7 @@ export const PROJECT_CARDS = [
     type: 'Testing',
     status: '',
     skills: ['Unit Testing', 'Android', 'JIRA', 'Git'], 
-    for: 'Quality Assurance - Amazon'
+    for: 'amzn'
   },
   {
     title: 'RidePal Admin Dashboard',
@@ -61,15 +61,15 @@ export const PROJECT_CARDS = [
     type: 'Full-stack web application',
     status: 'delivered',
     skills: ['Angular JS 1.4', 'Bootstrap 3', 'Google Maps', 'MySQL', 'Node JS', 'Scala', 'JIRA', 'Git'], 
-    for: 'RidePal (Corporate commute services) - CES IT'
+    for: 'ces'
   },
   {
     title: 'RidePal Official Website',
-    innerHTML: '<a href="www.ridepal.com" target="_blank">ridepal.com</a>',
+    innerHTML: '<a href="https://www.ridepal.com" target="_blank">Link</a>',
     type: 'Front-end web application',
     status: 'delivered',
     skills: ['Angular 8', 'Bootstrap 4', 'RxJS', 'Confluence', 'JIRA', 'Git'], 
-    for: 'RidePal (Corporate commute services) - CES IT'
+    for: 'ces'
   },
   {
     title: 'Vantage Dashboard Intellimetric',
@@ -77,51 +77,51 @@ export const PROJECT_CARDS = [
     type: 'Front-end web application',
     status: '',
     skills: ['Angular 8', 'Angular Material', 'Bootstrap 4', 'RxJS', 'Stripes', 'AWS Cognito', 'Amplify', 'Zeplin', 'BitBucket', 'Git'], 
-    for: 'Vantage (Learning services) - CES IT'
+    for: 'ces'
   },
   {
-    title: 'timer',
-    innerHTML: '<a href="http://ppm1988.github.io/timer" target="_blank">timer</a>',
+    title: 'Timer App',
+    innerHTML: '<a href="https://ppm1988.github.io/timer" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: ['Angular 8', 'Bootstrap 4', 'Angular Material', 'AWS Cognito', 'Git'], 
     for: ''
   },
   {
-    title: 'beppo',
-    innerHTML: '<a href="http://ppm1988.github.io/beppo" target="_blank">beppo</a>',
+    title: 'Official website - beppo ',
+    innerHTML: '<a href="https://ppm1988.github.io/beppo" target="_blank">Link</a>',
     type: 'Static website',
     status: '',
     skills: [],
     for: ''
   },
   {
-    title: 'time-keeper',
-    innerHTML: '<a href="http://ppm1988.github.io/tevoted" target="_blank">tevoted</a>',
+    title: 'Time-keeper',
+    innerHTML: '<a href="https://ppm1988.github.io/tevoted" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 
     for: ''
   },
   {
-    title: 'corner-board',
-    innerHTML: '<a href="http://ppm1988.github.io/ces-corner" target="_blank">ces-corner</a>',
+    title: 'Corner-board',
+    innerHTML: '<a href="https://ppm1988.github.io/ces-corner" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 
     for: ''
   },
   {
-    title: 'portfolio',
-    innerHTML: '<a href="http://ppm1988.github.io/portfolio" target="_blank">portfolio</a>',
-    type: 'Static website',
+    title: 'Old Portfolio',
+    innerHTML: '<a href="https://ppm1988.github.io/portfolio" target="_blank">Link</a>',
+    type: 'Interactive static website',
     status: '',
     skills: [], 
     for: ''
   },
   {
-    title: 'magic-box',
-    innerHTML: '<a href="http://ppm1988.github.io/magic-box" target="_blank">magic-box</a>',
+    title: 'Magic-box',
+    innerHTML: '<a href="https://ppm1988.github.io/magic-box" target="_blank">magic-box</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 
