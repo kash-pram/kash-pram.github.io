@@ -76,6 +76,6 @@ export const INTERESTS_CARDS = [
   },
   {
     title: 'Yoga',
-    proficiency: 'amateur'
+    proficiency: 'routine'
   },
 ];

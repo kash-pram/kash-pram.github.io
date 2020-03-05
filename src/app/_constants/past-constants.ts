@@ -3,9 +3,9 @@ export const PROJECT_CARDS = [
     title: 'Pulse Sales Tool',
     innerHTML: '',
     type: 'MVC web application',
-    status: 'Delivered',
+    status: 'delivered',
     skills: ['ASP.NET', 'C#', 'MS SQL', 'HTML', 'CSS', 'Visual SourceSafe'],
-    for: 'Oshkosh [Logistics] - CTS'
+    for: 'Oshkosh (Logistics) - CTS'
   },
   {
     title: 'ETF Trading',
@@ -13,7 +13,7 @@ export const PROJECT_CARDS = [
     type: 'Front-end web application',
     status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
-    for: 'BNY Mellon [Banking and Financial Services] - CTS'
+    for: 'BNY Mellon (Banking and Financial Services) - CTS'
   },
   {
     title: 'Sixth Day Allowance',
@@ -21,32 +21,32 @@ export const PROJECT_CARDS = [
     type: 'Front-end web application',
     status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
-    for: 'BNY Mellon [Banking and Financial Services] - CTS'
+    for: 'BNY Mellon (Banking and Financial Services) - CTS'
   },
   {
     title: 'Kindle Device Metrics',
     innerHTML: '',
     type: 'Full-stack web application',
-    status: 'Delivered',
+    status: 'delivered',
     skills: ['HTML', 'JS', 'CSS', 'PHP', 'MySQL','jQuery - AJAX', 'Chart JS', 'JIRA', 'Perforce'], 
     for: 'Amazon Internal'
   },
-  {
-    title: 'Record And Play',
-    innerHTML: '',
-    type: 'Scripting',
-    status: '',
-    skills: ['Python', 'Git', 'Jenkins'], 
-    for: 'Amazon Internal'
-  },
-  {
-    title: '300 DPI Approach',
-    innerHTML: '',
-    type: 'Scripting',
-    status: '',
-    skills: ['Shell scripting'],
-    for: 'Amazon'
-  },
+  // {
+  //   title: 'Record And Play',
+  //   innerHTML: '',
+  //   type: 'Scripting',
+  //   status: '',
+  //   skills: ['Python', 'Git', 'Jenkins'], 
+  //   for: 'Amazon Internal'
+  // },
+  // {
+  //   title: '300 DPI Approach',
+  //   innerHTML: '',
+  //   type: 'Scripting',
+  //   status: '',
+  //   skills: ['Shell scripting'],
+  //   for: 'Amazon'
+  // },
   {
     title: 'FireOS My-Accounts',
     innerHTML: '',
@@ -59,17 +59,17 @@ export const PROJECT_CARDS = [
     title: 'RidePal Admin Dashboard',
     innerHTML: '',
     type: 'Full-stack web application',
-    status: 'Delivered',
+    status: 'delivered',
     skills: ['Angular JS 1.4', 'Bootstrap 3', 'Google Maps', 'MySQL', 'Node JS', 'Scala', 'JIRA', 'Git'], 
-    for: 'RidePal [Corporate commute services] - CES IT'
+    for: 'RidePal (Corporate commute services) - CES IT'
   },
   {
     title: 'RidePal Official Website',
     innerHTML: '<a href="www.ridepal.com" target="_blank">ridepal.com</a>',
     type: 'Front-end web application',
-    status: 'Delivered',
+    status: 'delivered',
     skills: ['Angular 8', 'Bootstrap 4', 'RxJS', 'Confluence', 'JIRA', 'Git'], 
-    for: 'RidePal [Corporate commute services] - CES IT'
+    for: 'RidePal (Corporate commute services) - CES IT'
   },
   {
     title: 'Vantage Dashboard Intellimetric',
@@ -77,7 +77,7 @@ export const PROJECT_CARDS = [
     type: 'Front-end web application',
     status: '',
     skills: ['Angular 8', 'Angular Material', 'Bootstrap 4', 'RxJS', 'Stripes', 'AWS Cognito', 'Amplify', 'Zeplin', 'BitBucket', 'Git'], 
-    for: 'Vantage [Learning services] - CES IT'
+    for: 'Vantage (Learning services) - CES IT'
   },
   {
     title: 'timer',
@@ -92,7 +92,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a href="http://ppm1988.github.io/beppo" target="_blank">beppo</a>',
     type: 'Static website',
     status: '',
-    skills: [''], 
+    skills: [],
     for: ''
   },
   {
@@ -100,7 +100,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a href="http://ppm1988.github.io/tevoted" target="_blank">tevoted</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -108,7 +108,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a href="http://ppm1988.github.io/ces-corner" target="_blank">ces-corner</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -116,7 +116,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a href="http://ppm1988.github.io/portfolio" target="_blank">portfolio</a>',
     type: 'Static website',
     status: '',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -124,7 +124,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a href="http://ppm1988.github.io/magic-box" target="_blank">magic-box</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -132,7 +132,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -140,7 +140,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -148,7 +148,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -156,7 +156,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -164,7 +164,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -172,7 +172,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -180,7 +180,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -188,7 +188,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Web Plugin / Library',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -196,7 +196,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Web Plugin / Library',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
   {
@@ -204,7 +204,7 @@ export const PROJECT_CARDS = [
     innerHTML: '',
     type: 'Full-stack web application',
     status: 'Pending',
-    skills: [''], 
+    skills: [], 
     for: ''
   },
 ];

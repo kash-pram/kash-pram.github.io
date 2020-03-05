@@ -16,11 +16,13 @@ export class PastComponent implements OnInit {
   
   customOptions: OwlOptions = {
     loop: true,
+    items: 2,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
-    dots: false,
-    autoplay: true,
+    dots: true,
+    autoplay: false,
+    // dotsEach: true,
     // autoplaySpeed: 1000,
     navSpeed: 700,
     // navText: [],

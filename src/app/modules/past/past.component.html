@@ -83,27 +83,67 @@
 
   <div class="row margin-70px-top sm-margin-50px-top">
     <div class="col-12">
+
+      <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="..." alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="..." alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div> -->
+
       <owl-carousel-o [options]="customOptions">
         <ng-template carouselSlide *ngFor="let eachCard of projectsData; let ind as index">
-          <div class="card carousel-card-size no-outline no-border-all">
-            <div class="card-header bg-transparent border-transparent font-weight-bold">
-              {{eachCard.title}}
+          <div class="card no-outline m-2 no-border-all">
+            <!-- <div class="card-header bg-transparent border-transparent font-weight-bold">
+              <h5 class="card-title">
+                {{eachCard.title}}
+                <span class="text-success" *ngIf="(eachCard.status === 'delivered') ? true : false" title="Delivered">&#10004;</span>
+              </h5>
+            </div> -->
+
+            <div class="card-body">
+              <h5 class="card-title">
+                {{eachCard.title}}
+                <span class="text-success" *ngIf="(eachCard.status === 'delivered') ? true : false" title="Delivered">&#10004;</span>
+              </h5>
+              <h6 class="">
+                {{eachCard.type}}
+              </h6>
+              <h6 class="card-subtitle text-muted mb-2">
+                {{eachCard.for}}
+              </h6>
+              <div *ngIf="eachCard.skills.length > 0">
+                <div class="custom-tags d-inline-block" *ngFor="let eachSkill of eachCard.skills">
+                  {{eachSkill}}
+                </div>
+              </div>
+              <span [innerHTML]="eachCard.innerHTML"></span>
             </div>
           </div>
         </ng-template>
       </owl-carousel-o>
     </div>
   </div>
-
-  <!-- <div class="row margin-70px-top sm-margin-50px-top">
-    <div class="col" *ngFor="let eachCard of cardsData">
-      <div class="card card-size d-inline-flex no-outline no-border-all">
-        <div class="card-header bg-transparent border-transparent font-weight-bold">
-          {{eachCard.title}}
-        </div>
-      </div>
-    </div>
-  </div> -->
 
 </div>
 

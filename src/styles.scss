@@ -79,7 +79,9 @@ $color-primary-dark: #3D3242;
 .color-dark-gray{
   color: #737373;
 }
-
+.color-green{
+  color: #27ae60;
+}
 .color-blue{
   color: #0099CC;  
 }
@@ -180,13 +182,9 @@ $color-primary-dark: #3D3242;
   margin-bottom: 150px;
 }
 
-.card-size{
+.small-card{
   height: 100px;
   width: 250px;
-}
-.carousel-card-size{
-  // height: 100px;
-  // width: 250px;
 }
 
 // UTILITY
