@@ -127,86 +127,86 @@ export const PROJECT_CARDS = [
     skills: [], 
     for: ''
   },
-  {
-    title: 'remind-me',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'tototo',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'need-basis / group notify',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'post-it',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'one-place',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'transupport',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'work-log',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'up-to-date',
-    innerHTML: '',
-    type: 'Web Plugin / Library',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'phone-to-desktop',
-    innerHTML: '',
-    type: 'Web Plugin / Library',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
-  {
-    title: 'sense [on-demand]',
-    innerHTML: '',
-    type: 'Full-stack web application',
-    status: 'Pending',
-    skills: [], 
-    for: ''
-  },
+  // {
+  //   title: 'remind-me',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'tototo',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'need-basis / group notify',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'post-it',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'one-place',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'transupport',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'work-log',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'up-to-date',
+  //   innerHTML: '',
+  //   type: 'Web Plugin / Library',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'phone-to-desktop',
+  //   innerHTML: '',
+  //   type: 'Web Plugin / Library',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
+  // {
+  //   title: 'sense [on-demand]',
+  //   innerHTML: '',
+  //   type: 'Full-stack web application',
+  //   status: 'Pending',
+  //   skills: [], 
+  //   for: ''
+  // },
 ];
 
 export const TIMELINE_CARDS = [

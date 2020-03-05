@@ -13,17 +13,19 @@ export class PastComponent implements OnInit {
   // scriptHTML;
   projectsData = PROJECT_CARDS;
   timelineData = TIMELINE_CARDS;
-  
+
+  isMobile = ( window.innerWidth >= 768 ) ? false : true;
+
   customOptions: OwlOptions = {
     loop: true,
-    items: 2,
+    items: this.isMobile ? 1 : 3,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
     dots: true,
-    autoplay: false,
+    autoplay: true,
     // dotsEach: true,
-    // autoplaySpeed: 1000,
+    autoplaySpeed: 500,
     navSpeed: 700,
     // navText: [],
     navText: ['<', '>'],

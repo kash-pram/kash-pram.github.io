@@ -126,12 +126,12 @@
                 {{eachCard.title}}
                 <span class="text-success" *ngIf="(eachCard.status === 'delivered') ? true : false" title="Delivered">&#10004;</span>
               </h5>
-              <h6 class="">
+              <h6 class="card-subtitle text-muted py-2">
                 {{eachCard.type}}
               </h6>
-              <h6 class="card-subtitle text-muted mb-2">
+              <!-- <h6 class="text-muted mb-2">
                 {{eachCard.for}}
-              </h6>
+              </h6> -->
               <div *ngIf="eachCard.skills.length > 0">
                 <div class="custom-tags d-inline-block" *ngFor="let eachSkill of eachCard.skills">
                   {{eachSkill}}
