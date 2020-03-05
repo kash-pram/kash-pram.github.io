@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 // import { SharedModule } from '../shared/shared.module';
 import { PastRoutingModule } from './past-routing.module';
@@ -12,9 +13,10 @@ import { PastComponent } from './past.component';
   declarations: [ PastComponent ],
   imports: [
     CommonModule,
+    CarouselModule,
+    PastRoutingModule,
     // SharedModule,
     // MediumWidgetModule,
-    PastRoutingModule
   ]
 })
 export class PastModule { }

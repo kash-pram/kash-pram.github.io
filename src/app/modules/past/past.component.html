@@ -80,17 +80,16 @@
       </div>
     </div>
   </div>
-    <!-- <div class="row">
-    <h1 class="col-12 pb-1 pt-2 text-center color-light-gray font-weight-bold font-size70 sm-font-size50">
-      # projects
-    </h1>
-  </div> -->
 
-  <!-- <div class="row text-right">
-    <div class="col-12 pb-4 color-secondary">
-      my work
+  <div class="row">
+    <div class="col-12">
+      <owl-carousel-o [options]="customOptions">
+        <ng-template carouselSlide>Slide 1</ng-template>  
+        <ng-template carouselSlide>Slide 2</ng-template>  
+        <ng-template carouselSlide>Slide 3</ng-template>  
+      </owl-carousel-o>
     </div>
-  </div> -->
+  </div>
 
   <div class="row margin-70px-top sm-margin-50px-top">
     <div class="col" *ngFor="let eachCard of cardsData">
