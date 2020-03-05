@@ -11,36 +11,36 @@ import { PROJECT_CARDS, TIMELINE_CARDS } from 'src/app/_constants/past-constants
 })
 export class PastComponent implements OnInit {
   // scriptHTML;
-  cardsData = PROJECT_CARDS;
+  projectsData = PROJECT_CARDS;
   timelineData = TIMELINE_CARDS;
   
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: true,
     dots: false,
     autoplay: true,
-    autoplaySpeed: 1000,
-    navSpeed: 100,
+    // autoplaySpeed: 1000,
+    navSpeed: 700,
     // navText: [],
-    // navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1
-      },
-      400: {
-        items: 2
-      }
-      // ,
-      // 740: {
-      //   items: 3
-      // }
-      // ,
-      // 940: {
-      //   items: 4
-      // }
-    },
+    navText: ['<', '>'],
+    // responsive: {
+    //   0: {
+    //     items: 1
+    //   },
+    //   400: {
+    //     items: 2
+    //   }
+    //   // ,
+    //   // 740: {
+    //   //   items: 3
+    //   // }
+    //   // ,
+    //   // 940: {
+    //   //   items: 4
+    //   // }
+    // },
     nav: true
   };
 

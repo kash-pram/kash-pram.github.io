@@ -81,34 +81,29 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row margin-70px-top sm-margin-50px-top">
     <div class="col-12">
       <owl-carousel-o [options]="customOptions">
-        <ng-template carouselSlide>Slide 1</ng-template>  
-        <ng-template carouselSlide>Slide 2</ng-template>  
-        <ng-template carouselSlide>Slide 3</ng-template>  
+        <ng-template carouselSlide *ngFor="let eachCard of projectsData; let ind as index">
+          <div class="card carousel-card-size no-outline no-border-all">
+            <div class="card-header bg-transparent border-transparent font-weight-bold">
+              {{eachCard.title}}
+            </div>
+          </div>
+        </ng-template>
       </owl-carousel-o>
     </div>
   </div>
 
-  <div class="row margin-70px-top sm-margin-50px-top">
+  <!-- <div class="row margin-70px-top sm-margin-50px-top">
     <div class="col" *ngFor="let eachCard of cardsData">
       <div class="card card-size d-inline-flex no-outline no-border-all">
-        <div class="card-header bg-transparent border-transperent font-weight-bold">
+        <div class="card-header bg-transparent border-transparent font-weight-bold">
           {{eachCard.title}}
         </div>
-        <!-- <div class="card-body">
-          <div class="text-right font-weight-bold font-size18">{{eachCard.title}}</div>
-          <div class="progress mt-1">
-            <div class="progress-bar bg-green" role="progressbar" [ngStyle]="{'filter': 'hue-rotate(' + eachCard.proficiency + 'deg)'}" 
-            [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
-            
-            </div>
-            <span class="d-inline-block ml-2">{{eachCard.proficiency}}%</span>
-          </div>
-        </div> -->
       </div>
     </div>
-  </div>
+  </div> -->
+
 </div>
 

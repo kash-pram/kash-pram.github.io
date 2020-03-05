@@ -403,7 +403,7 @@ section {padding: 90px 0; overflow: hidden; background: #fff;}
 .border-outset {border-style: outset !important;}
 .border-none {border-style: none !important;}
 .border-hidden {border-style: hidden !important;}
-.border-transperent {border-color: transparent !important;}
+.border-transparent {border-color: transparent !important;}
 
 .no-border-all { border:none !important; }
 .no-border-top {border-top:0 !important;}
