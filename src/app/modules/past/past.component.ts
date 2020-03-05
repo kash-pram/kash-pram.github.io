@@ -18,7 +18,7 @@ export class PastComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: true,
-    items: this.isMobile ? 1 : 3,
+    items: this.isMobile ? 2 : 3,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
