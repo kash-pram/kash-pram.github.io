@@ -121,7 +121,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Magic-box',
-    innerHTML: '<a href="https://ppm1988.github.io/magic-box" target="_blank">magic-box</a>',
+    innerHTML: '<a href="https://ppm1988.github.io/magic-box" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 

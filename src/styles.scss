@@ -202,19 +202,19 @@ $color-primary-dark: #3D3242;
 
 
 /* OWL CAROUSEL OVER-RIDE */
-.owl-nav {
-  position: absolute;
-  top: -60px;
-  left: calc(50% - 90px);
+// .owl-nav {
+//   position: absolute;
+//   top: -60px;
+//   left: calc(50% - 90px);
 
-  & div {
-    // color: #000 !important;
-    font-size: 20px !important;
-    font-weight: bold !important;
-    margin: 0 20px !important;
-    padding: 5px 20px !important;
-  }
-}
+//   & div {
+//     // color: #000 !important;
+//     font-size: 20px !important;
+//     font-weight: bold !important;
+//     margin: 0 20px !important;
+//     padding: 5px 20px !important;
+//   }
+// }
 .owl-dots {
   position: relative;
   top: -45px;

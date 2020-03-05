@@ -27,8 +27,8 @@ export class PastComponent implements OnInit {
     autoplayHoverPause: true,
     autoplaySpeed: 1500,
     navSpeed: 700,
-    navText: ['<', '>'],
-    nav: true
+    // navText: ['<', '>'],
+    // nav: true
   };
 
   constructor () {
