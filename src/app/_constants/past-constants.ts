@@ -8,21 +8,21 @@ export const PROJECT_CARDS = [
     for: 'cts'
   },
   {
-    title: 'ETF Trading',
+    title: 'ETF Trading, Sixth Day Allowance',
     innerHTML: '',
     type: 'Front-end web application',
     status: '',
     skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
     for: 'cts'
   },
-  {
-    title: 'Sixth Day Allowance',
-    innerHTML: '',
-    type: 'Front-end web application',
-    status: '',
-    skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
-    for: 'cts'
-  },
+  // {
+  //   title: 'Sixth Day Allowance',
+  //   innerHTML: '',
+  //   type: 'Front-end web application',
+  //   status: '',
+  //   skills: ['HTML', 'CSS', 'JS', 'jQuery - AJAX', 'SVN'], 
+  //   for: 'cts'
+  // },
   {
     title: 'Kindle Device Metrics',
     innerHTML: '',
@@ -47,14 +47,14 @@ export const PROJECT_CARDS = [
   //   skills: ['Shell scripting'],
   //   for: 'Amazon'
   // },
-  {
-    title: 'FireOS My-Accounts',
-    innerHTML: '',
-    type: 'Testing',
-    status: '',
-    skills: ['Unit Testing', 'Android', 'JIRA', 'Git'], 
-    for: 'amzn'
-  },
+  // {
+  //   title: 'FireOS My-Accounts',
+  //   innerHTML: '',
+  //   type: 'Testing',
+  //   status: '',
+  //   skills: ['Unit Testing', 'Android', 'JIRA', 'Git'], 
+  //   for: 'amzn'
+  // },
   {
     title: 'RidePal Admin Dashboard',
     innerHTML: '',
@@ -72,11 +72,11 @@ export const PROJECT_CARDS = [
     for: 'ces'
   },
   {
-    title: 'Vantage Dashboard Intellimetric',
+    title: 'Vantage Dashboard',
     innerHTML: '',
     type: 'Front-end web application',
     status: '',
-    skills: ['Angular 8', 'Angular Material', 'Bootstrap 4', 'RxJS', 'Stripes', 'AWS Cognito', 'Amplify', 'Zeplin', 'BitBucket', 'Git'], 
+    skills: ['Angular 8', 'Angular Material', 'Stripes', 'AWS Cognito', 'Amplify', 'Zeplin', 'BitBucket', 'Git'], 
     for: 'ces'
   },
   {
