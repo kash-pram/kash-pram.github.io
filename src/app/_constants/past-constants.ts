@@ -65,7 +65,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'RidePal Official Website',
-    innerHTML: '<a href="https://www.ridepal.com" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://www.ridepal.com" target="_blank">Link</a>',
     type: 'Front-end web application',
     status: 'delivered',
     skills: ['Angular 8', 'Bootstrap 4', 'RxJS', 'Confluence', 'JIRA', 'Git'], 
@@ -81,7 +81,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Timer App',
-    innerHTML: '<a href="https://ppm1988.github.io/timer" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/timer" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: ['Angular 8', 'Bootstrap 4', 'Angular Material', 'AWS Cognito', 'Git'], 
@@ -89,7 +89,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Official website - beppo ',
-    innerHTML: '<a href="https://ppm1988.github.io/beppo" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/beppo" target="_blank">Link</a>',
     type: 'Static website',
     status: '',
     skills: [],
@@ -97,7 +97,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Time-keeper',
-    innerHTML: '<a href="https://ppm1988.github.io/tevoted" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/tevoted" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 
@@ -105,7 +105,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Corner-board',
-    innerHTML: '<a href="https://ppm1988.github.io/ces-corner" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/ces-corner" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 
@@ -113,7 +113,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Old Portfolio',
-    innerHTML: '<a href="https://ppm1988.github.io/portfolio" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/portfolio" target="_blank">Link</a>',
     type: 'Interactive static website',
     status: '',
     skills: [], 
@@ -121,7 +121,7 @@ export const PROJECT_CARDS = [
   },
   {
     title: 'Magic-box',
-    innerHTML: '<a href="https://ppm1988.github.io/magic-box" target="_blank">Link</a>',
+    innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/magic-box" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
     skills: [], 
