@@ -17,7 +17,9 @@
 
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of interestsData">
-      <div class="border-all no-border-left border-dashed border-color-extra-medium-gray rounded-right align-items-center m-3 width-150px text-left">
+      <div class="border-all no-border-left border-dashed border-color-extra-medium-gray rounded-right
+        xs-no-margin-lr xs-margin-10px-tb sm-no-margin-lr sm-margin-15px-tb md-margin-15px-all margin-15px-all  
+        width-150px text-left align-items-center">
         <div class="d-inline-block vertical-align-middle width-7px height-60px" [style.background-color]="eachCard.bgcolor"></div>
         <span class="vertical-align-middle pl-2 font-weight-bold font-size15">
           {{eachCard.title}}
@@ -60,14 +62,3 @@
     </div>
   </div><!-- ROW -->
 </div>
-
-<h3>
-  YouTube subscriptions -
-  Sadhguru,
-  Chris Ramsay,
-  
-</h3>
-<h3>
-  Shows I binged
-</h3>
-<blockquote class="embedly-card"><h4><a href="https://medium.com/@ppm1988/guide-github-pages-afdfe35c190a">Guide - GitHub pages</a></h4></blockquote>

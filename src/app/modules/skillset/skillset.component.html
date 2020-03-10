@@ -20,7 +20,7 @@
     <div class="col-auto" *ngFor="let eachCard of cardsData">
       <div class="card no-outline no-border-all" title="Proficiency {{eachCard.proficiency}}%">
         <div class="card-body small-card">
-          <div class="text-right font-size16">{{eachCard.title}}</div>
+          <div class="text-right font-size14 font-weight-bold">{{eachCard.title}}</div>
           <div class="progress mt-1">
             <div class="progress-bar bg-green" role="progressbar" [ngStyle]="{'filter': 'hue-rotate(' + eachCard.proficiency + 'deg)'}" 
             [style.width.%]="eachCard.proficiency" [attr.aria-valuenow]="eachCard.proficiency" aria-valuemin="0" aria-valuemax="100">
