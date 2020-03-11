@@ -19,6 +19,10 @@ export class AboutComponent {
     this.interestsData.forEach(elem => {
       elem['bgcolor'] = this.getRandomColor();
     });
+
+    // this.profilesData.forEach(elem => {
+    //   elem['color'] = this.getRandomColor();
+    // });
   } // FN
 
   getRandomColor() {

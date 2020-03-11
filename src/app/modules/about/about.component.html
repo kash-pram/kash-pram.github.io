@@ -55,12 +55,12 @@
     <div class="col-auto">
       <div class="card-columns">
         <div class="card no-outline" *ngFor="let eachCard of profilesData">
-          <div class="card-header">
+          <div class="card-header bg-transparent text-muted text-left font-size14 font-weight-bold">
             {{eachCard.title}}
           </div>
           <div class="card-body">
-            <div class="card-text" *ngFor="let eachElem of eachCard.innerHTML">
-              <span class="d-inline-block" [innerHTML]="eachElem"></span>
+            <div class="card-text d-inline-block" *ngFor="let eachElem of eachCard.innerHTML">
+              <span class="" [innerHTML]="eachElem"></span>
             </div>
           </div>
         </div>
