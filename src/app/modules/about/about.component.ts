@@ -12,21 +12,17 @@ export class AboutComponent {
   profilesData = PROFILES_CARDS;
 
   constructor () {
-    this.assignColor();
+    // this.assignColor();
   }
 
-  assignColor () {
-    this.interestsData.forEach(elem => {
-      elem['bgcolor'] = this.getRandomColor();
-    });
+  // assignColor () {
+  //   this.interestsData.forEach(elem => {
+  //     elem['bgcolor'] = this.getRandomColor();
+  //   });
+  // } // FN
 
-    // this.profilesData.forEach(elem => {
-    //   elem['color'] = this.getRandomColor();
-    // });
-  } // FN
-
-  getRandomColor() {
-    return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-  }
+  // getRandomColor() {
+  //   return 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+  // }
 
 }

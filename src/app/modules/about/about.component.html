@@ -20,7 +20,7 @@
       <div class="border-all no-border-left border-dashed border-color-extra-medium-gray rounded-right
         xs-no-margin-lr xs-margin-10px-tb sm-no-margin-lr sm-margin-15px-tb md-margin-15px-all margin-15px-all  
         width-150px text-left align-items-center">
-        <div class="d-inline-block vertical-align-middle width-7px height-60px" [style.background-color]="eachCard.bgcolor"></div>
+        <div class="d-inline-block vertical-align-middle width-7px height-60px bg-primary"></div>
         <span class="vertical-align-middle pl-2 font-weight-bold font-size15">
           {{eachCard.title}}
         </span>
@@ -54,15 +54,20 @@
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
     <div class="col-auto">
       <div class="card-columns">
-        <div class="card no-outline" *ngFor="let eachCard of profilesData">
-          <div class="card-header bg-transparent text-muted text-left font-size14 font-weight-bold">
+        <div class="card no-outline " *ngFor="let eachCard of profilesData">
+          <div class="card-header text-muted text-right font-size14 font-weight-bold">
             {{eachCard.title}}
           </div>
           <div class="card-body">
-            <div class="card-text d-inline-block" *ngFor="let eachElem of eachCard.innerHTML">
-              <span class="" [innerHTML]="eachElem"></span>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let eachElem of eachCard.innerHTML">
+                <div [innerHTML]="eachElem"></div>  
+              </li>
+            </ul>
+            <!-- <div class="card-text m-3" *ngFor="let eachElem of eachCard.innerHTML">
+              <div class="" [innerHTML]="eachElem"></div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div><!-- CARD-COLUMNS -->
     </div>

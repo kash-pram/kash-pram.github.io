@@ -169,18 +169,12 @@ $color-primary-dark: #3D3242;
   }
 }
 
-.masonry-header {
-  float: left;
-  // display: inline-block;
-  font-size: 18px;
-  position: relative;
-  top: 14px;
-  left: -14px;
-  background-color: green;
-  color: white;
-  padding: 5px;
-  border-radius: 2px;
-  border: 2px solid yellowgreen;
+
+.color-item{
+  filter: grayscale(100%);
+  &:hover {
+    filter: none;
+  }
 }
 
 .card-shadow{
