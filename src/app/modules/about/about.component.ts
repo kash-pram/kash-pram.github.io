@@ -16,8 +16,8 @@ export class AboutComponent {
   }
 
   // assignColor () {
-  //   this.interestsData.forEach(elem => {
-  //     elem['bgcolor'] = this.getRandomColor();
+  //   this.profilesData.forEach(elem => {
+  //     elem['color'] = this.getRandomColor();
   //   });
   // } // FN
 

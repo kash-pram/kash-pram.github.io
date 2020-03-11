@@ -55,7 +55,8 @@
     <div class="col-auto">
       <div class="card-columns">
         <div class="card no-outline border-dotted" *ngFor="let eachCard of profilesData">
-          <div class="card-header text-muted font-size14 font-weight-bold">
+          <div class="card-header font-size14 font-weight-bold">
+          <!-- <div class="card-header font-size14 font-weight-bold" [style.color]="eachCard.color"> -->
             <span [innerHTML]="eachCard.title"></span>
           </div>
           <div class="card-body">
