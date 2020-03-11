@@ -38,7 +38,7 @@
   <div class="row">
     <div class="col-12 text-center">
       <h1 class="no-margin-bottom color-light-gray font-weight-bold font-size70 sm-font-size50">
-        # profiles
+        # online
       </h1>
     </div>
   </div><!-- ROW -->
@@ -46,7 +46,7 @@
   <div class="row">
     <div class="col align-self-center">
       <div class="color-secondary font-size18 font-weight-bold">
-        my presence
+        my favorites & my profiles
       </div>
     </div>
   </div><!-- ROW -->
@@ -54,9 +54,9 @@
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
     <div class="col-auto">
       <div class="card-columns">
-        <div class="card no-outline " *ngFor="let eachCard of profilesData">
-          <div class="card-header text-muted text-right font-size14 font-weight-bold">
-            {{eachCard.title}}
+        <div class="card no-outline" *ngFor="let eachCard of profilesData">
+          <div class="card-header text-muted font-size14 font-weight-bold">
+            <span [innerHTML]="eachCard.title"></span>
           </div>
           <div class="card-body">
             <ul class="list-group list-group-flush">
