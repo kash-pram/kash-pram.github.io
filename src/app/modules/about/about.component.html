@@ -52,13 +52,20 @@
   </div><!-- ROW -->
 
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
-    <div class="col-auto" *ngFor="let eachCard of profilesData">
-      <a class="card mt-5 py-3 no-outline no-link hover-effect border-dotted" [href]="eachCard.link" target="_blank" title="{{eachCard.title}}">
-        <div class="card-body small-card">
-          <!-- <img class="float-right ml-3 external-link-icon" src="assets/icons/external-link.svg" height="15px" title="Opens link in new tab"> -->
-          <!-- <div class="card-text" [innerHTML]="eachCard.innerHTML"></div> -->
+    <div class="col-auto">
+      <div class="card-columns">
+        <div class="card no-outline" *ngFor="let eachCard of profilesData">
+          <div class="card-header">
+            {{eachCard.title}}
+          </div>
+          <div class="card-body">
+            <div class="card-text" *ngFor="let eachElem of eachCard.innerHTML">
+              <span class="d-inline-block" [innerHTML]="eachElem"></span>
+            </div>
+          </div>
         </div>
-      </a>
+      </div><!-- CARD-COLUMNS -->
     </div>
   </div><!-- ROW -->
+
 </div>

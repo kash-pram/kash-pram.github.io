@@ -14,6 +14,10 @@ $color-primary-dark: #3D3242;
     width: 50px;
   }
 
+  .card-columns {
+    column-count: 1;
+  }
+
   // .overflow-y{
   //   overflow-y: auto;
   // }
@@ -28,6 +32,10 @@ $color-primary-dark: #3D3242;
   // .overflow-y{
   //   overflow-y: auto;
   // }
+
+  .card-columns {
+    column-count: 1;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -42,11 +50,16 @@ $color-primary-dark: #3D3242;
   .font-size70{
     font-size: 70px;
   }
+  .card-columns {
+    column-count: 2;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  
+  .card-columns {
+    column-count: 3;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
