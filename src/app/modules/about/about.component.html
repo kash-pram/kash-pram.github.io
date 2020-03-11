@@ -17,7 +17,7 @@
 
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
     <div class="col-auto" *ngFor="let eachCard of interestsData">
-      <div class="border-all no-border-left border-dashed border-color-extra-medium-gray rounded-right
+      <div class="border-all no-border-left border-inset border-color-extra-medium-gray rounded-right
         xs-no-margin-lr xs-margin-10px-tb sm-no-margin-lr sm-margin-15px-tb md-margin-15px-all margin-15px-all  
         width-150px text-left align-items-center">
         <div class="d-inline-block vertical-align-middle width-7px height-60px bg-primary"></div>
@@ -54,7 +54,7 @@
   <div class="row margin-70px-top sm-margin-50px-top justify-content-center">
     <div class="col-auto">
       <div class="card-columns">
-        <div class="card no-outline" *ngFor="let eachCard of profilesData">
+        <div class="card no-outline border-dotted" *ngFor="let eachCard of profilesData">
           <div class="card-header text-muted font-size14 font-weight-bold">
             <span [innerHTML]="eachCard.title"></span>
           </div>

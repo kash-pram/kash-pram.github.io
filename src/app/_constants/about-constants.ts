@@ -2,9 +2,9 @@ export const PROFILES_CARDS = [
   {
     title: '-- Networks --',
     innerHTML: [
-      '<a class="d-inline-block p-3 no-outline color-item" href="https://stackoverflow.com/users/2959821/ppm1988" target="_blank" title="StackOverflow"><img src="https://stackoverflow.com/users/flair/2959821.png?theme=clean" width="208" height="58" alt="StackOverflow"></a>',
-      '<a class="d-inline-block p-3 no-outline color-item" href="https://github.com/ppm1988/" target="_blank" title="GitHub"><img src="assets/logos/github.png" height="58" alt="Github"></a>',
-      '<a class="d-inline-block p-3 no-outline color-item" href="https://www.linkedin.com/in/ppm1988" target="_blank" title="LinkedIn"><img src="assets/logos/linkedin.png" height="58" alt="LinkedIn"></a>'
+      '<a class="d-block no-outline color-item" href="https://stackoverflow.com/users/2959821/ppm1988" target="_blank" title="StackOverflow"><img src="https://stackoverflow.com/users/flair/2959821.png?theme=clean" width="208" height="58" alt="StackOverflow"></a>',
+      '<a class="d-block no-outline color-item" href="https://github.com/ppm1988/" target="_blank" title="GitHub"><img src="assets/logos/github.png" height="58" alt="Github"></a>',
+      '<a class="d-block no-outline color-item" href="https://www.linkedin.com/in/ppm1988" target="_blank" title="LinkedIn"><img src="assets/logos/linkedin.png" height="58" alt="LinkedIn"></a>'
     ]
   },
   {
