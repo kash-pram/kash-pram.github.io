@@ -11,7 +11,7 @@ export const PROFILES_CARDS = [
   },
   {
     // title: '<img class="mr-2" src="assets/logos/medium.svg" height="23" alt="Medium" title="Medium Post"> Posts',
-    title: '-- Medium Posts --',
+    title: '-- Posts --',
     innerHTML: [
       '<div class="text-left"><a class="no-outline text-muted" target="_blank" href="https://medium.com/@ppm1988/how-many-colors-exist-in-the-world-bb6907d6a54e">How many colors exist in the world?</a></div>',
       '<div class="text-left"><a class="no-outline text-muted" target="_blank" href="https://medium.com/@ppm1988/loading-webpages-faster-6950a65c6d90">Loading web-apps faster</a></div>',
@@ -22,9 +22,10 @@ export const PROFILES_CARDS = [
     ]
   },
   {
-    title: '-- Documents --',
+    title: '-- Docs --',
     innerHTML: [
-      '<a class="btn btn-outline-info no-outline" target="_blank" href="https://drive.google.com/open?id=1Y-j6lISynq5pgIKkJqrES1RAWnKXSXih">Open Resume</a>',
+      '<a class="btn btn-outline-info no-outline" target="_blank" href="https://drive.google.com/open?id=1t3cCYrKlLOYPHlETMlUcbGZCK4WUtUGb">Open Resume</a>',
+      '<div class="text-left"><a class="no-outline text-muted" target="_blank" href="https://drive.google.com/open?id=1RabBUYFLTDNdwZ1TdeTulOTiB161RepU">Git Rules</a></div>',
       // LUCID CHART
       // FLOW DIAGRAMS
     ]
