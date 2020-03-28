@@ -13,7 +13,7 @@
           *ngFor="let navItem of NAV_ITEMS; let i = index" (click)="navigateByUrl(navItem.link)"
           [ngClass]="{'active font-weight-bold': i === selectedNavIndex }" data-toggle="collapse" data-target=".navbar-collapse.show">
           <div class="no-outline row">
-            <div class="col-7 nav-icon text-right" [inlineSVG]="'/assets/icons/' + navItem.icon + '.svg'"></div>
+            <div class="col-7 nav-icon text-right" [inlineSVG]="'assets/icons/' + navItem.icon + '.svg'"></div>
             <div class="col-5 pl-3 text-center font-size13" [ngClass]="{'color-secondary': i === selectedNavIndex, '': i !== selectedNavIndex }">{{navItem.name}}</div>
           </div>
         </a>

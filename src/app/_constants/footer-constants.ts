@@ -33,7 +33,7 @@ export const FOOTER_CONSTANTS = {
       eng: 'What benefit has he derived from his knowledge, who does not endeavour to keep off pain from another as much as from himself ?'
     },
     {
-      tamil: ' இனிய உளவாக இன்னாத கூறல் கனிஇருப்பக் காய்கவர்ந் தற்று',
+      tamil: 'இனிய உளவாக இன்னாத கூறல் கனிஇருப்பக் காய்கவர்ந் தற்று',
       eng: 'To say disagreeable things when agreeable are at hand is like eating unripe fruit when there is ripe'
     },
     {
@@ -43,6 +43,11 @@ export const FOOTER_CONSTANTS = {
     {
       tamil: 'அகழ்வாரைத் தாங்கும் நிலம்போலத் தம்மை இகழ்வார்ப் பொறுத்தல் தலை',
       eng: 'To bear with those who revile us, just as the earth bears up those who dig it, is the first of virtues'
-    } 
+    },
+    {
+      tamil: 'கற்க கசடறக் கற்பவை கற்றபின் நிற்க அதற்குத் தக',
+      eng: 'Let a man learn thoroughly whatever he may learn, and let his conduct be worthy of his learning'
+    }
+     
   ]
 };

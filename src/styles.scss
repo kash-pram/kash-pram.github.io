@@ -67,8 +67,8 @@ $color-primary-dark: #3D3242;
   
 }
 
-.h-200px{
-  height: 200px;
+.h-350px{
+  height: 350px;
 }
 .color-white{
   color: #FFF;
@@ -130,6 +130,9 @@ $color-primary-dark: #3D3242;
   // background-color: #e9ecee;
   background-color: #595959;
 }
+.bg-light-black{
+  background-color: rgb(38, 38, 38);
+}
 .bg-gray{
   background-color: #F8F8F8;
 }
@@ -138,6 +141,13 @@ $color-primary-dark: #3D3242;
 }
 .bg-green{
   background-color: #27ae60;
+}
+
+.section-header{
+  color: #000;
+  -webkit-text-fill-color: #FFF;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #DCDFE2;
 }
 
 .hr-break{

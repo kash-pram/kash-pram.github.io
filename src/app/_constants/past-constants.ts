@@ -100,7 +100,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/tevoted" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [], 
+    skills: ['AngularJS'], 
     for: ''
   },
   {
@@ -108,7 +108,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/ces-corner" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [], 
+    skills: ['Vue JS'],
     for: ''
   },
   {
@@ -116,7 +116,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/portfolio" target="_blank">Link</a>',
     type: 'Interactive static website',
     status: '',
-    skills: [], 
+    skills: ['HTML, CSS'], 
     for: ''
   },
   {
@@ -124,7 +124,7 @@ export const PROJECT_CARDS = [
     innerHTML: '<a class="btn btn-outline-primary" href="https://ppm1988.github.io/magic-box" target="_blank">Link</a>',
     type: 'Full-stack web application',
     status: 'Work-in-progress',
-    skills: [], 
+    skills: ['HTML', 'CSS'],
     for: ''
   },
   // {
@@ -144,7 +144,7 @@ export const PROJECT_CARDS = [
   //   for: ''
   // },
   // {
-  //   title: 'need-basis / group notify',
+  //   title: 'Subscriber / need-basis / group notify',
   //   innerHTML: '',
   //   type: 'Full-stack web application',
   //   status: 'Pending',
