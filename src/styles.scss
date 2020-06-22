@@ -144,10 +144,14 @@ $color-primary-dark: #3D3242;
 }
 
 .section-header{
-  color: #000;
-  -webkit-text-fill-color: #FFF;
+  // color: #000;
+  // -webkit-text-fill-color: #FFF;
+  // -webkit-text-stroke-width: 1px;
+  // -webkit-text-stroke-color: #DCDFE2;
+
+  -webkit-text-fill-color: #F8F8F8;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #DCDFE2;
+  -webkit-text-stroke-color: #E18942;
 }
 
 .hr-break{
