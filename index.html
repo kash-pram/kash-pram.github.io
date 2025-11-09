@@ -3,275 +3,529 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kash Pram</title>
+    <title>Prakash Mariappan - WebApp Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-gradient-start: #667eea;
+            --bg-gradient-end: #764ba2;
+            --content-bg: #ffffff;
+            --content-secondary-bg: #fafafa;
+            --text-primary: #333333;
+            --text-secondary: #555555;
+            --border-color: #e0e0e0;
+            --shadow: rgba(0, 0, 0, 0.1);
+            --shadow-dark: rgba(0, 0, 0, 0.3);
+            --tab-hover: #f8f9fa;
+        }
+
+        body.dark-mode {
+            --bg-gradient-start: #1a1a2e;
+            --bg-gradient-end: #16213e;
+            --content-bg: #0f3460;
+            --content-secondary-bg: #16213e;
+            --text-primary: #e4e4e4;
+            --text-secondary: #b8b8b8;
+            --border-color: #2d4263;
+            --shadow: rgba(0, 0, 0, 0.3);
+            --shadow-dark: rgba(0, 0, 0, 0.5);
+            --tab-hover: #1a2742;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px 30px;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            padding: 12px 18px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.3em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+
+        .theme-toggle:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.1);
+        }
+
+        .portfolio-container {
+            background: var(--content-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px var(--shadow-dark);
+            transition: all 0.3s ease;
+        }
+
+        .tabs-container {
+            display: flex;
+            background: var(--content-secondary-bg);
+            border-bottom: 2px solid var(--border-color);
+            overflow-x: auto;
+            transition: all 0.3s ease;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 20px 15px;
+            cursor: pointer;
+            text-align: center;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 1em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            min-width: 150px;
+        }
+
+        .tab:hover {
+            background: var(--tab-hover);
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+            background: var(--content-bg);
+        }
+
+        body.dark-mode .tab.active {
+            color: #a8b5ff;
+            border-bottom-color: #a8b5ff;
+        }
+
+        .tab-icon {
+            font-size: 1.2em;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 40px;
+            animation: fadeIn 0.4s ease;
+            transition: all 0.3s ease;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .content-section h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+
+        body.dark-mode .content-section h3 {
+            color: #a8b5ff;
+        }
+
+        .content-section p {
+            line-height: 1.8;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .skill-item {
+            background: var(--content-secondary-bg);
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 8px var(--shadow);
+            transition: transform 0.3s ease;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card {
+            background: var(--content-secondary-bg);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .project-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        body.dark-mode .project-card h4 {
+            color: #a8b5ff;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .project-link {
+            display: inline-block;
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        body.dark-mode .project-link {
+            color: #c4a4ff;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: var(--content-secondary-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px var(--shadow);
+            border: 1px solid var(--border-color);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(5px);
+        }
+
+        .contact-icon {
+            font-size: 1.5em;
+            color: #667eea;
+        }
+
+        body.dark-mode .contact-icon {
+            color: #a8b5ff;
+        }
+
+        .interests-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .interest-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 0.95em;
+            transition: transform 0.3s ease;
+        }
+
+        .interest-tag:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .theme-toggle {
+                top: 10px;
+                right: 10px;
+                padding: 10px 15px;
+                font-size: 1.1em;
+            }
+
+            .tabs-container {
+                overflow-x: auto;
+            }
+
+            .tab {
+                min-width: 120px;
+                padding: 15px 10px;
+                font-size: 0.9em;
+            }
+
+            .tab-content {
+                padding: 25px 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+        }
+
+        @media (max-width: 480px) {
+            .tab-text {
+                display: none;
+            }
+
+            .tab {
+                min-width: 60px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <table border="1" cellpadding="15" cellspacing="0" align="center">
-        <tr>
-            <th>
-                Title
-            </th>
-            <th>
-                Link
-            </th>
-        </tr>
+    <div class="container">
+        <header>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+            <h1>John Doe</h1>
+            <p>Full Stack Developer & Creative Thinker</p>
+        </header>
 
-        <tr>
-            <td>
-                Family Tree
-            </td>
-            <td>
-                <a href="https://kash-pram.github.io/familee/" target="_blank">
-                    Familee
-                </a>
-            </td>
-        </tr>
+        <div class="portfolio-container">
+            <div class="tabs-container">
+                <button class="tab active" data-tab="about">
+                    <span class="tab-icon">👤</span>
+                    <span class="tab-text">About Me</span>
+                </button>
+                <button class="tab" data-tab="stack">
+                    <span class="tab-icon">💻</span>
+                    <span class="tab-text">Tech Stack</span>
+                </button>
+                <button class="tab" data-tab="projects">
+                    <span class="tab-icon">🚀</span>
+                    <span class="tab-text">Projects</span>
+                </button>
+                <button class="tab" data-tab="interests">
+                    <span class="tab-icon">⭐</span>
+                    <span class="tab-text">Interests</span>
+                </button>
+                <button class="tab" data-tab="contact">
+                    <span class="tab-icon">📧</span>
+                    <span class="tab-text">Contact</span>
+                </button>
+            </div>
 
-        <tr>
-            <td>
-                One Place
-            </td>
-            <td>
-                <a href="https://kash-pram.github.io/one-place/" target="_blank">
-                    Mutual Funds
-                </a>
-            </td>
-        </tr>
+            <!-- About Me Tab -->
+            <div class="tab-content active" id="about">
+                <div class="content-section">
+                    <h3>About Me</h3>
+                    <p>Hello! I'm a passionate full-stack developer with 5+ years of experience building web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
+                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and mentoring.</p>
+                    <p>I believe in writing clean, maintainable code and creating user experiences that make a difference.</p>
+                </div>
+            </div>
 
-                <tr>
-            <td>
-                Check-in Time
-            </td>
-            <td>
-                <a href="https://kash-pram.github.io/checkin/" target="_blank">
-                    Checkin
-                </a>
-            </td>
-        </tr>
+            <!-- Technical Stack Tab -->
+            <div class="tab-content" id="stack">
+                <div class="content-section">
+                    <h3>Languages & Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">TypeScript</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item">Node.js</div>
+                        <div class="skill-item">Express</div>
+                    </div>
+                    
+                    <h3 style="margin-top: 30px;">Tools & Technologies</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">Git</div>
+                        <div class="skill-item">Docker</div>
+                        <div class="skill-item">MongoDB</div>
+                        <div class="skill-item">PostgreSQL</div>
+                        <div class="skill-item">AWS</div>
+                        <div class="skill-item">REST APIs</div>
+                    </div>
+                </div>
+            </div>
 
-        <tr>
-            <td>
-                Numerology
-            </td>
-            <td>
-                <a href="https://kash-pram.github.io/numerology/" target="_blank">
-                    numerology
-                </a>
-            </td>
-        </tr>
+            <!-- Projects Tab -->
+            <div class="tab-content" id="projects">
+                <div class="content-section">
+                    <h3>My Projects</h3>
+                    <div class="project-card">
+                        <h4>E-Commerce Platform</h4>
+                        <p>A full-featured online shopping platform with payment integration, inventory management, and real-time analytics.</p>
+                        <p><strong>Tech:</strong> React, Node.js, MongoDB, Stripe API</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4>Task Management App</h4>
+                        <p>Collaborative task management tool with real-time updates, team collaboration features, and advanced filtering.</p>
+                        <p><strong>Tech:</strong> React, Express, Socket.io, PostgreSQL</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h4>Weather Dashboard</h4>
+                        <p>Beautiful weather application with forecasts, historical data visualization, and location-based recommendations.</p>
+                        <p><strong>Tech:</strong> JavaScript, Weather API, Chart.js</p>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
 
-        
+            <!-- Interests Tab -->
+            <div class="tab-content" id="interests">
+                <div class="content-section">
+                    <h3>My Interests</h3>
+                    <p>Beyond coding, I have diverse interests that keep me inspired and balanced:</p>
+                    <div class="interests-list">
+                        <div class="interest-tag">🎨 UI/UX Design</div>
+                        <div class="interest-tag">📚 Tech Blogging</div>
+                        <div class="interest-tag">🎮 Gaming</div>
+                        <div class="interest-tag">🏃 Running</div>
+                        <div class="interest-tag">📷 Photography</div>
+                        <div class="interest-tag">🎵 Music Production</div>
+                        <div class="interest-tag">🌍 Traveling</div>
+                        <div class="interest-tag">☕ Coffee Brewing</div>
+                    </div>
+                </div>
+            </div>
 
-        <tr>
-            <td>
-                Work Mode
-            </td>
-            <td>
-                <a href="https://kash-pram.github.io/fix-work-mode/" target="_blank">
-                    Work Mode
-                </a>
-            </td>
-        </tr>
-        
-        <tr>
-            <td>
-                Dynamic Portfolio 2016
-            </td>
-            <td>
-                <a href="https://kash-pram.github.io/portfolio-2016/" target="_blank">
-                    portfolio-2016
-                </a>
-            </td>
-        </tr>
+            <!-- Contact Tab -->
+            <div class="tab-content" id="contact">
+                <div class="content-section">
+                    <h3>Get In Touch</h3>
+                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>john.doe@example.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <span>linkedin.com/in/johndoe</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🐱</span>
+                            <span>github.com/johndoe</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🐦</span>
+                            <span>@johndoe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<tr>
-    <td>
-        CSS Assignment
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/" target="_blank">
-            css-assignment
-        </a>
-    </td>
-</tr>
+    <script>
+        // Tab switching functionality
+        const tabs = document.querySelectorAll('.tab');
+        const tabContents = document.querySelectorAll('.tab-content');
 
-<tr>
-    <td>
-        Magic Box
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/magic-box/" target="_blank">
-            magic-box
-        </a>
-    </td>
-</tr>
-        
-<tr>
-    <td>
-        Landing page
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/app-le-monday/" target="_blank">
-            Landing page
-        </a>
-    </td>
-</tr>
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                const targetTab = tab.getAttribute('data-tab');
+                
+                // Remove active class from all tabs and contents
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
 
-<tr>
-    <td>
-        App Timer
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/app-timer/" target="_blank">
-            app-timer
-        </a>
-    </td>
-</tr>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
 
-<tr>
-    <td>
-        Beppo
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/beppo/" target="_blank">
-            beppo
-        </a>
-    </td>
-</tr>
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            themeToggle.textContent = '☀️';
+        }
 
-<tr>
-    <td>
-        CES Corner
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/app-ces-corner" target="_blank">
-            ces-corner
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        Seat Booking
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/seat-booking/" target="_blank">
-            seat-booking
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        Numbar
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/numbar/" target="_blank">
-            numbar
-        </a>
-    </td>
-</tr>
-<!-- 
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
             
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        
-    </td>
-    <td>
-        <a href="https://kash-pram.github.io/css-assignment/">
-            
-        </a>
-    </td>
-</tr> -->
-
-
-    </table>
+            // Update button icon and save preference
+            if (body.classList.contains('dark-mode')) {
+                themeToggle.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            } else {
+                themeToggle.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 </body>
 </html>
