@@ -3,16 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prakash Mariappan - WebApp Developer</title>
-    <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-CX03R2VV2Y"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-CX03R2VV2Y');
-    </script>
+    <title>kash-pram</title>
     <style>
         * {
             margin: 0;
@@ -20,153 +11,124 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --bg-gradient-start: #667eea;
-            --bg-gradient-end: #764ba2;
-            --content-bg: #ffffff;
-            --content-secondary-bg: #fafafa;
-            --text-primary: #333333;
-            --text-secondary: #555555;
-            --border-color: #e0e0e0;
-            --shadow: rgba(0, 0, 0, 0.1);
-            --shadow-dark: rgba(0, 0, 0, 0.3);
-            --tab-hover: #f8f9fa;
-        }
-
-        body.dark-mode {
-            --bg-gradient-start: #1a1a2e;
-            --bg-gradient-end: #16213e;
-            --content-bg: #0f3460;
-            --content-secondary-bg: #16213e;
-            --text-primary: #e4e4e4;
-            --text-secondary: #b8b8b8;
-            --border-color: #2d4263;
-            --shadow: rgba(0, 0, 0, 0.3);
-            --shadow-dark: rgba(0, 0, 0, 0.5);
-            --tab-hover: #1a2742;
-        }
-
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
-            min-height: 100vh;
-            padding: 20px;
-            color: var(--text-primary);
-            transition: all 0.3s ease;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            color: white;
-            padding: 40px 20px 30px;
-            position: relative;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-        }
-
-        header p {
-            font-size: 1.3em;
-            opacity: 0.95;
-        }
-
-        .theme-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.2);
-            border: none;
-            padding: 12px 18px;
-            border-radius: 25px;
-            cursor: pointer;
-            font-size: 1.3em;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(10px);
-        }
-
-        .theme-toggle:hover {
-            background: rgba(255, 255, 255, 0.3);
-            transform: scale(1.1);
-        }
-
-        .portfolio-container {
-            background: var(--content-bg);
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px var(--shadow-dark);
-            transition: all 0.3s ease;
-        }
-
-        .tabs-container {
+            height: 100vh;
             display: flex;
-            background: var(--content-secondary-bg);
-            border-bottom: 2px solid var(--border-color);
-            overflow-x: auto;
-            transition: all 0.3s ease;
+            flex-direction: column;
+            overflow: hidden;
         }
 
-        .tab {
+        .main-content {
             flex: 1;
-            padding: 20px 15px;
-            cursor: pointer;
-            text-align: center;
-            border: none;
-            background: transparent;
-            color: var(--text-secondary);
-            font-size: 1em;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border-bottom: 3px solid transparent;
-            white-space: nowrap;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            min-width: 150px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+            padding: 20px;
+            position: relative;
         }
 
-        .tab:hover {
-            background: var(--tab-hover);
+        .main-content::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, rgba(255, 177, 153, 0.03) 0%, transparent 50%),
+                radial-gradient(circle at 40% 20%, rgba(186, 200, 224, 0.03) 0%, transparent 50%);
+            pointer-events: none;
         }
 
-        .tab.active {
-            color: #667eea;
-            border-bottom-color: #667eea;
-            background: var(--content-bg);
+        .content-wrapper {
+            text-align: center;
+            z-index: 1;
+            animation: fadeInUp 1s ease-out;
         }
 
-        body.dark-mode .tab.active {
-            color: #a8b5ff;
-            border-bottom-color: #a8b5ff;
+        h1 {
+            font-size: clamp(2rem, 5vw, 4rem);
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
         }
 
-        .tab-icon {
-            font-size: 1.2em;
+        .highlight {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
 
-        .tab-content {
-            display: none;
-            padding: 40px;
-            animation: fadeIn 0.4s ease;
+        .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.5rem);
+            color: #718096;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .construction-icon {
+            font-size: clamp(3rem, 8vw, 5rem);
+            margin-bottom: 2rem;
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        .loader {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .loader span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            animation: pulse 1.5s infinite;
+        }
+
+        .loader span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .loader span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+            padding: 1.5rem 2rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .footer-brand {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #ffffff;
+            text-decoration: none;
+            letter-spacing: 0.05em;
             transition: all 0.3s ease;
         }
 
-        .tab-content.active {
-            display: block;
+        .footer-brand:hover {
+            color: #667eea;
+            transform: translateY(-2px);
         }
 
-        @keyframes fadeIn {
+        @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(10px);
+                transform: translateY(30px);
             }
             to {
                 opacity: 1;
@@ -174,367 +136,78 @@
             }
         }
 
-        .content-section h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.3em;
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
         }
 
-        body.dark-mode .content-section h3 {
-            color: #a8b5ff;
-        }
-
-        .content-section p {
-            line-height: 1.8;
-            color: var(--text-secondary);
-            margin-bottom: 15px;
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .skill-item {
-            background: var(--content-secondary-bg);
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            box-shadow: 0 2px 8px var(--shadow);
-            transition: transform 0.3s ease;
-            border: 1px solid var(--border-color);
-        }
-
-        .skill-item:hover {
-            transform: translateY(-5px);
-        }
-
-        .project-card {
-            background: var(--content-secondary-bg);
-            padding: 20px;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 2px 8px var(--shadow);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .project-card:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 4px 12px var(--shadow);
-        }
-
-        .project-card h4 {
-            color: #667eea;
-            margin-bottom: 10px;
-        }
-
-        body.dark-mode .project-card h4 {
-            color: #a8b5ff;
-        }
-
-        .project-card p {
-            color: var(--text-secondary);
-            margin-bottom: 10px;
-        }
-
-        .project-link {
-            display: inline-block;
-            color: #764ba2;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-
-        body.dark-mode .project-link {
-            color: #c4a4ff;
-        }
-
-        .project-link:hover {
-            text-decoration: underline;
-        }
-
-        .contact-info {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            padding: 15px;
-            background: var(--content-secondary-bg);
-            border-radius: 8px;
-            box-shadow: 0 2px 8px var(--shadow);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            transform: translateX(5px);
-        }
-
-        .contact-icon {
-            font-size: 1.5em;
-            color: #667eea;
-        }
-
-        body.dark-mode .contact-icon {
-            color: #a8b5ff;
-        }
-
-        .interests-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-
-        .interest-tag {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-size: 0.95em;
-            transition: transform 0.3s ease;
-        }
-
-        .interest-tag:hover {
-            transform: scale(1.05);
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 0.5;
+                transform: scale(0.8);
+            }
         }
 
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
+            h1 {
+                margin-bottom: 1rem;
             }
 
-            header p {
-                font-size: 1.1em;
+            .subtitle {
+                margin-bottom: 1.5rem;
             }
 
-            .theme-toggle {
-                top: 10px;
-                right: 10px;
-                padding: 10px 15px;
-                font-size: 1.1em;
+            footer {
+                padding: 1rem 1.5rem;
             }
 
-            .tabs-container {
-                overflow-x: auto;
-            }
-
-            .tab {
-                min-width: 120px;
-                padding: 15px 10px;
-                font-size: 0.9em;
-            }
-
-            .tab-content {
-                padding: 25px 20px;
-            }
-
-            .skills-grid {
-                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            .footer-brand {
+                font-size: 1.1rem;
             }
         }
 
         @media (max-width: 480px) {
-            .tab-text {
-                display: none;
+            .main-content {
+                padding: 15px;
             }
 
-            .tab {
-                min-width: 60px;
+            footer {
+                padding: 1rem;
+            }
+
+            .footer-brand {
+                font-size: 1rem;
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
-            <h1>Prakash Mariappan</h1>
-            <p>Full Stack Developer & Creative Thinker</p>
-        </header>
-
-        <div class="portfolio-container">
-            <div class="tabs-container">
-                <button class="tab active" data-tab="about">
-                    <span class="tab-icon">👤</span>
-                    <span class="tab-text">About Me</span>
-                </button>
-                <button class="tab" data-tab="stack">
-                    <span class="tab-icon">💻</span>
-                    <span class="tab-text">Tech Stack</span>
-                </button>
-                <button class="tab" data-tab="projects">
-                    <span class="tab-icon">🚀</span>
-                    <span class="tab-text">Projects</span>
-                </button>
-                <button class="tab" data-tab="interests">
-                    <span class="tab-icon">⭐</span>
-                    <span class="tab-text">Interests</span>
-                </button>
-                <button class="tab" data-tab="contact">
-                    <span class="tab-icon">📧</span>
-                    <span class="tab-text">Contact</span>
-                </button>
-            </div>
-
-            <!-- About Me Tab -->
-            <div class="tab-content active" id="about">
-                <div class="content-section">
-                    <h3>About Me</h3>
-                    <p>Hello! I'm a passionate full-stack developer with 5+ years of experience building web applications. I love turning complex problems into simple, beautiful, and intuitive solutions.</p>
-                    <p>When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or sharing my knowledge through blog posts and mentoring.</p>
-                    <p>I believe in writing clean, maintainable code and creating user experiences that make a difference.</p>
-                </div>
-            </div>
-
-            <!-- Technical Stack Tab -->
-            <div class="tab-content" id="stack">
-                <div class="content-section">
-                    <h3>Languages & Frameworks</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">JavaScript</div>
-                        <div class="skill-item">TypeScript</div>
-                        <div class="skill-item">Python</div>
-                        <div class="skill-item">React</div>
-                        <div class="skill-item">Node.js</div>
-                        <div class="skill-item">Express</div>
-                    </div>
-                    
-                    <h3 style="margin-top: 30px;">Tools & Technologies</h3>
-                    <div class="skills-grid">
-                        <div class="skill-item">Git</div>
-                        <div class="skill-item">Docker</div>
-                        <div class="skill-item">MongoDB</div>
-                        <div class="skill-item">PostgreSQL</div>
-                        <div class="skill-item">AWS</div>
-                        <div class="skill-item">REST APIs</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Projects Tab -->
-            <div class="tab-content" id="projects">
-                <div class="content-section">
-                    <h3>My Projects</h3>
-                    <div class="project-card">
-                        <h4>E-Commerce Platform</h4>
-                        <p>A full-featured online shopping platform with payment integration, inventory management, and real-time analytics.</p>
-                        <p><strong>Tech:</strong> React, Node.js, MongoDB, Stripe API</p>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h4>Task Management App</h4>
-                        <p>Collaborative task management tool with real-time updates, team collaboration features, and advanced filtering.</p>
-                        <p><strong>Tech:</strong> React, Express, Socket.io, PostgreSQL</p>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                    
-                    <div class="project-card">
-                        <h4>Weather Dashboard</h4>
-                        <p>Beautiful weather application with forecasts, historical data visualization, and location-based recommendations.</p>
-                        <p><strong>Tech:</strong> JavaScript, Weather API, Chart.js</p>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Interests Tab -->
-            <div class="tab-content" id="interests">
-                <div class="content-section">
-                    <h3>My Interests</h3>
-                    <p>Beyond coding, I have diverse interests that keep me inspired and balanced:</p>
-                    <div class="interests-list">
-                        <div class="interest-tag">🎨 UI/UX Design</div>
-                        <div class="interest-tag">📚 Tech Blogging</div>
-                        <div class="interest-tag">🎮 Gaming</div>
-                        <div class="interest-tag">🏃 Running</div>
-                        <div class="interest-tag">📷 Photography</div>
-                        <div class="interest-tag">🎵 Music Production</div>
-                        <div class="interest-tag">🌍 Traveling</div>
-                        <div class="interest-tag">☕ Coffee Brewing</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Tab -->
-            <div class="tab-content" id="contact">
-                <div class="content-section">
-                    <h3>Get In Touch</h3>
-                    <p>I'm always open to new opportunities and collaborations. Feel free to reach out!</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <span class="contact-icon">📧</span>
-                            <span>john.doe@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">💼</span>
-                            <span>linkedin.com/in/johndoe</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🐱</span>
-                            <span>github.com/johndoe</span>
-                        </div>
-                        <div class="contact-item">
-                            <span class="contact-icon">🐦</span>
-                            <span>@johndoe</span>
-                        </div>
-                    </div>
-                </div>
+    <main class="main-content">
+        <div class="content-wrapper">
+            <div class="construction-icon">🚧</div>
+            <h1>
+                The <span class="highlight">next big thing</span><br>
+                is under construction
+            </h1>
+            <p class="subtitle">Something amazing is coming soon</p>
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </div>
-
-    <script>
-        // Tab switching functionality
-        const tabs = document.querySelectorAll('.tab');
-        const tabContents = document.querySelectorAll('.tab-content');
-
-        tabs.forEach(tab => {
-            tab.addEventListener('click', () => {
-                const targetTab = tab.getAttribute('data-tab');
-                
-                // Remove active class from all tabs and contents
-                tabs.forEach(t => t.classList.remove('active'));
-                tabContents.forEach(content => content.classList.remove('active'));
-                
-                // Add active class to clicked tab and corresponding content
-                tab.classList.add('active');
-                document.getElementById(targetTab).classList.add('active');
-            });
-        });
-
-        // Theme toggle functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const body = document.body;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        if (currentTheme === 'dark') {
-            body.classList.add('dark-mode');
-            themeToggle.textContent = '☀️';
-        }
-
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            
-            // Update button icon and save preference
-            if (body.classList.contains('dark-mode')) {
-                themeToggle.textContent = '☀️';
-                localStorage.setItem('theme', 'dark');
-            } else {
-                themeToggle.textContent = '🌙';
-                localStorage.setItem('theme', 'light');
-            }
-        });
-    </script>
+    </main>
+    
+    <!-- <footer>
+        <a href="https://beehta.com" class="footer-brand">beehta.com</a>
+    </footer> -->
 </body>
 </html>
